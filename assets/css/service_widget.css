@@ -1,0 +1,52 @@
+/* Clean Service Card Design */
+.srv-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid #eef2f6;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+.srv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.srv-icon-wrap {
+    height: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.srv-icon-wrap img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+.srv-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+.srv-desc {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.srv-link {
+    font-size: 0.9rem;
+    color: #4ea3fc;
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: auto;
+}
+.srv-link:hover {
+    color: #073c91;
+    text-decoration: underline;
+}

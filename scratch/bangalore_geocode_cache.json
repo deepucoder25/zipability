@@ -1,0 +1,778 @@
+{
+    "A F station yelahanka": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Adugodi": {
+        "lat": "12.9440234",
+        "lon": "77.6088867"
+    },
+    "Agara": {
+        "lat": "12.9091524",
+        "lon": "77.6438684"
+    },
+    "Agram": {
+        "lat": "12.9653161",
+        "lon": "77.6176944"
+    },
+    "Air Force hospital": {
+        "lat": "12.9639437",
+        "lon": "77.6276500"
+    },
+    "Amruthahalli": {
+        "lat": "13.0648426",
+        "lon": "77.5993429"
+    },
+    "Anandnagar": {
+        "lat": "13.0323795",
+        "lon": "77.5900655"
+    },
+    "Anekalbazar": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Arabic College": {
+        "lat": "13.0300103",
+        "lon": "77.6208765"
+    },
+    "Aranya Bhavan": {
+        "lat": "13.0105689",
+        "lon": "77.5708563"
+    },
+    "Ashoknagar": {
+        "lat": "12.9701373",
+        "lon": "77.6096402"
+    },
+    "Attibele": {
+        "lat": "12.7751249",
+        "lon": "77.7709216"
+    },
+    "Attur": {
+        "lat": "13.0946873",
+        "lon": "77.5596677"
+    },
+    "Austin Town": {
+        "lat": "12.9612736",
+        "lon": "77.6152935"
+    },
+    "Avalahalli": {
+        "lat": "12.9459464",
+        "lon": "77.5409354"
+    },
+    "Avani Sringeri mutt": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Avenue Road": {
+        "lat": "12.9698326",
+        "lon": "77.5797061"
+    },
+    "B Sk ii stage": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Bsf Campus yelahanka": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Bagalgunte": {
+        "lat": "13.0567188",
+        "lon": "77.5045078"
+    },
+    "Bagalur": {
+        "lat": "13.0079918",
+        "lon": "77.6184726"
+    },
+    "Balepete": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Banashankari": {
+        "lat": "12.9278196",
+        "lon": "77.5566210"
+    },
+    "Banaswadi": {
+        "lat": "13.0141618",
+        "lon": "77.6518539"
+    },
+    "Bandikodigehalli": {
+        "lat": "13.1663314",
+        "lon": "77.6902892"
+    },
+    "Bannerghatta": {
+        "lat": "12.9310617",
+        "lon": "77.6007297"
+    },
+    "Bapujinagar": {
+        "lat": "12.9539007",
+        "lon": "77.5436416"
+    },
+    "Basavanagudi": {
+        "lat": "12.9417261",
+        "lon": "77.5755021"
+    },
+    "Basaveshwaranagar": {
+        "lat": "12.9937572",
+        "lon": "77.5391325"
+    },
+    "Bellandur": {
+        "lat": "12.9320495",
+        "lon": "77.6842915"
+    },
+    "Benson Town": {
+        "lat": "12.9973430",
+        "lon": "77.6036815"
+    },
+    "Bestamaranahalli": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Bettahalsur": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Bhashyam Circle": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Bhattarahalli": {
+        "lat": "13.0255971",
+        "lon": "77.7145545"
+    },
+    "Bidaraguppe": {
+        "lat": "12.8060574",
+        "lon": "77.7862873"
+    },
+    "Bidrahalli": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Bangalore Viswavidalaya": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Bommanahalli": {
+        "lat": "12.9034581",
+        "lon": "77.6230028"
+    },
+    "Brigade Road": {
+        "lat": "12.9673497",
+        "lon": "77.6064374"
+    },
+    "Byatarayanapura": {
+        "lat": "13.0683220",
+        "lon": "77.5910060"
+    },
+    "C.V.raman nagar": {
+        "lat": "12.9856478",
+        "lon": "77.6649767"
+    },
+    "CMP Centre and school": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Crpf Campus yelahanka": {
+        "lat": "13.1219723",
+        "lon": "77.5707994"
+    },
+    "Cahmrajendrapet": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Chamrajpet": {
+        "lat": "12.9584184",
+        "lon": "77.5629161"
+    },
+    "Chandra Lay out": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Chickpet": {
+        "lat": "12.9691224",
+        "lon": "77.5768357"
+    },
+    "Chikkabettahalli": {
+        "lat": "13.0894554",
+        "lon": "77.5561710"
+    },
+    "Chikkajala": {
+        "lat": "13.1679234",
+        "lon": "77.6372834"
+    },
+    "Chikkalasandra": {
+        "lat": "12.9121916",
+        "lon": "77.5476337"
+    },
+    "Chikkanahalli": {
+        "lat": "12.9058433",
+        "lon": "77.6202731"
+    },
+    "Chunchanakuppe": {
+        "lat": "12.9024628",
+        "lon": "77.3835364"
+    },
+    "Cubban Road": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Dasarahalli": {
+        "lat": "13.0464819",
+        "lon": "77.5176977"
+    },
+    "Deepanjalinagar": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Devanagundi": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Devarjeevanahalli": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Devasandra": {
+        "lat": "13.0019714",
+        "lon": "77.6914404"
+    },
+    "Dharmaram College": {
+        "lat": "12.9353361",
+        "lon": "77.6026173"
+    },
+    "Doddagubbi": {
+        "lat": "13.0720681",
+        "lon": "77.6683289"
+    },
+    "Doddajala": {
+        "lat": "13.1821631",
+        "lon": "77.6547382"
+    },
+    "Doddakallasandra": {
+        "lat": "12.8846862",
+        "lon": "77.5527510"
+    },
+    "Doddanekkundi": {
+        "lat": "12.9674636",
+        "lon": "77.7027240"
+    },
+    "Domlur": {
+        "lat": "12.9624669",
+        "lon": "77.6381958"
+    },
+    "Dommasandra": {
+        "lat": "12.8777098",
+        "lon": "77.7534769"
+    },
+    "Doorvaninagar": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Dr Ambedkar Veedhi": {
+        "lat": "12.9795676",
+        "lon": "77.5920674"
+    },
+    "Electronics City": {
+        "lat": "12.8871751",
+        "lon": "77.6112689"
+    },
+    "Fraser Town": {
+        "lat": "13.0027542",
+        "lon": "77.6157507"
+    },
+    "Gaviopuram Extension": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Gaviopuram Guttanahalli": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Gayathrinagar": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Girinagar": {
+        "lat": "12.9401439",
+        "lon": "77.5444995"
+    },
+    "Goraguntepalya": {
+        "lat": "13.0269315",
+        "lon": "77.5440900"
+    },
+    "Goripalya": {
+        "lat": "12.9629437",
+        "lon": "77.5494998"
+    },
+    "Government Electric factory": {
+        "lat": "12.9946826",
+        "lon": "77.6489134"
+    },
+    "Govindapalya": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Gunjur": {
+        "lat": "12.9209772",
+        "lon": "77.7361016"
+    },
+    "Chamrajendrapet": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Chandra Layout": {
+        "lat": "12.9553330",
+        "lon": "77.5238903"
+    },
+    "Hsr Layout": {
+        "lat": "12.9116225",
+        "lon": "77.6388622"
+    },
+    "Hampinagar": {
+        "lat": "12.9624599",
+        "lon": "77.5409983"
+    },
+    "Handenahalli": {
+        "lat": "12.8259815",
+        "lon": "77.7673455"
+    },
+    "Harogadde": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Hebbal Kempapura": {
+        "lat": "13.0501940",
+        "lon": "77.6075951"
+    },
+    "Hennagara": {
+        "lat": "12.7906876",
+        "lon": "77.6741161"
+    },
+    "Highcourt": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Hongasandra": {
+        "lat": "12.8986261",
+        "lon": "77.6286732"
+    },
+    "Hoodi": {
+        "lat": "12.9959233",
+        "lon": "77.7192796"
+    },
+    "Horamavu": {
+        "lat": "13.0273312",
+        "lon": "77.6601508"
+    },
+    "Hosakerehalli": {
+        "lat": "12.9299371",
+        "lon": "77.5374237"
+    },
+    "Hosur Road": {
+        "lat": "12.9440304",
+        "lon": "77.6075609"
+    },
+    "Hulimangala": {
+        "lat": "12.8226963",
+        "lon": "77.6495447"
+    },
+    "Hulimavu": {
+        "lat": "12.8773486",
+        "lon": "77.6028031"
+    },
+    "Hulsur Bazaar": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Hunasamaranahalli": {
+        "lat": "13.1398615",
+        "lon": "77.6230512"
+    },
+    "Isro Anthariksh Bhavan": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Immedihalli": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Indalavadi": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Indiranagar": {
+        "lat": "12.9732913",
+        "lon": "77.6404672"
+    },
+    "Ittamadu Layout": {
+        "lat": "12.9261625",
+        "lon": "77.5445122"
+    },
+    "J P Nagar": {
+        "lat": "12.9109539",
+        "lon": "77.5978198"
+    },
+    "J.C. Nagar": {
+        "lat": "15.3508066",
+        "lon": "75.1420273"
+    },
+    "Jakkur": {
+        "lat": "13.0784743",
+        "lon": "77.6068938"
+    },
+    "Jalahalli": {
+        "lat": "13.0394104",
+        "lon": "77.5197351"
+    },
+    "Jalavayuvihar": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Jayanagar": {
+        "lat": "12.9292731",
+        "lon": "77.5824229"
+    },
+    "Jeevanahalli": {
+        "lat": "12.9982025",
+        "lon": "77.6322309"
+    },
+    "Jeevanbhimanagar": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Jigani": {
+        "lat": "12.7764978",
+        "lon": "77.6326204"
+    },
+    "JP Nagar III Phase": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "KHB Colony": {
+        "lat": "12.9929941",
+        "lon": "77.6250152"
+    },
+    "Kacharakanahalli": {
+        "lat": "13.0222071",
+        "lon": "77.6319093"
+    },
+    "Kadabagere": {
+        "lat": "12.9880910",
+        "lon": "77.4993522"
+    },
+    "Kadugodi": {
+        "lat": "12.9957428",
+        "lon": "77.7579489"
+    },
+    "Kalkunte": {
+        "lat": "12.9324180",
+        "lon": "77.8408056"
+    },
+    "Kalyanagar": {
+        "lat": "13.0159607",
+        "lon": "77.6421575"
+    },
+    "Kamagondanahalli": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Kamakshipalya": {
+        "lat": "12.9858669",
+        "lon": "77.5331755"
+    },
+    "Kannamangala": {
+        "lat": "13.0155506",
+        "lon": "77.7630344"
+    },
+    "Kannur": {
+        "lat": "13.1014045",
+        "lon": "77.6356543"
+    },
+    "Kanteeravanagar": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Kathriguppe": {
+        "lat": "12.9292170",
+        "lon": "77.5496920"
+    },
+    "Kenchanahalli": {
+        "lat": "12.9259485",
+        "lon": "77.5086317"
+    },
+    "Kendriya Sadan": {
+        "lat": "12.9254437",
+        "lon": "77.6212721"
+    },
+    "Kendriya Vihar": {
+        "lat": "13.1066272",
+        "lon": "77.5997205"
+    },
+    "Kodigehalli": {
+        "lat": "13.0031666",
+        "lon": "77.7272835"
+    },
+    "Konanakunte": {
+        "lat": "12.8792861",
+        "lon": "77.5697529"
+    },
+    "Koramangala": {
+        "lat": "12.9357366",
+        "lon": "77.6240810"
+    },
+    "Kothanur": {
+        "lat": "12.8701259",
+        "lon": "77.5820178"
+    },
+    "Krishnarajapuram": {
+        "lat": "13.0005461",
+        "lon": "77.6754561"
+    },
+    "Kugur": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Kumaraswamy Layout": {
+        "lat": "12.9150398",
+        "lon": "77.5678879"
+    },
+    "Kumbalgodu": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Kundalahalli": {
+        "lat": "12.9775940",
+        "lon": "77.7155586"
+    },
+    "Lalbagh West": {
+        "lat": "12.9482810",
+        "lon": "77.5799733"
+    },
+    "Legislators Home": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Lingarajapuram": {
+        "lat": "13.0093949",
+        "lon": "77.6267881"
+    },
+    "M S R road": {
+        "lat": "12.9039905",
+        "lon": "77.5859569"
+    },
+    "Madhavan Park": {
+        "lat": "12.9362650",
+        "lon": "77.5857086"
+    },
+    "Madivala": {
+        "lat": "12.9214542",
+        "lon": "77.6211213"
+    },
+    "Magadi Road": {
+        "lat": "12.9756080",
+        "lon": "77.5553564"
+    },
+    "Mahadevapura": {
+        "lat": "12.9965445",
+        "lon": "77.6927176"
+    },
+    "Mahalakshmipuram Layout": {
+        "lat": "13.0029165",
+        "lon": "77.5464264"
+    },
+    "Mahatma Gandhi road": {
+        "lat": "12.9755264",
+        "lon": "77.6067902"
+    },
+    "Malkand Lines": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Mallathahalli": {
+        "lat": "12.9696490",
+        "lon": "77.5023618"
+    },
+    "Malleswaram": {
+        "lat": "13.0027353",
+        "lon": "77.5703253"
+    },
+    "Mandalay Lines": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Marathahalli Colony": {
+        "lat": "12.9559165",
+        "lon": "77.6882298"
+    },
+    "Marsur": {
+        "lat": "12.7678915",
+        "lon": "77.7043732"
+    },
+    "Maruthi Sevanagar": {
+        "lat": "13.0026039",
+        "lon": "77.6347249"
+    },
+    "Mathikere": {
+        "lat": "13.0333587",
+        "lon": "77.5581786"
+    },
+    "Mavalli": {
+        "lat": "12.9528478",
+        "lon": "77.5819643"
+    },
+    "Mayasandra": {
+        "lat": "12.7503059",
+        "lon": "77.7473192"
+    },
+    "Medihalli": {
+        "lat": "12.7338988",
+        "lon": "77.7372040"
+    },
+    "Medimallasandra": {
+        "lat": "12.9523031",
+        "lon": "77.8301080"
+    },
+    "Mico Layout": {
+        "lat": "12.9129858",
+        "lon": "77.6037799"
+    },
+    "Milk Colony": {
+        "lat": "13.0093324",
+        "lon": "77.5583026"
+    },
+    "Mount St joseph": {
+        "lat": "12.8685212",
+        "lon": "77.5901132"
+    },
+    "Msrit": {
+        "lat": "13.0309207",
+        "lon": "77.5647436"
+    },
+    "Mundur": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Museum Road": {
+        "lat": "12.9724576",
+        "lon": "77.6039808"
+    },
+    "Muthanallur": {
+        "lat": "12.8870930",
+        "lon": "77.7386665"
+    },
+    "Muthusandra": {
+        "lat": "12.9621761",
+        "lon": "77.7713674"
+    },
+    "Nal": {
+        "lat": "12.9637621",
+        "lon": "77.6517907"
+    },
+    "Naduvathi": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Nagarbhavi": {
+        "lat": "12.9512353",
+        "lon": "77.5190540"
+    },
+    "Nagasandra": {
+        "lat": "13.0479536",
+        "lon": "77.5001422"
+    },
+    "Nagavara": {
+        "lat": "13.0374647",
+        "lon": "77.6236020"
+    },
+    "Nandinilayout": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Narasimharaja Colony": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Narayan Pillai street": {
+        "lat": "12.9832444",
+        "lon": "77.6085465"
+    },
+    "Nayandahalli": {
+        "lat": "12.9413253",
+        "lon": "77.5212118"
+    },
+    "Neralur": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "New Tharaggupet": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "New Thippasandra": {
+        "lat": "12.9761264",
+        "lon": "77.6608150"
+    },
+    "Okalipuram": {
+        "lat": "12.9852006",
+        "lon": "77.5645066"
+    },
+    "Pnt Col kavalbyrasandra": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Padmanabhnagar": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Palace Guttahalli": {
+        "lat": "12.9994890",
+        "lon": "77.5843469"
+    },
+    "Panathur": {
+        "lat": "12.9351457",
+        "lon": "77.7047541"
+    },
+    "Pasmpamahakavi Road": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Peenya": {
+        "lat": "13.0330515",
+        "lon": "77.5332233"
+    },
+    "R T nagar": {
+        "lat": "13.0254156",
+        "lon": "77.5960071"
+    },
+    "R.M.v. extension ii stage": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Rajajinagar": {
+        "lat": "13.0005359",
+        "lon": "77.5496996"
+    },
+    "Rajanakunte": {
+        "lat": "13.1691901",
+        "lon": "77.5639442"
+    },
+    "Rajarajeshwarinagar": {
+        "lat": "12.9061275",
+        "lon": "77.5195580"
+    },
+    "Rajbhavan": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    },
+    "Ramachandrapuram": {
+        "lat": "12.9824156",
+        "lon": "77.5620528"
+    },
+    "Ramagondanahalli": {
+        "lat": "12.9558969",
+        "lon": "77.7405826"
+    },
+    "Ramakrishna Hegde nagar": {
+        "lat": "12.971598",
+        "lon": "77.594562"
+    }
+}
