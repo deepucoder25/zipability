@@ -25,36 +25,7 @@
     <div class="container-fluid px-4 px-xl-5 d-flex align-items-center justify-content-between">
       <!-- Brand Logo -->
       <a href="<?= site_url() ?>" class="brand-wrap text-decoration-none">
-        <div class="logo-container d-flex align-items-center">
-          <svg width="45" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <!-- Top bar -->
-             <path d="M5 8 L28 8 L22 15 L5 15 Z" fill="url(#paint0_linear)"/>
-             <!-- Diagonal -->
-             <path d="M28 8 L33 8 L18 32 L13 32 Z" fill="url(#paint1_linear)"/>
-             <!-- Bottom bar -->
-             <path d="M18 32 L40 32 L34 25 L13 25 Z" fill="url(#paint2_linear)"/>
-             <!-- Red Arrow -->
-             <path d="M12 28 L30 10 L23 10 L35 2 L35 14 L28 14 L15 28 Z" fill="#F44336"/>
-             <defs>
-                <linearGradient id="paint0_linear" x1="5" y1="11.5" x2="28" y2="11.5" gradientUnits="userSpaceOnUse">
-                   <stop stop-color="#9C27B0"/>
-                   <stop offset="1" stop-color="#03A9F4"/>
-                </linearGradient>
-                <linearGradient id="paint1_linear" x1="23" y1="8" x2="23" y2="32" gradientUnits="userSpaceOnUse">
-                   <stop stop-color="#03A9F4"/>
-                   <stop offset="1" stop-color="#3F51B5"/>
-                </linearGradient>
-                <linearGradient id="paint2_linear" x1="13" y1="28.5" x2="40" y2="28.5" gradientUnits="userSpaceOnUse">
-                   <stop stop-color="#3F51B5"/>
-                   <stop offset="1" stop-color="#00BCD4"/>
-                </linearGradient>
-             </defs>
-          </svg>
-          <div class="ms-2 d-flex flex-column justify-content-center">
-            <span class="logo-title m-0 p-0" style="font-weight: 900; font-size: 22px; line-height: 1; color: #000; letter-spacing: 0.5px;">ZIPABILITY</span>
-            <span class="logo-subtitle m-0 p-0" style="font-weight: 600; font-size: 11px; line-height: 1.2; color: #00BCD4; letter-spacing: 1px;">RELOCATION PVT.LTD.</span>
-          </div>
-        </div>
+        <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="ZIPABILITY RELOCATION" class="brand-logo">
       </a>
 
       <!-- Desktop Navigation Menu -->

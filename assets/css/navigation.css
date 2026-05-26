@@ -44,6 +44,12 @@ html, body {
     text-decoration: none;
 }
 
+.brand-logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
 /* Desktop Navigation */
 .desktop-nav {
     display: flex;
