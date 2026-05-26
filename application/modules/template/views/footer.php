@@ -1,183 +1,147 @@
-<!-- FOOTER SECTION -->
 <?php
 $floatingPhoneNumber = preg_replace('/\D+/', '', (string) $phone);
 $floatingWhatsappLink = !empty($whatsapphtml)
   ? $whatsapphtml
   : (!empty($floatingPhoneNumber) ? 'https://wa.me/' . $floatingPhoneNumber : '#');
 ?>
-<footer class="footer-section">
-
-  <div class="footer-main">
-    <div class="container">
-      <div class="row g-4 g-xl-5">
-
-        <div class="col-lg-4">
-          <div class="footer-brand">
-            <a href="<?= site_url() ?>" class="footer-brand-logo">
-            <div class="h3 fw-bold text-white mb-2"><?= $company3?> </div>
-            </a>
-
-            <p class="footer-brand-copy">
-              Safe. Secure. Sincere. Your trusted moving partner for a hassle-free relocation experience.
-            </p>
-
-            <div class="footer-feature-strip">
-              <div class="footer-feature-item">
-                <i class="bi bi-shield-check"></i>
-                <span>Safe Handling</span>
-              </div>
-
-              <div class="footer-feature-item">
-                <i class="bi bi-box-seam"></i>
-                <span>Secure Packing</span>
-              </div>
-
-              <div class="footer-feature-item">
-                <i class="bi bi-people"></i>
-                <span>Experienced Team</span>
-              </div>
-
-              <div class="footer-feature-item">
-                <i class="bi bi-award"></i>
-                <span>On-Time Delivery</span>
-              </div>
-            </div>
-
-         
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <div class="footer-widget">
-            <div class="h5 fw-bold text-white mb-3">Quick Links</div>
-
-            <ul>
-              <li><a href="<?= site_url() ?>">Home</a></li>
-              <li><a href="<?= site_url('our-services') ?>">Our Services</a></li>
-              <li><a href="<?= site_url('about-us') ?>">About Us</a></li>
-              <li><a href="<?= site_url('why-choose-us') ?>">Why Choose Us</a></li>
-              <li><a href="<?= site_url('our-branches') ?>">Our Branches</a></li>
-              <li><a href="<?= site_url('testimonials') ?>">Testimonials</a></li>
-              <li><a href="<?= site_url('reviews') ?>">Reviews</a></li>
-              <li><a href="<?= site_url('photo-gallery') ?>">Gallery</a></li>
-              <li><a href="<?= site_url('contact-us') ?>">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="footer-widget">
-            <div class="h5 fw-bold text-white mb-3">Our Services</div>
-
-            <ul>
-              <li><a href="<?= site_url('home-shifting') ?>">Home Shifting</a></li>
-              <li><a href="<?= site_url('office-relocation') ?>">Office Relocation</a></li>
-              <li><a href="<?= site_url('car-transportation') ?>">Car Transportation</a></li>
-              <li><a href="<?= site_url('bike-transportation') ?>">Bike Transportation</a></li>
-              <li><a href="<?= site_url('warehouse-and-storage') ?>">Warehouse &amp; Storage</a></li>
-              <li><a href="<?= site_url('domestic-relocation') ?>">Domestic Relocation</a></li>
-              <li><a href="<?= site_url('international-shifting') ?>">International Shifting</a></li>
-              <li><a href="<?= site_url('corporate-shifting') ?>">Corporate Shifting</a></li>
-              <li><a href="<?= site_url('intercity-shifting') ?>">Intercity Shifting</a></li>
-              <li><a href="<?= site_url('local-shifting') ?>">Local Shifting</a></li>
-              <li><a href="<?= site_url('logistic-services') ?>">Logistic Services</a></li>
-              <li><a href="<?= site_url('pet-relocation') ?>">Pet Relocation</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4">
-          <div class="footer-widget footer-contact-widget">
-            <div class="h5 fw-bold text-white mb-3">Contact Us</div>
-
-            <div class="footer-contact-list">
-              <a href="<?= $phonehtml ?>" class="footer-contact-item">
-                <i class="bi bi-telephone-fill"></i>
-                <span><?= $phone ?></span>
-              </a>
-
-              <a href="<?= $phonehtml1 ?>" class="footer-contact-item">
-                <i class="bi bi-telephone-fill"></i>
-                <span><?= $phone1 ?></span>
-              </a>
-
-              <a href="<?= $mailhtml ?>" class="footer-contact-item">
-                <i class="bi bi-envelope-fill"></i>
-                <span><?= $mail ?></span>
-              </a>
-
-
-              <div class="footer-contact-item footer-address-item">
-                <i class="bi bi-geo-alt-fill"></i>
-                <span><?= $address ?></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <div class="footer-bottom-wrap">
-          <div class="footer-bottom-col footer-copy">
-            <p>
-              &copy; <?= date('Y') ?> <?=$company3?>.<br>
-              All Rights Reserved.
-            </p>
-          </div>
-
-          <div class="footer-bottom-col footer-bottom-badge">
-            <i class="bi bi-shield-check"></i>
-            <span>100% Secure Shifting</span>
-          </div>
-
-          <div class="footer-bottom-col footer-bottom-badge">
-            <i class="bi bi-people"></i>
-            <span>Reliable | Affordable | Professional</span>
-          </div>
-
-          <div class="footer-bottom-col footer-bottom-social">
-            <span class="footer-follow-text">Follow Us</span>
-
-            <div class="footer-social">
-              <a href="<?= $facebookhtml ?>" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="<?= $instagramhtml ?>" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="<?= $linkedinhtml ?>" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-              <a href="<?= $youtubehtml ?>" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-policy-links">
-          <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>
-          <a href="<?= site_url('terms-and-conditions') ?>">Terms &amp; Conditions</a>
-        </div>
+<!-- TRUSTED BY SECTION -->
+<section class="trusted-by-section bg-white py-3 border-top">
+  <div class="container-fluid px-4 px-xl-5">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <div class="trusted-text fw-bold text-dark mb-0 d-flex align-items-center me-4">TRUSTED BY</div>
+      <div class="trusted-logos flex-grow-1 text-center d-flex align-items-center justify-content-between flex-wrap gap-4">
+        <img src="<?= base_url() ?>assets/images/trusted/google.png" alt="Google" class="img-fluid trusted-logo-md">
+        <img src="<?= base_url() ?>assets/images/trusted/amazon.png" alt="Amazon" class="img-fluid trusted-logo-md">
+        <img src="<?= base_url() ?>assets/images/trusted/tata.png" alt="Tata" class="img-fluid trusted-logo-lg">
+        <img src="<?= base_url() ?>assets/images/trusted/infosys.png" alt="Infosys" class="img-fluid trusted-logo-md">
+        <img src="<?= base_url() ?>assets/images/trusted/wipro.png" alt="Wipro" class="img-fluid trusted-logo-lg">
+        <img src="<?= base_url() ?>assets/images/trusted/dhl.png" alt="DHL" class="img-fluid trusted-logo-sm">
+        <img src="<?= base_url() ?>assets/images/trusted/hdfc.png" alt="HDFC Bank" class="img-fluid trusted-logo-md">
       </div>
     </div>
   </div>
+</section>
 
+<!-- FOOTER SECTION -->
+<footer class="footer-section">
+  <div class="container-fluid px-4 px-xl-5">
+    <div class="row pt-5 pb-4 g-4 border-bottom border-secondary border-opacity-25">
+      
+      <!-- Col 1: Brand & About -->
+      <div class="col-lg-3 col-md-6 pe-lg-4">
+        <a href="<?= site_url() ?>" class="d-inline-block mb-3">
+          <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= @$company3 ?> RELOCATION" class="footer-brand-logo">
+        </a>
+        <p class="footer-copy-text mb-4">
+          Your trusted partner for safe, secure, and hassle-free relocations across India. We move your world with care.
+        </p>
+        <div class="footer-socials d-flex gap-2">
+          <a href="<?= @$facebookhtml ?>" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="<?= @$instagramhtml ?>" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="<?= @$linkedinhtml ?>" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Company -->
+      <div class="col-lg-2 col-md-6 col-6">
+        <h5 class="footer-heading">COMPANY</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="<?= site_url('about-us') ?>">About Us</a></li>
+          <li><a href="<?= site_url('why-us') ?>">Why Us</a></li>
+          <li><a href="<?= site_url('how-it-works') ?>">How It Works</a></li>
+          <li><a href="<?= site_url('careers') ?>">Careers</a></li>
+          <li><a href="<?= site_url('contact-us') ?>">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Services (Double column wide) -->
+      <div class="col-lg-3 col-md-6 col-12">
+        <h5 class="footer-heading">OUR SERVICES</h5>
+        <div class="row">
+          <div class="col-6">
+            <ul class="footer-links list-unstyled">
+              <li><a href="<?= site_url('home-shifting') ?>">Home Relocation</a></li>
+              <li><a href="<?= site_url('office-relocation') ?>">Office Shifting</a></li>
+              <li><a href="<?= site_url('bike-transportation') ?>">Bike Relocation</a></li>
+              <li><a href="<?= site_url('car-transportation') ?>">Car Carrier</a></li>
+              <li><a href="<?= site_url('loading-unloading') ?>">Loading & Unloading</a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul class="footer-links list-unstyled">
+              <li><a href="<?= site_url('packing-unpacking') ?>">Packing & Unpacking</a></li>
+              <li><a href="<?= site_url('warehouse-and-storage') ?>">Warehousing</a></li>
+              <li><a href="<?= site_url('vehicle-transportation') ?>">Vehicle Transportation</a></li>
+              <li><a href="<?= site_url('storage-solutions') ?>">Storage Solutions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Col 4: Quick Links -->
+      <div class="col-lg-2 col-md-6 col-6">
+        <h5 class="footer-heading">QUICK LINKS</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="<?= site_url('faqs') ?>">FAQs</a></li>
+          <li><a href="<?= site_url('blog') ?>">Blog</a></li>
+          <li><a href="<?= site_url('terms-and-conditions') ?>">Terms & Conditions</a></li>
+          <li><a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 5: Contact Us -->
+      <div class="col-lg-2 col-md-12">
+        <h5 class="footer-heading">CONTACT US</h5>
+        <ul class="footer-contact-list list-unstyled">
+          <li class="d-flex align-items-start mb-3">
+            <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+            <div class="contact-text">
+              <a href="<?= @$phonehtml ?>"><?= @$phone ?></a><br>
+              <a href="<?= @$phonehtml1 ?>"><?= @$phone1 ?></a>
+            </div>
+          </li>
+          <li class="d-flex align-items-start mb-3">
+            <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+            <div class="contact-text">
+              <a href="<?= @$mailhtml ?>"><?= @$mail ?></a>
+            </div>
+          </li>
+          <li class="d-flex align-items-start mb-3">
+            <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+            <div class="contact-text">
+              <?= @$address ?>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom-bar text-center py-4">
+      <p class="mb-0 footer-copyright">&copy; <?= date('Y') ?> <?= @$company3 ?>. All Rights Reserved.</p>
+    </div>
+  </div>
 </footer>
 
-  <div class="floating-actions">
-    <a href="<?= $phonehtml ?>" class="float-btn float-call" title="Call Now" aria-label="Call <?= $company3 ?> now">
-      <div class="icon-wrap"><i class="bi bi-telephone-fill"></i></div>
-      <span>Call Now</span>
-    </a>
-    <a href="<?= $floatingWhatsappLink ?>" class="float-btn float-whatsapp" title="WhatsApp Us" target="_blank" rel="noopener" aria-label="Message <?= $company3 ?> on WhatsApp">
-      <div class="icon-wrap"><i class="bi bi-whatsapp"></i></div>
-      <span>WhatsApp Us</span>
-    </a>
-    <button type="button" class="float-btn float-callback" data-bs-toggle="modal" data-bs-target="#callMeBackModal" title="Call Me Back" aria-label="Request a Call Back">
-      <div class="icon-wrap"><i class="bi bi-headset"></i></div>
-      <span>Call Me Back</span>
-    </button>
-  </div>
+<div class="floating-actions">
+  <a href="<?= $phonehtml ?>" class="float-btn float-call" title="Call Now" aria-label="Call <?= $company3 ?> now">
+    <div class="icon-wrap"><i class="bi bi-telephone-fill"></i></div>
+    <span>Call Now</span>
+  </a>
+  <a href="<?= $floatingWhatsappLink ?>" class="float-btn float-whatsapp" title="WhatsApp Us" target="_blank" rel="noopener" aria-label="Message <?= $company3 ?> on WhatsApp">
+    <div class="icon-wrap"><i class="bi bi-whatsapp"></i></div>
+    <span>WhatsApp Us</span>
+  </a>
+  <button type="button" class="float-btn float-callback" data-bs-toggle="modal" data-bs-target="#callMeBackModal" title="Call Me Back" aria-label="Request a Call Back">
+    <div class="icon-wrap"><i class="bi bi-headset"></i></div>
+    <span>Call Me Back</span>
+  </button>
+</div>
 
-  <?php $this->load->view('contacts/quotemodal'); ?>
-  <?php $this->load->view('contacts/callmeback_modal'); ?>
-  <?php $this->load->view('contacts/review_modal'); ?>
+<?php $this->load->view('contacts/quotemodal'); ?>
+<?php $this->load->view('contacts/callmeback_modal'); ?>
+<?php $this->load->view('contacts/review_modal'); ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?=base_url()?>assets/js/form.js"></script>
 </body>
-
 </html>
