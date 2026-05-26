@@ -5,65 +5,10 @@ html, body {
 }
 
 :root {
-    --dark-navy: #030f26;
-    --primary-blue: #0a4ebd;
-    --accent-gold: #ffb300;
-    --text-dark: #20344d;
+    --primary-cyan: #00B5B8; /* Adjust to match the button color from image */
+    --text-dark: #111827;
+    --text-light: #6B7280;
     --white: #ffffff;
-}
-
-/* Top Slim Bar */
-.top-bar {
-    background: var(--dark-navy);
-    color: var(--white);
-    font-size: 13px;
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.top-bar a {
-    color: var(--white);
-    text-decoration: none;
-    transition: opacity 0.2s ease, color 0.2s ease;
-    font-weight: 500;
-}
-
-.top-bar a:hover {
-    color: var(--accent-gold);
-    opacity: 1;
-}
-
-.top-bar .divider-line {
-    color: rgba(255, 255, 255, 0.2);
-}
-
-.text-primary-light {
-    color: #6da2f8;
-}
-
-/* Top Bar Badge Pills */
-.top-badge-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    border: 1px solid var(--accent-gold);
-    background: rgba(255, 179, 0, 0.06);
-    color: var(--white);
-    font-weight: 700;
-    font-size: 11px;
-    padding: 4px 10px;
-    border-radius: 4px;
-    letter-spacing: 0.2px;
-}
-
-.top-badge-pill i {
-    font-size: 12px;
-}
-
-.top-badge-text {
-    font-size: 13px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.9);
 }
 
 /* Main Sticky Header */
@@ -72,27 +17,31 @@ html, body {
     top: 0;
     z-index: 999;
     background: var(--white);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-    height: 80px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    height: 75px;
     display: flex;
     align-items: center;
     transition: all 0.3s ease;
 }
 
+.main-header.home-header {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+}
+
 .main-header.scrolled {
-    box-shadow: 0 10px 30px rgba(3, 15, 38, 0.08);
+    position: fixed;
+    width: 100%;
+    background: var(--white);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 .brand-wrap {
     display: flex;
     align-items: center;
     text-decoration: none;
-}
-
-.brand-logo {
-    width: 210px;
-    height: 70px;
-    object-fit: contain;
 }
 
 /* Desktop Navigation */
@@ -105,11 +54,11 @@ html, body {
 .desktop-nav .nav-link {
     position: relative;
     color: var(--text-dark);
-    font-weight: 700;
-    font-size: 15px;
+    font-weight: 600;
+    font-size: 16px;
     text-decoration: none;
     transition: color 0.25s ease;
-    padding: 28px 0;
+    padding: 27px 0;
     display: flex;
     align-items: center;
 }
@@ -117,26 +66,26 @@ html, body {
 .desktop-nav .nav-link i {
     font-size: 11px;
     font-weight: 800;
+    margin-left: 6px;
 }
 
 .desktop-nav .nav-link:hover {
-    color: var(--primary-blue);
+    color: var(--primary-cyan);
 }
 
 /* Active Link State with bottom line indicator */
 .desktop-nav .nav-link.active {
-    color: var(--primary-blue);
+    color: var(--primary-cyan);
 }
 
 .desktop-nav .nav-link.active::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 23px;
     left: 0;
     width: 100%;
-    height: 3px;
-    background-color: var(--primary-blue);
-    border-radius: 3px 3px 0 0;
+    height: 2px;
+    background-color: var(--primary-cyan);
 }
 
 /* Dropdown Menu Styling */
@@ -145,7 +94,7 @@ html, body {
 }
 
 .desktop-nav .dropdown-toggle::after {
-    display: none !important; /* Hide default bootstrap caret */
+    display: none !important; 
 }
 
 .desktop-nav .dropdown-menu {
@@ -156,11 +105,11 @@ html, body {
     top: 100%;
     left: 0;
     background-color: var(--white);
-    border: 1px solid rgba(3, 15, 38, 0.08);
-    border-radius: 12px;
+    border: none;
+    border-radius: 8px;
     padding: 10px 0;
     min-width: 220px;
-    box-shadow: 0 10px 30px rgba(3, 15, 38, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transform: translateY(10px);
     transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     margin: 0;
@@ -176,10 +125,10 @@ html, body {
 .desktop-nav .dropdown-item {
     display: block;
     width: 100%;
-    padding: 8px 20px;
+    padding: 10px 20px;
     clear: both;
-    font-weight: 600;
-    color: #4a5c73;
+    font-weight: 500;
+    color: var(--text-dark);
     text-align: inherit;
     text-decoration: none;
     white-space: nowrap;
@@ -190,53 +139,33 @@ html, body {
 }
 
 .desktop-nav .dropdown-item:hover {
-    color: var(--primary-blue);
-    background-color: #f0f7ff;
-    padding-left: 24px;
-}
-
-.desktop-nav .dropdown-item.active {
-    color: var(--primary-blue);
-    background-color: #e2eeff;
+    color: var(--primary-cyan);
+    background-color: rgba(0, 181, 184, 0.05);
     padding-left: 24px;
 }
 
 /* Action Quote Button */
-@keyframes btnPulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(27, 73, 180, 0.6);
-    }
-    70% {
-        box-shadow: 0 0 0 12px rgba(27, 73, 180, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(27, 73, 180, 0);
-    }
-}
-
 .btn-quote {
-    background: var(--primary-blue);
-    color: var(--white);
+    background: var(--primary-cyan);
+    color: var(--white) !important;
     padding: 10px 24px;
     border-radius: 50px;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 16px;
     text-decoration: none;
     transition: all 0.3s ease;
     border: 0;
-    box-shadow: 0 4px 12px rgba(27, 73, 180, 0.2);
-    animation: btnPulse 2s infinite;
 }
 
 .btn-quote:hover {
-    background: #11368c;
+    background: #009CA0;
     color: var(--white);
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(27, 73, 180, 0.35);
+    box-shadow: 0 6px 15px rgba(0, 181, 184, 0.3);
 }
 
 .btn-quote i {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Hamburger Button */
@@ -259,20 +188,16 @@ html, body {
     display: block;
     width: 24px;
     height: 3px;
-    background-color: #000000;
+    background-color: var(--text-dark);
     border-radius: 10px;
     transition: background-color 0.25s ease;
 }
 
-.hamburger:hover span {
-    background-color: var(--primary-blue);
-}
-
-/* Full Screen Mega Menu (Overlay backdrop) */
+/* Mobile Menu Styles */
 .mega-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(3, 15, 38, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(4px);
     z-index: 2000;
     opacity: 0;
@@ -290,7 +215,6 @@ body.menu-open {
     visibility: visible;
 }
 
-/* Slide-in Drawer Container */
 .mega-inner {
     position: absolute;
     top: 0;
@@ -301,20 +225,17 @@ body.menu-open {
     background: #ffffff;
     height: 100%;
     overflow-y: auto;
-    box-shadow: -5px 0 25px rgba(3, 15, 38, 0.15);
     transform: translateX(100%);
     transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     padding: 70px 24px 40px 24px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
 }
 
 .mega-overlay.active .mega-inner {
     transform: translateX(0);
 }
 
-/* Close Button (top-right of drawer) */
 .mega-close {
     position: absolute !important;
     z-index: 2010;
@@ -324,128 +245,21 @@ body.menu-open {
     height: 38px;
     padding: 0;
     border-radius: 50%;
-    border: 1px solid rgba(3, 15, 38, 0.08);
+    border: 1px solid #eee;
     background: #ffffff;
-    color: var(--text-dark);
-    font-size: 20px;
+    font-size: 24px;
     display: grid;
     place-items: center;
-    box-shadow: 0 4px 12px rgba(4, 27, 61, 0.08);
-    transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.mega-close:hover {
-    background: #f5f8fc;
-    color: var(--primary-blue);
-    transform: rotate(90deg);
-}
-
-/* Top Brand Card */
-.mega-brand-card {
-    background: #f5f9ff;
-    border: 1px solid #e2eeff;
-    border-radius: 20px;
-    padding: 24px;
-    box-shadow: 0 4px 15px rgba(10, 78, 189, 0.02);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.mega-logo {
-    width: 110px;
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 4px;
-}
-
-.mega-brand-card .brand-title {
-    font-size: 16px;
-    font-weight: 800;
-    color: var(--dark-navy);
-    margin: 0;
-}
-
-.mega-brand-card p {
-    color: #506176;
-    font-size: 13px;
-    line-height: 1.5;
-    margin: 0;
-}
-
-/* Call Buttons in Brand Card */
-.mega-call-btn-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 8px;
-}
-
-.mega-call-primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 12px 20px;
-    background: var(--primary-blue);
-    color: #ffffff;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 14px;
-    transition: all 0.2s ease;
-    box-shadow: 0 4px 12px rgba(10, 78, 189, 0.2);
-}
-
-.mega-call-primary:hover {
-    background: #083c93;
-    color: #ffffff;
-    transform: translateY(-1px);
-}
-
-.mega-call-secondary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 12px 20px;
-    background: #f0f6fe;
-    color: var(--primary-blue);
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 14px;
-    border: 1px solid #d2e4fc;
-    transition: all 0.2s ease;
-}
-
-.mega-call-secondary:hover {
-    background: #e2eeff;
-    color: var(--primary-blue);
-    transform: translateY(-1px);
-}
-
-/* Mobile Accordion Navigation System */
 .mobile-nav-list {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-}
-
-.mobile-nav-heading {
-    font-size: 16px;
-    font-weight: 800;
-    color: var(--dark-navy);
-    margin: 12px 0 8px 4px;
 }
 
 .mobile-nav-item {
-    border-bottom: 1px solid #f2f5fa;
-}
-
-.mobile-nav-item:last-child {
-    border-bottom: none;
+    border-bottom: 1px solid #f3f4f6;
 }
 
 .mobile-nav-link {
@@ -453,150 +267,63 @@ body.menu-open {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 12px 6px;
-    font-size: 14px;
+    padding: 16px 8px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--text-dark);
     background: none;
     border: none;
     text-decoration: none;
     text-align: left;
-    transition: color 0.2s ease;
 }
 
-.mobile-nav-link:hover, .mobile-nav-link:focus {
-    color: var(--primary-blue);
+.mobile-nav-link:hover {
+    color: var(--primary-cyan);
 }
 
-.mobile-nav-link i.toggle-icon {
-    font-size: 12px;
-    transition: transform 0.3s ease;
-}
-
-/* Accordion Active / Expanded State */
 .mobile-nav-item.active .mobile-nav-link {
-    color: var(--primary-blue);
+    color: var(--primary-cyan);
 }
 
 .mobile-nav-item.active .toggle-icon {
     transform: rotate(180deg);
 }
 
-/* Mobile Dropdown Sub-menu */
 .mobile-dropdown-menu {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+    transition: max-height 0.3s ease;
     display: flex;
     flex-direction: column;
-    background: #fbfcfd;
-    border-radius: 8px;
-    margin: 0 4px 8px 4px;
+    background: #fafafa;
 }
 
 .mobile-nav-item.active .mobile-dropdown-menu {
-    max-height: 500px; /* high enough limit for CSS transitions */
-    transition: max-height 0.3s cubic-bezier(0.9, 0, 0.1, 1);
-    padding: 6px 0;
-    border: 1px solid #f2f5fa;
+    max-height: 500px;
+    padding: 10px 0;
 }
 
 .mobile-dropdown-menu a {
-    padding: 8px 16px;
-    font-size: 13.5px;
-    font-weight: 600;
-    color: #506176;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-light);
     text-decoration: none;
-    transition: all 0.2s ease;
 }
 
 .mobile-dropdown-menu a:hover {
-    color: var(--primary-blue);
-    padding-left: 20px;
-    background: #f5f9ff;
+    color: var(--primary-cyan);
 }
 
-.mobile-dropdown-menu a.active {
-    color: var(--primary-blue);
-    background-color: #f5f9ff;
-    padding-left: 20px;
-}
-
-/* Secondary links at the bottom */
-.mobile-sec-links {
-    margin-top: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 16px;
-    padding-top: 16px;
-    border-top: 1px solid #f2f5fa;
-}
-
-.mobile-sec-links a {
-    font-size: 12px;
-    font-weight: 600;
-    color: #8da2bb;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.mobile-sec-links a:hover {
-    color: var(--primary-blue);
-}
-
-/* Responsive Rules */
 @media (max-width: 991px) {
     .main-header {
         height: 70px;
     }
-
-    .brand-logo {
-        width: 170px;
-        height: 60px;
-    }
-
-    /* Smaller Quote Button for Mobile */
     .btn-quote {
-        padding: 6px 14px;
-        font-size: 12px;
-        border-radius: 30px;
+        padding: 8px 16px;
+        font-size: 13px;
     }
-
     .btn-quote i {
-        font-size: 14px;
-    }
-
-    /* Centered contact text in mobile top bar */
-    .top-bar-mobile {
-        font-size: 12px;
-    }
-
-    .top-bar-mobile a {
-        font-size: 12px;
-    }
-
-    .top-badge-pill {
-        font-size: 10px;
-        padding: 3px 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    .top-bar-mobile {
-        font-size: 11px;
-    }
-
-    .top-bar-mobile a {
-        font-size: 11px;
-    }
-
-    .top-badge-pill {
-        font-size: 9px;
-        padding: 2px 6px;
-    }
-
-    .brand-logo {
-        width: 140px;
-        height: 50px;
+        font-size: 16px;
     }
 }

@@ -1,56 +1,46 @@
-<section class="home-page-slider">
-  <div class="home-page-slider-content">
-    <div class="container">
-      <!-- Title & Text Section -->
-      <div class="row">
-        <div class="col-lg-8 col-md-10 text-start hero-text-col">
-          <div class="hero-eyebrow">INDIA'S TRUSTED RELOCATION PARTNER</div>
-          <h1 class="hero-title">
-            Move. Care. Deliver. We Make <span class="accent-text">It Happen.</span>
-          </h1>
-          <p class="hero-lead">
-            Safe, reliable and hassle-free relocation services across India and around the world.
-          </p>
+<section class="hero-section">
+  <div class="container-fluid px-4 px-xl-5 h-100 position-relative z-2">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-7 col-md-10 text-start hero-content-wrapper">
+        <div class="hero-eyebrow">MOVE. SETTLE. THRIVE.</div>
+        <h1 class="hero-title">
+          <span class="text-dark">Your Move,</span><br/>
+          <span class="text-cyan">Our Responsibility.</span>
+        </h1>
+        <p class="hero-lead">
+          From home to office, bikes to cars&mdash;we make every move safe, smooth, and stress-free.
+        </p>
+
+        <!-- Features List -->
+        <div class="hero-features d-flex flex-wrap gap-4 mt-5 mb-5">
+          <div class="feature-item text-center">
+            <div class="feature-icon mb-2"><i class="bi bi-shield-check"></i></div>
+            <div class="feature-text">Safe &amp; Secure<br/>Relocation</div>
+          </div>
+          <div class="feature-item text-center">
+            <div class="feature-icon mb-2"><i class="bi bi-clock"></i></div>
+            <div class="feature-text">On-Time<br/>Delivery</div>
+          </div>
+          <div class="feature-item text-center">
+            <div class="feature-icon mb-2"><i class="bi bi-geo-alt"></i></div>
+            <div class="feature-text">Pan India<br/>Service</div>
+          </div>
+          <div class="feature-item text-center">
+            <div class="feature-icon mb-2"><i class="bi bi-headset"></i></div>
+            <div class="feature-text">Professional<br/>Support</div>
+          </div>
         </div>
-      </div>
-      
-      <!-- Quote Form Card -->
-      <div class="row">
-        <div class="col-12">
-        <?php $this->load->view('contacts/quoteform.php')?>
+        
+        <!-- Buttons -->
+        <div class="hero-buttons d-flex gap-3 flex-wrap">
+          <a href="#" class="btn btn-cyan btn-lg d-flex align-items-center justify-content-center gap-2 rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#qteModal">
+            Get a Free Quote <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="<?= site_url('our-services') ?>" class="btn btn-outline-dark btn-lg d-flex align-items-center justify-content-center gap-2 rounded-pill px-4 py-2">
+            Explore Services <i class="bi bi-arrow-right"></i>
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- Mobile Trust Badge Bar (Mobile Only, Outside the Card) -->
-<div class="mobile-trust-bar d-flex d-lg-none py-3 bg-white border-bottom">
-  <div class="container-fluid px-1">
-    <div class="row g-0 justify-content-center align-items-stretch">
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-shield-check trust-icon mb-2"></i>
-        <strong>100% Secure</strong>
-        <span>Your data is safe with us</span>
-      </div>
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-clock trust-icon mb-2"></i>
-        <strong>Quick Response</strong>
-        <span>We respond within 15 mins</span>
-      </div>
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-currency-rupee trust-icon-circle mb-2"></i>
-        <strong>Best Price Guarantee</strong>
-        <span>Get the most competitive rates</span>
-      </div>
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-headset trust-icon mb-2"></i>
-        <strong>24/7 Support</strong>
-        <span>We are here to help</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
