@@ -81,7 +81,7 @@
 }
 
 .contact-form-header {
-    background: linear-gradient(135deg, #06283d, #1363df);
+    background: linear-gradient(135deg, #06283d, var(--primary-cyan));
     color: #fff;
     padding: 15px 20px;
     display: flex;
@@ -110,7 +110,7 @@
 
 .contact-form-header .close:hover {
     background: #fff;
-    color: #1363df;
+    color: var(--primary-cyan);
 }
 
 #quotemodal {
@@ -130,7 +130,7 @@
     left: 14px;
     top: 50%;
     transform: translateY(-50%);
-    color: #1363df;
+    color: var(--primary-cyan);
     font-size: 16px;
     z-index: 2;
 }
@@ -161,7 +161,7 @@
 
 #quotemodal .form-control:focus {
     background: #fff;
-    border-color: #1363df;
+    border-color: var(--primary-cyan);
     box-shadow: 0 0 0 4px rgba(19, 99, 223, .12);
 }
 
@@ -171,7 +171,7 @@
     padding: 10px 24px;
     font-size: 14px;
     font-weight: 600;
-    background: linear-gradient(135deg, #1363df, #47b5ff);
+    background: linear-gradient(135deg, var(--primary-cyan), #47b5ff);
     color: #fff;
     transition: .3s ease;
     box-shadow: 0 10px 25px rgba(19, 99, 223, .25);
@@ -184,7 +184,7 @@
 
 #quotemodal button[type="reset"] {
     background: #eef4fb;
-    color: #1363df;
+    color: var(--primary-cyan);
     box-shadow: none;
 }
 

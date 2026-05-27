@@ -100,7 +100,7 @@
                             </div>
                             <div class="card-body p-4 d-flex flex-column">
                                 <div class="d-flex align-items-center gap-3 mb-3 text-muted small">
-                                    <span class="d-flex align-items-center gap-1"><i class="bi bi-person-circle" style="color: #073c91;"></i> By Admin</span>
+                                    <span class="d-flex align-items-center gap-1"><i class="bi bi-person-circle" style="color: var(--primary-cyan);"></i> By Admin</span>
                                     <span class="d-flex align-items-center gap-1"><i class="bi bi-patch-check-fill text-success"></i> Verified</span>
                                 </div>
                                 <h5 class="card-title fw-bold mb-3">
@@ -110,7 +110,7 @@
                                     <?= substr(strip_tags($b->description), 0, 110) ?>...
                                 </p>
                                 <div>
-                                    <a href="<?= $link ?>" class="btn btn-sm px-4 rounded-pill fw-bold" style="background: #073c91; color: #fff; transition: background 0.3s ease;">
+                                    <a href="<?= $link ?>" class="btn btn-sm px-4 rounded-pill fw-bold" style="background: var(--primary-cyan); color: #fff; transition: background 0.3s ease;">
                                         Read More <i class="bi bi-arrow-right ms-1"></i>
                                     </a>
                                 </div>
@@ -156,7 +156,7 @@
     color: #ffb800 !important;
 }
 .blog-card .btn:hover {
-    background: #052c6e !important;
+    background: var(--primary-cyan) !important;
 }
 </style>
 
