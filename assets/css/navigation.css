@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 
-html, body {
+html,
+body {
     font-family: 'Outfit', sans-serif;
 }
 
 :root {
-    --primary-cyan: #00B5B8; /* Adjust to match the button color from image */
+    --primary-cyan: #00B5B8;
+    /* Adjust to match the button color from image */
     --text-dark: #111827;
     --text-light: #6B7280;
     --white: #ffffff;
@@ -100,7 +102,7 @@ html, body {
 }
 
 .desktop-nav .dropdown-toggle::after {
-    display: none !important; 
+    display: none !important;
 }
 
 .desktop-nav .dropdown-menu {
@@ -161,17 +163,36 @@ html, body {
     text-decoration: none;
     transition: all 0.3s ease;
     border: 0;
+    animation: quotePulse 2s infinite;
+}
+
+@keyframes quotePulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 181, 184, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 181, 184, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 181, 184, 0);
+    }
 }
 
 .btn-quote:hover {
     background: #009CA0;
     color: var(--white);
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0, 181, 184, 0.3);
+    box-shadow: 0 6px 15px rgba(0, 181, 184, 0.4);
+    animation: none; /* Pause continuous pulse on hover */
 }
 
 .btn-quote i {
     font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.btn-quote:hover i {
+    transform: translateX(4px);
 }
 
 /* Hamburger Button */
@@ -325,10 +346,16 @@ body.menu-open {
     .main-header {
         height: 70px;
     }
+
+    .brand-logo {
+        height: 45px;
+    }
+
     .btn-quote {
         padding: 8px 16px;
         font-size: 13px;
     }
+
     .btn-quote i {
         font-size: 16px;
     }

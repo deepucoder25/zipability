@@ -22,7 +22,7 @@
 
   <!-- Main Sticky Header -->
   <header class="main-header <?= $active_tab === 'home' ? 'home-header' : '' ?>" id="mainHeader">
-    <div class="container-fluid px-4 px-xl-5 d-flex align-items-center justify-content-between">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
       <!-- Brand Logo -->
       <a href="<?= site_url() ?>" class="brand-wrap text-decoration-none">
         <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="ZIPABILITY RELOCATION" class="brand-logo">
@@ -35,9 +35,9 @@
         <div class="nav-item dropdown">
           <a href="<?= site_url('our-services') ?>" class="nav-link dropdown-toggle<?= $active_tab === 'services' ? ' active' : '' ?>">Our Services <i class="bi bi-chevron-down ms-1"></i></a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?= site_url('home-shifting') ?>">Home Shifting</a></li>
-            <li><a class="dropdown-item" href="<?= site_url('office-relocation') ?>">Office Relocation</a></li>
-            <li><a class="dropdown-item" href="<?= site_url('car-transportation') ?>">Car Transportation</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('home-shifting') ?>">Home Shifting in Hyderabad</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('office-relocation') ?>">Office Relocation in Hyderabad</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('car-transportation') ?>">Car Transportation in Hyderabad</a></li>
           </ul>
         </div>
         <a href="<?= site_url('why-us') ?>" class="nav-link">Why Us</a>
@@ -89,9 +89,9 @@
             <i class="bi bi-chevron-down toggle-icon"></i>
           </button>
           <div class="mobile-dropdown-menu">
-            <a href="<?= site_url('home-shifting') ?>">Home Shifting</a>
-            <a href="<?= site_url('office-relocation') ?>">Office Relocation</a>
-            <a href="<?= site_url('car-transportation') ?>">Car Transportation</a>
+            <a href="<?= site_url('home-shifting') ?>">Home Shifting in Hyderabad</a>
+            <a href="<?= site_url('office-relocation') ?>">Office Relocation in Hyderabad</a>
+            <a href="<?= site_url('car-transportation') ?>">Car Transportation in Hyderabad</a>
           </div>
         </div>
         <div class="mobile-nav-item">

@@ -9,14 +9,14 @@ $floatingWhatsappLink = !empty($whatsapphtml)
   <div class="container-fluid px-4 px-xl-5">
     <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
       <div class="trusted-text fw-bold text-dark mb-0 d-flex align-items-center me-4">TRUSTED BY</div>
-      <div class="trusted-logos flex-grow-1 text-center d-flex align-items-center justify-content-between flex-wrap gap-4">
-        <img src="<?= base_url() ?>assets/images/trusted/google.png" alt="Google" class="img-fluid trusted-logo-md">
-        <img src="<?= base_url() ?>assets/images/trusted/amazon.png" alt="Amazon" class="img-fluid trusted-logo-md">
-        <img src="<?= base_url() ?>assets/images/trusted/tata.png" alt="Tata" class="img-fluid trusted-logo-lg">
-        <img src="<?= base_url() ?>assets/images/trusted/infosys.png" alt="Infosys" class="img-fluid trusted-logo-md">
-        <img src="<?= base_url() ?>assets/images/trusted/wipro.png" alt="Wipro" class="img-fluid trusted-logo-lg">
-        <img src="<?= base_url() ?>assets/images/trusted/dhl.png" alt="DHL" class="img-fluid trusted-logo-sm">
-        <img src="<?= base_url() ?>assets/images/trusted/hdfc.png" alt="HDFC Bank" class="img-fluid trusted-logo-md">
+      <div class="trusted-logos flex-grow-1 d-flex align-items-center justify-content-between flex-wrap gap-4" loading="lazy">
+        <img src="<?= base_url('assets/images/trusted/google.jpg') ?>" alt="Google" class="img-fluid trusted-logo-lg" loading="lazy">
+        <img src="<?= base_url('assets/images/trusted/amazon.jpg') ?>" alt="Amazon" class="img-fluid trusted-logo-lg" loading="lazy">
+        <img src="<?= base_url('assets/images/trusted/tata.jpg') ?>" alt="Tata" class="img-fluid trusted-logo-sm" loading="lazy">
+        <img src="<?= base_url('assets/images/trusted/infosys.jpg') ?>" alt="Infosys" class="img-fluid trusted-logo-lg" loading="lazy">
+        <img src="<?= base_url('assets/images/trusted/wipro.jpg') ?>" alt="Wipro" class="img-fluid trusted-logo-md" loading="lazy">
+        <img src="<?= base_url('assets/images/trusted/dhl.jpg') ?>" alt="DHL" class="img-fluid trusted-logo-md" loading="lazy">
+        <img src="<?= base_url('assets/images/trusted/hdfc.jpg') ?>" alt="HDFC Bank" class="img-fluid trusted-logo-sm" loading="lazy">
       </div>
     </div>
   </div>

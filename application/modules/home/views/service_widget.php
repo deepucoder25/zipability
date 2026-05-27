@@ -11,7 +11,7 @@ $services = [
     [
         'title' => 'Office Shifting',
         'icon' => 'bi-building',
-        'image' => 'office.png',
+        'image' => 'office.jpg',
         'desc' => 'Complete office relocation with minimal downtime and maximum care.',
         'link' => 'office-relocation'
     ],
@@ -32,21 +32,21 @@ $services = [
     [
         'title' => 'Loading & Unloading',
         'icon' => 'bi-truck',
-        'image' => 'loading.png',
+        'image' => 'loading.jpg',
         'desc' => 'Expert handling for safe loading and unloading of your belongings.',
         'link' => 'loading-unloading'
     ],
     [
         'title' => 'Packing & Unpacking',
         'icon' => 'bi-box-seam',
-        'image' => 'packing.png',
+        'image' => 'packing.jpg',
         'desc' => 'High-quality packing materials and careful unpacking for zero hassle.',
         'link' => 'packing-unpacking'
     ],
     [
         'title' => 'Warehousing',
         'icon' => 'bi-shop',
-        'image' => 'warehouse.png',
+        'image' => 'warehouse.jpg',
         'desc' => 'Secure storage solutions with 24/7 surveillance and full protection.',
         'link' => 'warehouse-and-storage'
     ]

@@ -60,7 +60,7 @@
     font-size: 32px;
     font-weight: 900;
     letter-spacing: 0.5px;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
     margin: 0 15px;
     text-transform: uppercase;
 }
@@ -68,13 +68,13 @@
 .services-section .header-line {
     height: 2px;
     width: 120px;
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
 }
 
 .services-section .header-dot {
     width: 6px;
     height: 6px;
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     border-radius: 50%;
 }
 
@@ -96,7 +96,7 @@
 .services-section .truck-icon-container {
     position: relative;
     display: inline-block;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
 }
 
 .services-section .truck-icon {
@@ -110,7 +110,7 @@
 .services-section .speed-line {
     position: absolute;
     height: 2px;
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     border-radius: 2px;
     opacity: 0.6;
 }
@@ -190,23 +190,23 @@
     font-weight: 800;
     line-height: 1.25;
     text-transform: uppercase;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
 }
 
 .services-section .title-part-1 {
     display: block;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
 }
 
 .services-section .title-part-2 {
     display: block;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
 }
 
 .services-section .title-underline {
     height: 2px;
     width: 40px;
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     margin-top: 5px;
     border-radius: 1px;
     transition: width 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
@@ -369,7 +369,7 @@
     font-size: 10px;
     font-weight: 800;
     color: #ffffff;
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     padding: 4px 12px;
     border-radius: 30px;
     letter-spacing: 1px;
@@ -408,7 +408,7 @@
 .faq-title-truck-wrap .truck-icon-container {
     position: relative;
     display: inline-block;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
 }
 
 .faq-title-truck-wrap .truck-icon {
@@ -422,7 +422,7 @@
 .faq-title-truck-wrap .speed-line {
     position: absolute;
     height: 2px;
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     border-radius: 2px;
     opacity: 0.5;
 }
@@ -477,7 +477,7 @@
 }
 
 .faq-card:has(.faq-card-header:not(.collapsed)) {
-    border-color: #0a4ebd;
+    border-color: var(--primary-cyan);
     box-shadow: 0 10px 25px rgba(10, 78, 189, 0.06);
 }
 
@@ -490,7 +490,7 @@
     height: 32px;
     background-color: #eef4fc;
     border-radius: 50%;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
     font-size: 14px;
     flex-shrink: 0;
     margin-right: 12px;
@@ -498,12 +498,12 @@
 }
 
 .faq-card:hover .faq-icon-wrap {
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     color: #ffffff;
 }
 
 .faq-card:has(.faq-card-header:not(.collapsed)) .faq-icon-wrap {
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     color: #ffffff;
 }
 
@@ -517,13 +517,13 @@
 }
 
 .faq-card-header:not(.collapsed) .faq-question {
-    color: #0a4ebd;
+    color: var(--primary-cyan);
 }
 
 .faq-toggle-btn {
     width: 20px;
     height: 20px;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
     font-size: 15px;
     font-weight: bold;
     flex-shrink: 0;
@@ -555,7 +555,7 @@
 /* Footer Banner */
 .faq-help-banner {
     max-width: 600px;
-    background: linear-gradient(135deg, #0a4ebd 0%, #032e73 100%);
+    background: linear-gradient(135deg, var(--primary-cyan) 0%, #032e73 100%);
     border-radius: 10px;
     padding: 12px 20px;
     box-shadow: 0 10px 25px rgba(10, 78, 189, 0.12);
@@ -751,7 +751,7 @@
     position: absolute;
     bottom: 25px;
     right: -10px;
-    background: linear-gradient(135deg, #0a4ebd 0%, #032e73 100%);
+    background: linear-gradient(135deg, var(--primary-cyan) 0%, #032e73 100%);
     color: #ffffff;
     border-radius: 12px;
     padding: 10px 16px;
@@ -789,7 +789,7 @@
     font-family: 'Outfit', sans-serif;
     font-size: 10px;
     font-weight: 800;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
     background-color: #eef4fc;
     padding: 4px 12px;
     border-radius: 30px;
@@ -799,7 +799,7 @@
 .about-badge-wrap .about-badge-line {
     height: 1.5px;
     width: 20px;
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     margin-right: 8px;
 }
 
@@ -812,7 +812,7 @@
 }
 
 .about-title .text-primary-blue {
-    color: #0a4ebd;
+    color: var(--primary-cyan);
 }
 
 .about-desc-lead {
@@ -849,7 +849,7 @@
 .about-feature-item .feature-icon-circle {
     width: 24px;
     height: 24px;
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     color: #ffffff;
     border-radius: 50%;
     display: flex;
@@ -869,7 +869,7 @@
 
 /* CTA */
 .btn-primary-blue {
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     color: #ffffff;
     font-family: 'Outfit', sans-serif;
     font-size: 13px;
@@ -890,7 +890,7 @@
     width: 36px;
     height: 36px;
     background-color: #eef4fc;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -913,7 +913,7 @@
 .about-contact-wrap .contact-number {
     font-family: 'Outfit', sans-serif;
     font-size: 14px;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
     font-weight: 800;
 }
 
@@ -995,7 +995,7 @@
 .reviews-badge-container .badge-line {
     width: 6px;
     height: 6px;
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     transform: rotate(45deg);
     opacity: 0.8;
 }
@@ -1004,7 +1004,7 @@
     font-family: 'Outfit', sans-serif;
     font-size: 11px;
     font-weight: 800;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -1034,7 +1034,7 @@
     transform: translate(-50%, -50%);
     width: 220px;
     height: 1px;
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     opacity: 0.25;
     z-index: 1;
 }
@@ -1044,7 +1044,7 @@
     padding: 0 15px;
     position: relative;
     z-index: 2;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
 }
 
 .reviews-title-truck-wrap .truck-icon {
@@ -1055,7 +1055,7 @@
 .reviews-title-truck-wrap .speed-line {
     position: absolute;
     height: 2px;
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     border-radius: 2px;
     opacity: 0.6;
 }
@@ -1204,7 +1204,7 @@
 }
 
 .verified-badge {
-    color: #0a4ebd;
+    color: var(--primary-cyan);
     font-size: 12px;
 }
 
@@ -1219,7 +1219,7 @@
 }
 
 .location-icon {
-    color: #0a4ebd;
+    color: var(--primary-cyan);
 }
 
 /* Review Text */
@@ -1241,7 +1241,7 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     border: none;
     color: #ffffff;
     display: flex;
@@ -1298,7 +1298,7 @@
 }
 
 .trust-icon-box.box-star {
-    background-color: #0a4ebd;
+    background-color: var(--primary-cyan);
     color: #ffffff;
     border-radius: 8px;
     width: 32px;
@@ -1307,17 +1307,17 @@
 
 .trust-icon-box.box-users {
     background-color: #eef4fc;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
 }
 
 .trust-icon-box.box-shield {
     background-color: #eef4fc;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
 }
 
 .trust-icon-box.box-recommend {
     background-color: #eef4fc;
-    color: #0a4ebd;
+    color: var(--primary-cyan);
 }
 
 .trust-text-box {

@@ -23,19 +23,10 @@ $companyState = isset($companystate) ? $companystate : '';
             <div class="col-lg-6 col-12">
                 <div class="about-image-wrap position-relative">
                     <div class="about-img-bg-shape"></div>
-                    <img src="<?= base_url('assets/images/about/about-showcase.webp') ?>" 
-                         alt="Reliable Packers and Movers Service - <?= htmlspecialchars($companyName) ?>" 
+                    <img src="<?= base_url('assets/images/about/about-showcase.jpg') ?>" 
+                         alt="Professional Bike Shifting &amp; Relocation Service - <?= htmlspecialchars($companyName) ?>" 
                          class="about-img img-fluid rounded-4 shadow-lg position-relative about-z2" 
                          loading="lazy">
-                    
-                    <!-- Floating Experience Badge -->
-                    <div class="about-experience-badge d-flex align-items-center shadow-lg">
-                        <div class="exp-number"><?= htmlspecialchars($companyExperience) ?></div>
-                        <div class="exp-text">
-                            <span class="d-block text-uppercase font-weight-bold">Years of</span>
-                            <span class="d-block text-uppercase">Trusted service</span>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -51,16 +42,16 @@ $companyState = isset($companystate) ? $companystate : '';
 
                     <!-- SEO-Friendly Heading -->
                     <h2 class="about-title mb-3">
-                        Reliable Shifting &amp; Relocation Services by <span class="text-primary-blue"><?= htmlspecialchars($companyName) ?></span>
+                        Professional Bike Transportation &amp; Parcel Services in Hyderabad by <span class="text-primary-blue"><?= htmlspecialchars($companyName) ?></span>
                     </h2>
 
                     <!-- Descriptive Paragraphs -->
                     <p class="about-desc-lead mb-3">
-                        Moving to a new home, office, or transporting vehicles can feel overwhelming. At <strong><?= htmlspecialchars($companyName) ?></strong>, we are committed to making your relocation journey smooth, secure, and stress-free. Whether shifting locally within <?= htmlspecialchars($companyLocation) ?> or relocating across <?= htmlspecialchars($companyState) ?> and all over India, our team handles every aspect of your move with extreme care and precision.
+                        Moving your two-wheeler or relocating your household can feel overwhelming. At <strong><?= htmlspecialchars($companyName) ?></strong>, we specialize in offering secure, hassle-free <strong>Bike Transportation Services in Hyderabad</strong> and intercity two-wheeler shifting solutions all across India. Whether shifting your motorcycle locally within Hyderabad or sending your scooter to another state, our trained team handles every step of your bike shifting with extreme care and precision.
                     </p>
                     
                     <p class="about-desc mb-4">
-                        With over <strong><?= htmlspecialchars($companyExperience) ?> years</strong> of professional experience, we have established ourselves as one of India's most trusted packing and moving brands. We use industry-standard packaging materials, modern cargo carriers, and structured loading systems to ensure all your precious goods and vehicles reach their destination safely, on time, and damage-free.
+                        With over <strong><?= htmlspecialchars($companyExperience) ?> years</strong> of professional experience, we have established ourselves as one of Hyderabad's most trusted brands for two-wheeler shipping and relocation. We utilize premium multi-layer bubble wrapping, heavy-duty cargo sheets, and specialized container carriers to ensure all your bikes, scooters, and precious goods reach their destination safely, on time, and completely scratch-free.
                     </p>
 
                     <!-- Features List Grid -->
@@ -70,7 +61,15 @@ $companyState = isset($companystate) ? $companystate : '';
                                 <div class="feature-icon-circle mr-3">
                                     <i class="bi bi-shield-check"></i>
                                 </div>
-                                <span class="feature-text">Fully Insured Shifting</span>
+                                <span class="feature-text">Multi-Layer Bike Packing</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="about-feature-item d-flex align-items-center">
+                                <div class="feature-icon-circle mr-3">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <span class="feature-text">Local Hyderabad Shifting</span>
                             </div>
                         </div>
                         <div class="col-md-6 col-12">
@@ -78,15 +77,7 @@ $companyState = isset($companystate) ? $companystate : '';
                                 <div class="feature-icon-circle mr-3">
                                     <i class="bi bi-truck"></i>
                                 </div>
-                                <span class="feature-text">Modern GPS Fleet</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-person-check"></i>
-                                </div>
-                                <span class="feature-text">Trained Packing Crew</span>
+                                <span class="feature-text">Dedicated Bike Carriers</span>
                             </div>
                         </div>
                         <div class="col-md-6 col-12">

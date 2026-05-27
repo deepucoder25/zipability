@@ -5,3 +5,44 @@
 .about-cta-icon {
     font-size: 1.2rem;
 }
+
+/* --- About Us Color Variable Overrides --- */
+
+.about-title span.text-primary-blue,
+.about-title span.text-primary-cyan {
+    color: var(--primary-cyan) !important;
+}
+
+.about-feature-item {
+    background: #F4F8FB !important;
+    border: 1px solid rgba(0, 181, 184, 0.1) !important;
+    transition: all 0.3s ease;
+}
+
+.about-feature-item:hover {
+    border-color: var(--primary-cyan) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 15px rgba(0, 181, 184, 0.1) !important;
+}
+
+.about-feature-item .feature-icon-circle {
+    background-color: var(--primary-cyan) !important;
+}
+
+.btn-primary-blue {
+    background-color: var(--primary-cyan) !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary-blue:hover {
+    background-color: #009CA0 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(0, 181, 184, 0.3) !important;
+}
+
+.about-contact-wrap .about-contact-icon {
+    background-color: #F4F8FB !important;
+    color: var(--primary-cyan) !important;
+    border: 1px solid rgba(0, 181, 184, 0.1) !important;
+}
