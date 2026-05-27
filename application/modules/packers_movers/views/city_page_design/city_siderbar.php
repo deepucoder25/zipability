@@ -64,14 +64,13 @@
     <ul class="city-services-list" id="citySidebarServiceList">
       <?php
       $sidebar_services = [
-        ['slug' => 'home-shifting',         'name' => 'Home Shifting',         'icon' => 'bi-house-heart-fill'],
-        ['slug' => 'office-relocation',     'name' => 'Office Relocation',     'icon' => 'bi-building-gear'],
-        ['slug' => 'car-transportation',    'name' => 'Car Transportation',    'icon' => 'bi-car-front-fill'],
-        ['slug' => 'bike-transportation',   'name' => 'Bike Transportation',   'icon' => 'bi-bicycle'],
-        ['slug' => 'warehouse-and-storage', 'name' => 'Warehouse & Storage',   'icon' => 'bi-box-seam-fill'],
-        ['slug' => 'domestic-relocation',   'name' => 'Domestic Relocation',   'icon' => 'bi-truck'],
-        ['slug' => 'local-shifting',        'name' => 'Local Shifting',        'icon' => 'bi-geo-alt-fill'],
-        ['slug' => 'intercity-shifting',    'name' => 'Intercity Shifting',    'icon' => 'bi-signpost-split-fill'],
+        ['slug' => 'home-shifting',         'name' => "Packing and Moving Services in $city",         'icon' => 'bi-house-heart-fill'],
+        ['slug' => 'loading-unloading',     'name' => "Loading and Unloading Services in $city",     'icon' => 'bi-box-seam'],
+        ['slug' => 'car-transportation',    'name' => "Car Carrier Services in $city",    'icon' => 'bi-car-front-fill'],
+        ['slug' => 'office-relocation',   'name' => "Office Shifting Services in $city",   'icon' => 'bi-building'],
+        ['slug' => 'bike-transportation', 'name' => "Bike Transportation Services in $city",   'icon' => 'bi-bike'],
+        ['slug' => 'corporate-shifting',   'name' => "Commercial Shifting Services in $city",   'icon' => 'bi-person-workspace'],
+        ['slug' => 'warehouse-and-storage', 'name' => "Household Goods Warehousing Services in $city", 'icon' => 'bi-shop-window'],
       ];
       foreach ($sidebar_services as $srv):
       ?>
