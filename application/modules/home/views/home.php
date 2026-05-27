@@ -6,6 +6,9 @@ $this->load->view('service_widget');
 // Load the About Us widget
 $this->load->view('about_widget');
 
+// Load the Why Choose Us widget
+$this->load->view('why_choose_widget');
+
 // Load the Reviews widget
 $this->load->view('review_widget');
 $this->load->view('city_list');
