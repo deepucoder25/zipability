@@ -31,7 +31,11 @@ include 'city_content.php';
 
     <?php echo $htmlcontent1;?>   
     <?php echo $htmlcontent2;?>      
-       <?php include 'city_reviews.php'?>
+
+    <!-- ============ Premium Shifting Rate Charts Widget ============ -->
+    <?php include 'city_price.php'; ?>
+
+    <?php include 'city_reviews.php'?>
 
     <?php include 'city_faq.php'?>
 
@@ -90,7 +94,7 @@ include 'city_content.php';
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: #0a4ebd;
+  color: var(--primary-cyan);
   text-transform: uppercase;
   margin-bottom: 8px;
 }
@@ -103,7 +107,7 @@ include 'city_content.php';
   line-height: 1.3;
   margin-bottom: 22px;
 }
-.city-accent { color: #0a4ebd; }
+.city-accent { color: var(--primary-cyan); }
 
 .city-section-title-sm {
   font-size: 1.15rem;
@@ -152,7 +156,7 @@ include 'city_content.php';
 .city-exp-badge .exp-num {
   font-size: 2rem;
   font-weight: 900;
-  color: #0a4ebd;
+  color: var(--primary-cyan);
   line-height: 1;
 }
 .city-exp-badge .exp-label {
@@ -182,7 +186,7 @@ include 'city_content.php';
   gap: 8px;
   background: #f0f6ff;
   border: 1px solid #d4e4ff;
-  color: #0a4ebd;
+  color: var(--primary-cyan);
   border-radius: 8px;
   padding: 8px 14px;
   font-size: 13px;
@@ -207,7 +211,7 @@ include 'city_content.php';
   color: #334155;
 }
 .city-checklist li i {
-  color: #0a4ebd;
+  color: var(--primary-cyan);
   font-size: 16px;
   flex-shrink: 0;
 }
@@ -217,7 +221,7 @@ include 'city_content.php';
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
-  background: linear-gradient(120deg, #001333 0%, #0a4ebd 100%);
+  background: linear-gradient(120deg, #001333 0%, var(--primary-cyan) 100%);
   border-radius: 14px;
   padding: 20px 10px;
   margin-top: 24px;
@@ -246,7 +250,7 @@ include 'city_content.php';
 .city-review-card {
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-left: 4px solid #0a4ebd;
+  border-left: 4px solid var(--primary-cyan);
   border-radius: 12px;
   padding: 18px;
   height: 100%;
@@ -271,7 +275,7 @@ include 'city_content.php';
 .city-review-card .review-avatar {
   width: 36px;
   height: 36px;
-  background: linear-gradient(135deg, #0a4ebd, #001333);
+  background: linear-gradient(135deg, var(--primary-cyan), #001333);
   color: #fff;
   border-radius: 50%;
   display: grid;
@@ -314,10 +318,10 @@ include 'city_content.php';
   transition: background 0.2s;
 }
 .city-faq-btn:hover { background: #f0f6ff; }
-.city-faq-btn.active { color: #0a4ebd; background: #f0f6ff; }
+.city-faq-btn.active { color: var(--primary-cyan); background: #f0f6ff; }
 .city-faq-btn .faq-q-icon { color: #ff6600; font-size: 17px; flex-shrink: 0; }
 .city-faq-btn .faq-chevron { margin-left: auto; font-size: 14px; color: #94a3b8; transition: transform 0.3s; }
-.city-faq-btn[aria-expanded="true"] .faq-chevron { transform: rotate(180deg); color: #0a4ebd; }
+.city-faq-btn[aria-expanded="true"] .faq-chevron { transform: rotate(180deg); color: var(--primary-cyan); }
 .city-faq-btn span { flex: 1; }
 .city-faq-body {
   padding: 4px 20px 16px 49px;

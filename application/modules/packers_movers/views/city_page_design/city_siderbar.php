@@ -55,39 +55,6 @@
     </div>
   </div>
 
-  <!-- Services Widget -->
-  <div class="city-sidebar-widget mt-4" id="sidebarServicesWidget">
-    <h4 class="city-sidebar-widget-title">
-      <i class="bi bi-grid-3x3-gap-fill me-2"></i>Our Services
-    </h4>
-    <p class="city-sidebar-widget-desc">Expert relocation solutions in <?= $city ?>.</p>
-    <ul class="city-services-list" id="citySidebarServiceList">
-      <?php
-      $sidebar_services = [
-        ['slug' => 'home-shifting',         'name' => "Packing and Moving Services in $city",         'icon' => 'bi-house-heart-fill'],
-        ['slug' => 'loading-unloading',     'name' => "Loading and Unloading Services in $city",     'icon' => 'bi-box-seam'],
-        ['slug' => 'car-transportation',    'name' => "Car Carrier Services in $city",    'icon' => 'bi-car-front-fill'],
-        ['slug' => 'office-relocation',   'name' => "Office Shifting Services in $city",   'icon' => 'bi-building'],
-        ['slug' => 'bike-transportation', 'name' => "Bike Transportation Services in $city",   'icon' => 'bi-bicycle'],
-        ['slug' => 'corporate-shifting',   'name' => "Commercial Shifting Services in $city",   'icon' => 'bi-person-workspace'],
-        ['slug' => 'warehouse-and-storage', 'name' => "Household Goods Warehousing Services in $city", 'icon' => 'bi-shop-window'],
-      ];
-      foreach ($sidebar_services as $srv):
-      ?>
-      <li>
-        <a href="<?= site_url($srv['slug']) ?>" class="city-service-link" id="sidebarService-<?= $srv['slug'] ?>">
-          <span class="city-svc-icon"><i class="bi <?= $srv['icon'] ?>"></i></span>
-          <span class="city-svc-name"><?= $srv['name'] ?></span>
-          <i class="bi bi-chevron-right city-svc-arrow"></i>
-        </a>
-      </li>
-      <?php endforeach; ?>
-    </ul>
-    <a href="<?= site_url('our-services') ?>" class="city-view-all-btn" id="sidebarViewAllServices">
-      <i class="bi bi-grid me-1"></i> View All Services
-      <i class="bi bi-arrow-right ms-1"></i>
-    </a>
-  </div>
 
   <!-- Trust Badges Widget -->
   <div class="city-sidebar-widget mt-4" id="sidebarTrustWidget">
@@ -206,7 +173,7 @@
 
 /* ---- CTA Card ---- */
 .city-cta-card {
-  background: linear-gradient(125deg, #001333 0%, #0a3fa8 55%, #1565d8 100%);
+  background: linear-gradient(125deg, var(--primary-cyan) 0%, #0a3fa8 55%, #1565d8 100%);
   position: relative;
   overflow: hidden;
   border: none;
@@ -226,14 +193,39 @@
 .city-cta-icon-wrap {
   width: 50px;
   height: 50px;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
   border-radius: 14px;
   display: grid;
   place-items: center;
   font-size: 22px;
   color: #ffd600;
   margin-bottom: 14px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: cta-icon-pulse 3s infinite ease-in-out;
+}
+.city-cta-icon-wrap i {
+  display: inline-block;
+  animation: headset-float 2.5s infinite ease-in-out;
+}
+.city-cta-card:hover .city-cta-icon-wrap {
+  transform: scale(1.1) rotate(15deg);
+  background: rgba(255,255,255,0.2);
+  border-color: #ffd600;
+  box-shadow: 0 0 15px rgba(255, 214, 0, 0.6);
+}
+@keyframes cta-icon-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 214, 0, 0.2), inset 0 0 0 0 rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 12px 3px rgba(255, 214, 0, 0.4), inset 0 0 6px 1px rgba(255, 255, 255, 0.15);
+  }
+}
+@keyframes headset-float {
+  0%, 100% { transform: translateY(0) rotate(0) scale(1); }
+  50% { transform: translateY(-5px) rotate(8deg) scale(1.08); }
 }
 .city-cta-title {
   font-size: 1.05rem;
@@ -270,7 +262,76 @@
   transform: translateX(3px);
   color: #fff;
 }
-.city-cta-btn > i { font-size: 20px; color: #ffd600; flex-shrink: 0; }
+.city-cta-btn > i { font-size: 20px; color: #ffd600; flex-shrink: 0; display: inline-block; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+/* Different highly attractive animations on the two phone numbers */
+.city-cta-call > i {
+  animation: modern-phone-ring 2s infinite ease-in-out;
+}
+.city-cta-alt-call > i {
+  animation: alt-phone-heartbeat 2.2s infinite ease-in-out;
+}
+
+#sidebarCallBtn:hover > i {
+  transform: scale(1.3) rotate(-15deg);
+  color: #ffffff;
+  filter: drop-shadow(0 0 8px #ffd600);
+  animation: modern-phone-ring 0.6s infinite ease-in-out; /* Supercharged ring on hover */
+}
+
+#sidebarAltCallBtn:hover > i {
+  transform: scale(1.3) rotate(360deg);
+  color: #ffffff;
+  filter: drop-shadow(0 0 8px #ffd600);
+}
+
+@keyframes modern-phone-ring {
+  0%, 100% {
+    transform: rotate(0) scale(1);
+    filter: drop-shadow(0 0 0px rgba(255, 214, 0, 0));
+  }
+  15% {
+    transform: rotate(-15deg) scale(1.2);
+    filter: drop-shadow(0 0 6px rgba(255, 214, 0, 0.7));
+  }
+  30% {
+    transform: rotate(15deg) scale(1.2);
+    filter: drop-shadow(0 0 6px rgba(255, 214, 0, 0.7));
+  }
+  45% {
+    transform: rotate(-10deg) scale(1.15);
+    filter: drop-shadow(0 0 4px rgba(255, 214, 0, 0.5));
+  }
+  60% {
+    transform: rotate(10deg) scale(1.15);
+    filter: drop-shadow(0 0 4px rgba(255, 214, 0, 0.5));
+  }
+  75% {
+    transform: rotate(0) scale(1.05);
+  }
+}
+
+@keyframes alt-phone-heartbeat {
+  0%, 100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    color: #ffd600;
+  }
+  25% {
+    transform: translateY(-4px) scale(1.2) rotate(-8deg);
+    color: #ffffff;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6));
+  }
+  40% {
+    transform: translateY(0) scale(1.1) rotate(4deg);
+    color: #ffd600;
+  }
+  60% {
+    transform: translateY(-2px) scale(1.25) rotate(0deg);
+    color: #ffffff;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+  }
+}
+
 .city-cta-btn small {
   display: flex;
   align-items: center;
@@ -311,10 +372,47 @@
   text-decoration: none;
   transition: transform 0.2s, opacity 0.2s;
 }
-.city-action-btn:hover { transform: translateY(-2px); opacity: 0.92; }
-.city-action-btn i { font-size: 18px; }
-.city-whatsapp-btn { background: #25d366; color: #fff; }
-.city-quote-btn    { background: #ffd600; color: #001333; }
+.city-action-btn:hover {
+  transform: translateY(-4px);
+  opacity: 1;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.city-action-btn i {
+  font-size: 18px;
+  display: inline-block;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.city-whatsapp-btn {
+  background: #25d366;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.city-whatsapp-btn:hover {
+  background: #22c35e;
+}
+.city-whatsapp-btn i {
+  animation: wa-bounce-spin 3s infinite ease-in-out;
+}
+.city-whatsapp-btn:hover i {
+  transform: scale(1.35) rotate(360deg);
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
+}
+
+.city-quote-btn {
+  background: #ffd600;
+  color: #001333;
+  transition: all 0.3s ease;
+}
+.city-quote-btn:hover {
+  background: #ffea00;
+}
+.city-quote-btn i {
+  animation: quote-pop-check 2.8s infinite ease-in-out;
+}
+.city-quote-btn:hover i {
+  transform: scale(1.3) translateY(-2px) rotate(-15deg);
+  filter: drop-shadow(0 0 6px rgba(0, 19, 51, 0.3));
+}
 
 /* ---- Services List ---- */
 .city-services-list { list-style: none; padding: 0; margin: 0 0 14px; display: flex; flex-direction: column; gap: 6px; }
@@ -333,14 +431,14 @@
   transition: all 0.25s;
 }
 .city-service-link:hover {
-  background: #0a4ebd;
+  background: var(--primary-cyan);
   color: #fff;
-  border-color: #0a4ebd;
+  border-color: var(--primary-cyan);
   transform: translateX(4px);
 }
 .city-service-link:hover .city-svc-icon,
 .city-service-link:hover .city-svc-arrow { color: #fff; }
-.city-svc-icon { font-size: 16px; color: #0a4ebd; flex-shrink: 0; transition: color 0.25s; }
+.city-svc-icon { font-size: 16px; color: var(--primary-cyan); flex-shrink: 0; transition: color 0.25s; }
 .city-svc-name { flex: 1; }
 .city-svc-arrow { font-size: 13px; color: #94a3b8; transition: color 0.25s; }
 .city-view-all-btn {
@@ -349,15 +447,15 @@
   justify-content: center;
   width: 100%;
   padding: 10px;
-  border: 2px solid #0a4ebd;
+  border: 2px solid var(--primary-cyan);
   border-radius: 10px;
-  color: #0a4ebd;
+  color: var(--primary-cyan);
   font-weight: 700;
   font-size: 13px;
   text-decoration: none;
   transition: all 0.25s;
 }
-.city-view-all-btn:hover { background: #0a4ebd; color: #fff; }
+.city-view-all-btn:hover { background: var(--primary-cyan); color: #fff; }
 
 /* ---- Trust List ---- */
 .city-trust-list { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 16px; }
@@ -367,7 +465,7 @@
   height: 36px;
   border-radius: 10px;
   background: #eff6ff;
-  color: #0a4ebd;
+  color: var(--primary-cyan);
   display: grid;
   place-items: center;
   font-size: 16px;
@@ -396,8 +494,8 @@
   text-decoration: none;
   transition: all 0.2s;
 }
-.city-tag:hover { background: #0a4ebd; color: #fff; border-color: #0a4ebd; }
-.city-tag i { color: #0a4ebd; transition: color 0.2s; font-size: 14px; }
+.city-tag:hover { background: var(--primary-cyan); color: #fff; border-color: var(--primary-cyan); }
+.city-tag i { color: var(--primary-cyan); transition: color 0.2s; font-size: 14px; }
 .city-tag:hover i { color: #fff; }
 
 /* Responsive */
