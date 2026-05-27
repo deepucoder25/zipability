@@ -6,8 +6,6 @@
         <nav class="bc-nav">
             <a href="<?= site_url() ?>">Home</a>
             <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-services') ?>">Services</a>
-            <span class="bc-sep">›</span>
             <span class="bc-current">Warehouse &amp; Storage</span>
         </nav>
         <h1><span class="bc-title-white">Warehouse &amp;</span> <span class="bc-title-orange">Storage</span></h1>
@@ -64,6 +62,47 @@
                         <p>
                             Here at our company, we pride ourselves in the professional team that offers excellent and professional storage services as desired by our clients. Allow us to provide the best in warehouse and storage services for a hassle-free one-stop solution.
                         </p>
+                    </div>
+
+                    <!-- Storage Packages Comparison (Premium Grid) -->
+                    <h3 class="mt-5 mb-3 fw-bold text-dark d-flex align-items-center gap-2">
+                        <i class="bi bi-box-seam text-cyan fs-4"></i> Flexible Storage Solutions
+                    </h3>
+                    <p class="text-muted small">Select the warehousing layout that best matches your inventory and duration requirements:</p>
+                    
+                    <div class="row g-4 mb-5">
+                        <!-- Plan 1 -->
+                        <div class="col-md-6">
+                            <div class="pack-card h-100">
+                                <div class="pack-badge bg-secondary-subtle text-secondary">FLEXIBLE</div>
+                                <h4 class="pack-title">Shared Warehouse Storage</h4>
+                                <div class="pack-subtitle">Ideal for standard household goods, furniture, seasonal stock &amp; archives</div>
+                                <ul class="pack-features-list">
+                                    <li><i class="bi bi-check-circle"></i> Allocated pallet and rack spaces in a shared facility</li>
+                                    <li><i class="bi bi-check-circle"></i> 24/7 CCTV surveillance &amp; regular pest control</li>
+                                    <li><i class="bi bi-check-circle"></i> Double shrink-wrap and high-grade plastic dust covers</li>
+                                    <li><i class="bi bi-check-circle"></i> Flexible weekly or monthly renewal options</li>
+                                    <li><i class="bi bi-check-circle"></i> Digital inventory log with barcode-labeled crates</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Plan 2 -->
+                        <div class="col-md-6">
+                            <div class="pack-card featured h-100">
+                                <span class="badge-featured">EXCLUSIVE COVERAGE</span>
+                                <div class="pack-badge bg-cyan text-white">SECURE</div>
+                                <h4 class="pack-title">Private Vault &amp; Commercial Storage</h4>
+                                <div class="pack-subtitle">Ideal for high-value artwork, bulk trade inventory, servers &amp; luxury goods</div>
+                                <ul class="pack-features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i> Dedicated wooden/metal lockable vaults</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Temperature &amp; climate-regulated environment controls</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> High-density shelving units and secure lockbox access</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Custom fire-proof crating and heavy-duty bubble wrap</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Full insurance audit report &amp; priority retrieval service</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- How We Process Section -->

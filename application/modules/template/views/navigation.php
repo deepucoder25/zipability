@@ -47,13 +47,14 @@
         <div class="nav-item dropdown">
           <a href="<?= site_url('our-services') ?>" class="nav-link dropdown-toggle<?= $active_tab === 'services' ? ' active' : '' ?>">Services <i class="bi bi-chevron-down ms-1"></i></a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?= site_url('home-shifting') ?>">Packing and Moving Services</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('packing-moving') ?>">Packing and Moving Services</a></li>
             <li><a class="dropdown-item" href="<?= site_url('loading-unloading') ?>">Loading and Unloading Services</a></li>
             <li><a class="dropdown-item" href="<?= site_url('car-transportation') ?>">Car Carrier Services</a></li>
             <li><a class="dropdown-item" href="<?= site_url('office-relocation') ?>">Office Shifting Services</a></li>
             <li><a class="dropdown-item" href="<?= site_url('bike-transportation') ?>">Bike Transportation Services</a></li>
             <li><a class="dropdown-item" href="<?= site_url('corporate-shifting') ?>">Commercial Shifting Services</a></li>
             <li><a class="dropdown-item" href="<?= site_url('warehouse-and-storage') ?>">Household Goods Warehousing Services</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('goods-insurance') ?>">Household Goods Insurance Services</a></li>
           </ul>
         </div>
         <a href="<?= site_url('our-branches') ?>" class="nav-link">Network</a>
@@ -118,13 +119,14 @@
             <i class="bi bi-chevron-down toggle-icon"></i>
           </button>
           <div class="mobile-dropdown-menu">
-            <a href="<?= site_url('home-shifting') ?>">Packing and Moving Services</a>
+            <a href="<?= site_url('packing-moving') ?>">Packing and Moving Services</a>
             <a href="<?= site_url('loading-unloading') ?>">Loading and Unloading Services</a>
             <a href="<?= site_url('car-transportation') ?>">Car Carrier Services</a>
             <a href="<?= site_url('office-relocation') ?>">Office Shifting Services</a>
             <a href="<?= site_url('bike-transportation') ?>">Bike Transportation Services</a>
             <a href="<?= site_url('corporate-shifting') ?>">Commercial Shifting Services</a>
             <a href="<?= site_url('warehouse-and-storage') ?>">Household Goods Warehousing Services</a>
+            <a href="<?= site_url('goods-insurance') ?>">Household Goods Insurance Services</a>
           </div>
         </div>
         <div class="mobile-nav-item">

@@ -2,11 +2,11 @@
 
 $services = [
     [
-        'title' => 'Home Relocation',
+        'title' => 'Packing & Moving',
         'icon' => 'bi-house-door',
         'image' => 'home.jpg',
         'desc' => 'Safe and hassle-free shifting of your home anywhere in India.',
-        'link' => 'home-shifting'
+        'link' => 'packing-moving'
     ],
     [
         'title' => 'Office Shifting',

@@ -109,11 +109,18 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     min-width: 160px;
+    animation: float-slow 4s infinite ease-in-out;
 }
+.bc-feature-pill:nth-child(1) { animation-delay: 0s; }
+.bc-feature-pill:nth-child(2) { animation-delay: 0.4s; }
+.bc-feature-pill:nth-child(3) { animation-delay: 0.8s; }
+.bc-feature-pill:nth-child(4) { animation-delay: 1.2s; }
+
 .bc-feature-pill:hover {
     border-color: var(--primary-cyan);
-    transform: translateY(-4px);
-    box-shadow: 0 15px 30px rgba(0, 181, 184, 0.1);
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 181, 184, 0.15);
+    animation-play-state: paused;
 }
 .bc-feature-pill .pill-icon {
     width: 38px;
@@ -224,7 +231,7 @@
     z-index: 10;
 }
 .sidebar-widget {
-    background-color: #ffffff;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
@@ -249,58 +256,93 @@
     background-color: var(--primary-cyan);
 }
 
-/* Services Navigation list */
+/* Services Navigation list - Premium Modern Redesign */
 .sidebar-services-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 .sidebar-services-list li {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 .sidebar-services-list li:last-child {
     margin-bottom: 0;
 }
 .sidebar-services-list li a {
-    color: #475569;
+    color: #334155;
     text-decoration: none;
-    padding: 12px 18px;
-    border-radius: 10px;
-    background-color: #f8fafc;
-    border: 1px solid #f1f5f9;
+    padding: 14px 20px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #ffffff 0%, #fcfdfe 100%);
+    border: 1px solid #e2e8f0;
     font-weight: 600;
     font-size: 14px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.015);
+    position: relative;
+    overflow: hidden;
 }
+
+/* Hover State */
 .sidebar-services-list li a:hover {
-    background-color: var(--primary-cyan);
-    color: #ffffff;
-    transform: translateX(5px);
-    border-color: var(--primary-cyan);
+    background: linear-gradient(135deg, #ffffff 0%, rgba(0, 181, 184, 0.06) 100%);
+    color: var(--primary-cyan);
+    transform: translateX(8px);
+    border-color: rgba(0, 181, 184, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 181, 184, 0.08);
 }
-.sidebar-services-list li a:hover .service-icon,
+.sidebar-services-list li a:hover .service-icon-wrap {
+    background-color: rgba(0, 181, 184, 0.15);
+    color: var(--primary-cyan);
+    transform: scale(1.05);
+}
 .sidebar-services-list li a:hover .arrow-icon {
-    color: #ffffff;
+    transform: translateX(4px);
+    color: var(--primary-cyan);
 }
+
+/* Active Page State */
 .sidebar-services-list li a.active {
-    background-color: var(--primary-cyan);
-    color: #ffffff;
-    border-color: var(--primary-cyan);
+    background: linear-gradient(135deg, var(--primary-cyan) 0%, #009ca0 100%);
+    color: #ffffff !important;
+    border-color: transparent;
+    box-shadow: 0 8px 25px rgba(0, 181, 184, 0.25);
 }
-.sidebar-services-list li a.active .service-icon,
+.sidebar-services-list li a.active .service-icon-wrap {
+    background-color: #ffffff;
+    color: var(--primary-cyan);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 .sidebar-services-list li a.active .arrow-icon {
     color: #ffffff;
+    font-weight: 800;
 }
-.sidebar-services-list .service-icon {
+
+/* Circular icon badge wrappers */
+.sidebar-services-list .service-icon-wrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(0, 181, 184, 0.08);
     color: var(--primary-cyan);
-    font-size: 1.1rem;
-    transition: color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+.sidebar-services-list .service-name {
+    font-size: 13.5px;
+    line-height: 1.4;
 }
 .sidebar-services-list .arrow-icon {
-    font-size: 0.9rem;
+    font-size: 13px;
     color: #94a3b8;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
 }
 
 /* Contact CTA Sidebar Card */
@@ -349,39 +391,94 @@
     border-radius: 12px;
     font-weight: 700;
     font-size: 14px;
-    transition: all 0.3s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
     text-decoration: none;
     display: inline-block;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
+
+/* Call Button - Micro Vibration & Cyan Glow */
 .btn-sidebar-call {
     background-color: var(--primary-cyan);
     color: #ffffff;
 }
+.btn-sidebar-call i {
+    display: inline-block;
+    animation: phone-vibrate 2.5s infinite ease-in-out;
+}
 .btn-sidebar-call:hover {
     background-color: #009CA0;
-    transform: translateY(-2px);
+    transform: translateY(-4px) scale(1.02);
     color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 181, 184, 0.4);
 }
+
+/* WhatsApp Button - Breathing Pulse & Green Glow */
 .btn-sidebar-whatsapp {
     background-color: #25d366;
     color: #ffffff;
 }
+.btn-sidebar-whatsapp i {
+    display: inline-block;
+    animation: whatsapp-pulse 2s infinite ease-in-out;
+}
 .btn-sidebar-whatsapp:hover {
     background-color: #20ba5a;
-    transform: translateY(-2px);
+    transform: translateY(-4px) scale(1.02);
     color: #ffffff;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 }
+
+/* Quote Button - Continuous Sweeping Sheen */
 .btn-sidebar-quote {
     background-color: rgba(255, 255, 255, 0.15);
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.25);
 }
+.btn-sidebar-quote::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.25) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    animation: quote-sheen 3.5s infinite ease-in-out;
+}
 .btn-sidebar-quote:hover {
     background-color: #ffffff;
     color: #001846;
-    transform: translateY(-2px);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.35);
+}
+
+/* Keyframes for call/vibration icons */
+@keyframes phone-vibrate {
+    0%, 100% { transform: rotate(0); }
+    8%, 24% { transform: rotate(-12deg); }
+    16%, 32% { transform: rotate(12deg); }
+    40%, 90% { transform: rotate(0); }
+}
+
+/* Keyframes for WhatsApp icons */
+@keyframes whatsapp-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+/* Keyframes for Quote Sweeping Sheen */
+@keyframes quote-sheen {
+    0% { left: -150%; }
+    40%, 100% { left: 150%; }
 }
 
 /* Trusted Checklist */
@@ -418,9 +515,18 @@
 .process-step {
     position: relative;
     margin-bottom: 25px;
+    transition: all 0.3s ease;
 }
 .process-step:last-child {
     margin-bottom: 0;
+}
+.process-step:hover {
+    transform: translateX(6px);
+}
+.process-step:hover .step-number {
+    background-color: #009ca0;
+    box-shadow: 0 0 12px rgba(0, 181, 184, 0.5);
+    transform: scale(1.15);
 }
 .step-number {
     position: absolute;
@@ -437,6 +543,7 @@
     place-items: center;
     border: 3px solid #ffffff;
     box-shadow: 0 0 0 2px var(--primary-cyan);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .process-step h4 {
     font-size: 1.1rem;
@@ -465,18 +572,26 @@
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    transition: all 0.3s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .choose-item-card:hover {
     background-color: #ffffff;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+    box-shadow: 0 12px 25px rgba(0, 181, 184, 0.06);
     border-color: var(--primary-cyan);
-    transform: translateY(-2px);
+    transform: translateY(-5px);
+}
+.choose-item-card:hover .choose-icon-wrap i {
+    animation: icon-wiggle 0.6s ease-in-out;
 }
 .choose-icon-wrap {
     font-size: 1.4rem;
     color: var(--primary-cyan);
     margin-top: 2px;
+    transition: all 0.3s ease;
+}
+.choose-icon-wrap i {
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 .choose-content h5 {
     font-size: 14px;
@@ -603,4 +718,108 @@
         margin-top: 30px;
         position: static;
     }
+}
+
+/* 8. Tailored Relocation/Service Packages & Plans Grid */
+.pack-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 181, 184, 0.15);
+    border-radius: 16px;
+    padding: 30px 24px;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+.pack-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(0, 181, 184, 0.12);
+    border-color: var(--primary-cyan);
+}
+.pack-card.featured {
+    box-shadow: 0 10px 25px rgba(0, 181, 184, 0.08);
+}
+.pack-card.featured:hover {
+    box-shadow: 0 25px 40px rgba(0, 181, 184, 0.18);
+}
+.badge-featured {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #ff9e00 0%, #e06000 100%);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 16px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(224, 96, 0, 0.2);
+    letter-spacing: 0.5px;
+    z-index: 5;
+    animation: badge-pulse 2.5s infinite ease-in-out;
+}
+.pack-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+.pack-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #001846;
+    margin-bottom: 6px;
+}
+.pack-subtitle {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 24px;
+    min-height: 36px;
+}
+.pack-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.pack-features-list li {
+    font-size: 13px;
+    color: #475569;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.pack-features-list li i {
+    font-size: 14px;
+}
+.pack-features-list li i.bi-check-circle-fill {
+    color: var(--primary-cyan);
+}
+.pack-features-list li i.bi-check-circle {
+    color: #94a3b8;
+}
+.bg-cyan-light {
+    background-color: rgba(0, 181, 184, 0.1) !important;
+}
+.bg-cyan-gradient {
+    background: linear-gradient(135deg, var(--primary-cyan) 0%, #002246 100%) !important;
+}
+
+/* 9. Keyframes for Premium Micro-Animations */
+@keyframes badge-pulse {
+    0%, 100% { transform: translateX(-50%) scale(1); }
+    50% { transform: translateX(-50%) scale(1.06); }
+}
+
+@keyframes icon-wiggle {
+    0%, 100% { transform: rotate(0) scale(1); }
+    25% { transform: rotate(-10deg) scale(1.1); }
+    75% { transform: rotate(10deg) scale(1.1); }
+}
+
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
 }

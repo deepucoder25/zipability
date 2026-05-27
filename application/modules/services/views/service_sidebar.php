@@ -7,13 +7,14 @@
         <ul class="sidebar-services-list" id="sidebarServiceList">
             <?php
             $sidebar_services = [
-                ['slug' => 'home-shifting',         'name' => "Packing and Moving Services in hyderabad",         'icon' => 'bi-house-heart-fill'],
+                ['slug' => 'packing-moving',         'name' => "Packing and Moving Services in hyderabad",         'icon' => 'bi-house-heart-fill'],
         ['slug' => 'loading-unloading',     'name' => "Loading and Unloading Services in hyderabad",     'icon' => 'bi-box-seam'],
         ['slug' => 'car-transportation',    'name' => "Car Carrier Services in hyderabad",    'icon' => 'bi-car-front-fill'],
         ['slug' => 'office-relocation',   'name' => "Office Shifting Services in hyderabad",   'icon' => 'bi-building'],
         ['slug' => 'bike-transportation', 'name' => "Bike Transportation Services in hyderabad",   'icon' => 'bi-bicycle'],
         ['slug' => 'corporate-shifting',   'name' => "Commercial Shifting Services in hyderabad",   'icon' => 'bi-person-workspace'],
         ['slug' => 'warehouse-and-storage', 'name' => "Household Goods Warehousing Services in hyderabad", 'icon' => 'bi-shop-window'],
+        ['slug' => 'goods-insurance', 'name' => "Household Goods Insurance Services in hyderabad", 'icon' => 'bi-shield-fill-check'],
             ];
 
             foreach ($sidebar_services as $index => $s):
@@ -24,7 +25,9 @@
                 <li class="<?= $hidden_class ?>">
                     <a href="<?= site_url($s['slug']) ?>" class="d-flex align-items-center justify-content-between <?= $is_active ?>">
                         <span class="d-flex align-items-center gap-2">
-                            <i class="bi <?= $s['icon'] ?> service-icon"></i>
+                            <span class="service-icon-wrap">
+                                <i class="bi <?= $s['icon'] ?>"></i>
+                            </span>
                             <span class="service-name"><?= $s['name'] ?></span>
                         </span>
                         <i class="bi bi-chevron-right arrow-icon"></i>

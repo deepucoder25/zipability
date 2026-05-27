@@ -6,8 +6,6 @@
         <nav class="bc-nav">
             <a href="<?= site_url() ?>">Home</a>
             <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-services') ?>">Services</a>
-            <span class="bc-sep">›</span>
             <span class="bc-current">Corporate Shifting</span>
         </nav>
         <h1><span class="bc-title-white">Corporate</span> <span class="bc-title-orange">Shifting</span></h1>
@@ -69,6 +67,47 @@
                         <p>
                             Experience the best corporate shifting with us which will cater to all your business shifting requirements.
                         </p>
+                    </div>
+
+                    <!-- Corporate Shifting Packages Comparison (Premium Grid) -->
+                    <h3 class="mt-5 mb-3 fw-bold text-dark d-flex align-items-center gap-2">
+                        <i class="bi bi-box-seam text-cyan fs-4"></i> Corporate Relocation Formats
+                    </h3>
+                    <p class="text-muted small">Select the corporate shifting scale that corresponds to your organizational footprint:</p>
+                    
+                    <div class="row g-4 mb-5">
+                        <!-- Plan 1 -->
+                        <div class="col-md-6">
+                            <div class="pack-card h-100">
+                                <div class="pack-badge bg-secondary-subtle text-secondary">REGIONAL</div>
+                                <h4 class="pack-title">Commercial Branch Shifting</h4>
+                                <div class="pack-subtitle">Ideal for commercial stores, local bank branches, retail outlets, and modular workspaces</div>
+                                <ul class="pack-features-list">
+                                    <li><i class="bi bi-check-circle"></i> Heavy-duty commercial bubble wrapping &amp; palletizing</li>
+                                    <li><i class="bi bi-check-circle"></i> Glass showcase, rack, and display counter dismantling</li>
+                                    <li><i class="bi bi-check-circle"></i> Inventory tagging and security seal coding</li>
+                                    <li><i class="bi bi-check-circle"></i> Sealed closed container shipping</li>
+                                    <li><i class="bi bi-check-circle"></i> Overnight or holiday dispatch to minimize revenue loss</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Plan 2 -->
+                        <div class="col-md-6">
+                            <div class="pack-card featured h-100">
+                                <span class="badge-featured">ENTERPRISE ELITE</span>
+                                <div class="pack-badge bg-cyan text-white">CONGLOMERATE</div>
+                                <h4 class="pack-title">Headquarters &amp; Industrial Shifting</h4>
+                                <div class="pack-subtitle">Ideal for multi-floor headquarters, heavy machinery, data centers, and large corporate houses</div>
+                                <ul class="pack-features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i> Specialized high-value server rack &amp; UPS logistics</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Heavy crane &amp; forklift loading for industrial machinery</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Multi-tier GPS tracking with automated location pings</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Corporate relocation advisory with desk layout mapping</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Complete white-glove setup and IT department hand-off</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- How We Process Section -->

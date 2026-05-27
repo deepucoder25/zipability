@@ -6,8 +6,6 @@
         <nav class="bc-nav">
             <a href="<?= site_url() ?>">Home</a>
             <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-services') ?>">Services</a>
-            <span class="bc-sep">›</span>
             <span class="bc-current">Office Relocation</span>
         </nav>
         <h1><span class="bc-title-white">Office</span> <span class="bc-title-orange">Relocation</span></h1>
@@ -61,6 +59,47 @@
                         <p>
                             In our pro team, we ensure that our work brings positive results offering the most efficient move needed for a business. Let us take full responsibility for doing that with the standard that you expect from any office removals.
                         </p>
+                    </div>
+
+                    <!-- Office Relocation Packages Comparison (Premium Grid) -->
+                    <h3 class="mt-5 mb-3 fw-bold text-dark d-flex align-items-center gap-2">
+                        <i class="bi bi-box-seam text-cyan fs-4"></i> Tailored Office Relocation Plans
+                    </h3>
+                    <p class="text-muted small">Select the office shifting configuration that best matches your company size:</p>
+                    
+                    <div class="row g-4 mb-5">
+                        <!-- Plan 1 -->
+                        <div class="col-md-6">
+                            <div class="pack-card h-100">
+                                <div class="pack-badge bg-secondary-subtle text-secondary">CORPORATE</div>
+                                <h4 class="pack-title">Standard Workspace Move</h4>
+                                <div class="pack-subtitle">Ideal for small offices, branches, and startups (up to 20 workstations)</div>
+                                <ul class="pack-features-list">
+                                    <li><i class="bi bi-check-circle"></i> Standard bubble wrapping for PCs &amp; monitors</li>
+                                    <li><i class="bi bi-check-circle"></i> Basic furniture dismantling &amp; layout planning</li>
+                                    <li><i class="bi bi-check-circle"></i> Secure storage box cataloging &amp; labeling</li>
+                                    <li><i class="bi bi-check-circle"></i> Multi-layer box packing for office records</li>
+                                    <li><i class="bi bi-check-circle"></i> Weekend or overnight off-hours shifting</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Plan 2 -->
+                        <div class="col-md-6">
+                            <div class="pack-card featured h-100">
+                                <span class="badge-featured">ZERO DOWNTIME PRO</span>
+                                <div class="pack-badge bg-cyan text-white">ENTERPRISE</div>
+                                <h4 class="pack-title">Large-Scale &amp; IT Move</h4>
+                                <div class="pack-subtitle">Ideal for corporate head offices, server rooms, and large businesses (20+ workstations)</div>
+                                <ul class="pack-features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i> Anti-static bubble wrapping for server racks &amp; networks</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Specialized modular furniture dismantling &amp; reassembly</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Direct project coordinator &amp; department color-coding</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Priority transit &amp; dedicated enclosed container fleet</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Complete layout setup, workstation cabling assistance</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- How We Process Section -->

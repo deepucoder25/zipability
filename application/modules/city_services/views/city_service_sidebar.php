@@ -19,7 +19,9 @@
                 <li>
                     <a href="<?= site_url($s['slug']) ?>" class="d-flex align-items-center justify-content-between <?= $is_active ?>">
                         <span class="d-flex align-items-center gap-2">
-                            <i class="bi <?= $s['icon'] ?> service-icon"></i>
+                            <span class="service-icon-wrap">
+                                <i class="bi <?= $s['icon'] ?>"></i>
+                            </span>
                             <span class="service-name"><?= $s['name'] ?></span>
                         </span>
                         <i class="bi bi-chevron-right arrow-icon"></i>

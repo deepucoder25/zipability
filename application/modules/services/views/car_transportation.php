@@ -6,8 +6,6 @@
         <nav class="bc-nav">
             <a href="<?= site_url() ?>">Home</a>
             <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-services') ?>">Services</a>
-            <span class="bc-sep">›</span>
             <span class="bc-current">Car Transportation</span>
         </nav>
         <h1><span class="bc-title-white">Car</span> <span class="bc-title-orange">Transportation</span></h1>
@@ -66,6 +64,47 @@
                         <p>
                             To avail the best car transportation services you should transport with <strong><?= $company3 ?></strong>.
                         </p>
+                    </div>
+                    
+                    <!-- Car Transport Packages Comparison (Premium Grid) -->
+                    <h3 class="mt-5 mb-3 fw-bold text-dark d-flex align-items-center gap-2">
+                        <i class="bi bi-box-seam text-cyan fs-4"></i> Tailored Car Shipping Plans
+                    </h3>
+                    <p class="text-muted small">Select the shipping method that best matches your car's model and value:</p>
+                    
+                    <div class="row g-4 mb-5">
+                        <!-- Plan 1 -->
+                        <div class="col-md-6">
+                            <div class="pack-card h-100">
+                                <div class="pack-badge bg-secondary-subtle text-secondary">STANDARD</div>
+                                <h4 class="pack-title">Open Car Carrier</h4>
+                                <div class="pack-subtitle">Ideal for standard sedans, hatchbacks &amp; daily commuter cars</div>
+                                <ul class="pack-features-list">
+                                    <li><i class="bi bi-check-circle"></i> High-capacity open car carrier trailer</li>
+                                    <li><i class="bi bi-check-circle"></i> 4-point tire chock and strap anchoring</li>
+                                    <li><i class="bi bi-check-circle"></i> Standard foam wrapping on side mirrors &amp; wipers</li>
+                                    <li><i class="bi bi-check-circle"></i> Door-to-door pickup &amp; delivery</li>
+                                    <li><i class="bi bi-check-circle"></i> Transit GPS coordinates on demand</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Plan 2 -->
+                        <div class="col-md-6">
+                            <div class="pack-card featured h-100">
+                                <span class="badge-featured">PREMIUM SECURITY</span>
+                                <div class="pack-badge bg-cyan text-white">DELUXE</div>
+                                <h4 class="pack-title">Enclosed Auto Carrier</h4>
+                                <div class="pack-subtitle">Ideal for luxury SUVs, sports cars, new vehicles &amp; classic collectibles</div>
+                                <ul class="pack-features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i> Fully enclosed secure container trailer</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Zero dust, rain, or highway debris exposure</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Heavy-duty soft nylon wheel-tie harnesses</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Premium full-body dust cover wrapping</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Priority transit &amp; dedicated customer care manager</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     
                     <!-- How We Process Section -->

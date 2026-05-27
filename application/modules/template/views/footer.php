@@ -60,14 +60,14 @@ $floatingWhatsappLink = !empty($whatsapphtml)
       <div class="col-lg-3 col-md-6 col-12">
         <h5 class="footer-heading">OUR SERVICES</h5>
         <ul class="footer-links list-unstyled">
-          <li><a href="<?= site_url('home-shifting') ?>">Packing and Moving Services in Hyderabad</a></li>
+          <li><a href="<?= site_url('packing-moving') ?>">Packing and Moving Services in Hyderabad</a></li>
           <li><a href="<?= site_url('loading-unloading') ?>">Loading and Unloading Services in Hyderabad</a></li>
           <li><a href="<?= site_url('car-transportation') ?>">Car Carrier Services in Hyderabad</a></li>
           <li><a href="<?= site_url('office-relocation') ?>">Office Shifting Services in Hyderabad</a></li>
           <li><a href="<?= site_url('bike-transportation') ?>">Bike Transportation Services in Hyderabad</a></li>
           <li><a href="<?= site_url('corporate-shifting') ?>">Commercial Shifting Services in Hyderabad</a></li>
           <li><a href="<?= site_url('warehouse-and-storage') ?>">Household Goods Warehousing Services in Hyderabad</a></li>
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#qteModal">Household Goods Insurance Services in Hyderabad</a></li>
+          <li><a href="<?= site_url('goods-insurance') ?>">Household Goods Insurance Services in Hyderabad</a></li>
         </ul>
       </div>
 
