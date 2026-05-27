@@ -8,12 +8,13 @@
             <?php
             $sidebar_links = [
                 ['slug' => 'about-us',          'name' => 'About Us',          'icon' => 'bi-info-circle'],
-                ['slug' => 'why-choose-us',     'name' => 'Why Choose Us',     'icon' => 'bi-patch-question'],
-                ['slug' => 'faqs',              'name' => 'FAQ',               'icon' => 'bi-chat-left-text'],
-                ['slug' => 'testimonials',      'name' => 'Testimonial',       'icon' => 'bi-chat-quote'],
-                ['slug' => 'reviews',           'name' => 'Customer Reviews',  'icon' => 'bi-star-half'],
-                ['slug' => 'photo-gallery',     'name' => 'Photo Gallery',     'icon' => 'bi-images'],
-                ['slug' => 'video-gallery',     'name' => 'Video Gallery',     'icon' => 'bi-play-circle'],
+                ['slug' => 'why-us',            'name' => 'Why Us',            'icon' => 'bi-patch-question'],
+                ['slug' => 'how-it-works',      'name' => 'How It Works',      'icon' => 'bi-gear'],
+                ['slug' => 'careers',           'name' => 'Careers',           'icon' => 'bi-briefcase'],
+                ['slug' => 'faqs',              'name' => 'FAQs',              'icon' => 'bi-chat-left-text'],
+                ['slug' => 'blog',              'name' => 'Blog',              'icon' => 'bi-journal-text'],
+                ['slug' => 'terms-and-conditions',  'name' => 'Terms & Conditions','icon' => 'bi-file-earmark-text'],
+                ['slug' => 'privacy-policy',    'name' => 'Privacy Policy',    'icon' => 'bi-shield-check'],
             ];
 
             foreach ($sidebar_links as $link):

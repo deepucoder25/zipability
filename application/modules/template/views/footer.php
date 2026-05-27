@@ -45,48 +45,39 @@ $floatingWhatsappLink = !empty($whatsapphtml)
 
       <!-- Col 2: Company -->
       <div class="col-lg-2 col-md-6 col-6">
-        <h5 class="footer-heading">COMPANY</h5>
+        <h5 class="footer-heading">QUICK LINKS</h5>
         <ul class="footer-links list-unstyled">
+          <li><a href="<?= site_url() ?>">Home</a></li>
           <li><a href="<?= site_url('about-us') ?>">About Us</a></li>
-          <li><a href="<?= site_url('why-us') ?>">Why Us</a></li>
-          <li><a href="<?= site_url('how-it-works') ?>">How It Works</a></li>
-          <li><a href="<?= site_url('careers') ?>">Careers</a></li>
-          <li><a href="<?= site_url('contact-us') ?>">Contact Us</a></li>
+          <li><a href="<?= site_url('our-services') ?>">Services</a></li>
+          <li><a href="<?= site_url('our-branches') ?>">Network</a></li>
+          <li><a href="<?= site_url('photo-gallery') ?>">Gallery</a></li>
+          <li><a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a></li>
         </ul>
       </div>
 
-      <!-- Col 3: Services (Double column wide) -->
+      <!-- Col 3: Services -->
       <div class="col-lg-3 col-md-6 col-12">
         <h5 class="footer-heading">OUR SERVICES</h5>
-        <div class="row">
-          <div class="col-6">
-            <ul class="footer-links list-unstyled">
-              <li><a href="<?= site_url('home-shifting') ?>">Home Relocation</a></li>
-              <li><a href="<?= site_url('office-relocation') ?>">Office Shifting</a></li>
-              <li><a href="<?= site_url('bike-transportation') ?>">Bike Relocation</a></li>
-              <li><a href="<?= site_url('car-transportation') ?>">Car Carrier</a></li>
-              <li><a href="<?= site_url('loading-unloading') ?>">Loading & Unloading</a></li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <ul class="footer-links list-unstyled">
-              <li><a href="<?= site_url('packing-unpacking') ?>">Packing & Unpacking</a></li>
-              <li><a href="<?= site_url('warehouse-and-storage') ?>">Warehousing</a></li>
-              <li><a href="<?= site_url('vehicle-transportation') ?>">Vehicle Transportation</a></li>
-              <li><a href="<?= site_url('storage-solutions') ?>">Storage Solutions</a></li>
-            </ul>
-          </div>
-        </div>
+        <ul class="footer-links list-unstyled">
+          <li><a href="<?= site_url('home-shifting') ?>">Packing and Moving Services in Hyderabad</a></li>
+          <li><a href="<?= site_url('loading-unloading') ?>">Loading and Unloading Services in Hyderabad</a></li>
+          <li><a href="<?= site_url('car-transportation') ?>">Car Carrier Services in Hyderabad</a></li>
+          <li><a href="<?= site_url('office-relocation') ?>">Office Shifting Services in Hyderabad</a></li>
+          <li><a href="<?= site_url('bike-transportation') ?>">Bike Transportation Services in Hyderabad</a></li>
+          <li><a href="<?= site_url('corporate-shifting') ?>">Commercial Shifting Services in Hyderabad</a></li>
+          <li><a href="<?= site_url('warehouse-and-storage') ?>">Household Goods Warehousing Services in Hyderabad</a></li>
+          <li><a href="#" data-bs-toggle="modal" data-bs-target="#qteModal">Household Goods Insurance Services in Hyderabad</a></li>
+        </ul>
       </div>
 
       <!-- Col 4: Quick Links -->
       <div class="col-lg-2 col-md-6 col-6">
-        <h5 class="footer-heading">QUICK LINKS</h5>
+        <h5 class="footer-heading">COMPANY</h5>
         <ul class="footer-links list-unstyled">
-          <li><a href="<?= site_url('faqs') ?>">FAQs</a></li>
-          <li><a href="<?= site_url('blog') ?>">Blog</a></li>
           <li><a href="<?= site_url('terms-and-conditions') ?>">Terms & Conditions</a></li>
-          <li><a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a></li>
+          <li><a href="#" data-bs-toggle="modal" data-bs-target="#qteModal">Enquiry</a></li>
+          <li><a href="<?= site_url('contact-us') ?>">Contact Us</a></li>
         </ul>
       </div>
 

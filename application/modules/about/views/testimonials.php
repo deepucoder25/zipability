@@ -252,14 +252,14 @@
 
 <style>
 .transition-hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
 }
 .transition-hover:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(10, 78, 189, 0.05) !important;
+    box-shadow: 0 10px 25px rgba(0, 181, 184, 0.15) !important;
 }
 .bg-success-soft {
-    background-color: rgba(25, 135, 84, 0.1) !important;
+    background-color: rgba(0, 181, 184, 0.1) !important;
 }
 .italic-text {
     font-style: italic;
@@ -268,7 +268,22 @@
     border: 1px solid #eef1f6 !important;
 }
 .testimonial-card:hover {
-    border-color: #5f9618 !important;
+    border-color: var(--primary-cyan) !important;
+}
+/* Override green accents with brand primary-cyan */
+.quote-icon.text-success,
+.badge.text-success,
+.text-success,
+.border-success {
+    color: var(--primary-cyan) !important;
+}
+.btn-success {
+    background-color: var(--primary-cyan) !important;
+    border-color: var(--primary-cyan) !important;
+}
+.btn-success:hover {
+    background-color: #009CA0 !important;
+    border-color: #009CA0 !important;
 }
 </style>
 

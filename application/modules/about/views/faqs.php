@@ -156,8 +156,8 @@
     border: 1px solid #eef1f6 !important;
 }
 .custom-faq-accordion .accordion-button:not(.collapsed) {
-    color: #5f9618 !important;
-    background-color: #f6fbf2 !important;
+    color: var(--primary-cyan) !important;
+    background-color: rgba(0, 181, 184, 0.05) !important;
     box-shadow: none !important;
 }
 .custom-faq-accordion .accordion-button:focus {

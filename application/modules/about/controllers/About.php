@@ -60,5 +60,23 @@ class About extends MX_Controller
         $data['view_file'] = "terms";
         echo Modules::run('template/layout2', $data);
     }
+
+    function how_it_works()
+    {
+        $data['title'] = "How Relocation & Shifting Works | " . $this->comp['company3'];
+        $data['description'] = "A transparent, step-by-step guide to our motorcycle shipping and household moving process in Hyderabad and pan-India.";
+        $data['module'] = "about";
+        $data['view_file'] = "how_it_works";
+        echo Modules::run('template/layout2', $data);
+    }
+
+    function careers()
+    {
+        $data['title'] = "Careers - Join Our Relocation Team | " . $this->comp['company3'];
+        $data['description'] = "Explore job openings, custom packaging opportunities, and customer relationship roles at " . $this->comp['company3'] . " in Hyderabad.";
+        $data['module'] = "about";
+        $data['view_file'] = "careers";
+        echo Modules::run('template/layout2', $data);
+    }
 }
 

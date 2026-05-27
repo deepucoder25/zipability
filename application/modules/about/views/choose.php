@@ -136,11 +136,19 @@
 
 <style>
 .transition-hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
 }
 .transition-hover:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(10, 78, 189, 0.05) !important;
+    box-shadow: 0 10px 25px rgba(0, 181, 184, 0.15) !important;
+    border-color: var(--primary-cyan) !important;
+}
+/* Override green accents to match the brand color */
+.icon-box.text-success,
+.text-success,
+.border-success {
+    color: var(--primary-cyan) !important;
+    border-color: var(--primary-cyan) !important;
 }
 </style>
 

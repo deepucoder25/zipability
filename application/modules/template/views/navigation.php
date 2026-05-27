@@ -31,24 +31,40 @@
       <!-- Desktop Navigation Menu -->
       <nav class="desktop-nav d-none d-lg-flex align-items-center gap-4">
         <a href="<?= site_url() ?>" class="nav-link<?= $active_tab === 'home' ? ' active' : '' ?>">Home</a>
-        <a href="<?= site_url('about-us') ?>" class="nav-link<?= $active_tab === 'about' ? ' active' : '' ?>">About Us</a>
         <div class="nav-item dropdown">
-          <a href="<?= site_url('our-services') ?>" class="nav-link dropdown-toggle<?= $active_tab === 'services' ? ' active' : '' ?>">Our Services <i class="bi bi-chevron-down ms-1"></i></a>
+          <a href="#" class="nav-link dropdown-toggle<?= $active_tab === 'about' ? ' active' : '' ?>">About Us <i class="bi bi-chevron-down ms-1"></i></a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?= site_url('home-shifting') ?>">Home Shifting in Hyderabad</a></li>
-            <li><a class="dropdown-item" href="<?= site_url('office-relocation') ?>">Office Relocation in Hyderabad</a></li>
-            <li><a class="dropdown-item" href="<?= site_url('car-transportation') ?>">Car Transportation in Hyderabad</a></li>
-          </ul>
-        </div>
-        <a href="<?= site_url('why-us') ?>" class="nav-link">Why Us</a>
-        <a href="<?= site_url('how-it-works') ?>" class="nav-link">How It Works</a>
-        <div class="nav-item dropdown">
-          <a href="<?= site_url('resources') ?>" class="nav-link dropdown-toggle<?= $active_tab === 'resources' ? ' active' : '' ?>">Resources <i class="bi bi-chevron-down ms-1"></i></a>
-          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="<?= site_url('about-us') ?>">About Us</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('why-us') ?>">Why Choose Us</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('how-it-works') ?>">How It Works</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('careers') ?>">Careers</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('faqs') ?>">FAQs</a></li>
             <li><a class="dropdown-item" href="<?= site_url('blog') ?>">Blog</a></li>
-            <li><a class="dropdown-item" href="<?= site_url('faqs') ?>">FAQ</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('terms-and-conditions') ?>">Terms & Conditions</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('privacy-policy') ?>">Privacy Policy</a></li>
           </ul>
         </div>
+        <div class="nav-item dropdown">
+          <a href="<?= site_url('our-services') ?>" class="nav-link dropdown-toggle<?= $active_tab === 'services' ? ' active' : '' ?>">Services <i class="bi bi-chevron-down ms-1"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="<?= site_url('home-shifting') ?>">Packing and Moving Services</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('loading-unloading') ?>">Loading and Unloading Services</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('car-transportation') ?>">Car Carrier Services</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('office-relocation') ?>">Office Shifting Services</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('bike-transportation') ?>">Bike Transportation Services</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('corporate-shifting') ?>">Commercial Shifting Services</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('warehouse-and-storage') ?>">Household Goods Warehousing Services</a></li>
+          </ul>
+        </div>
+        <a href="<?= site_url('our-branches') ?>" class="nav-link">Network</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Gallery <i class="bi bi-chevron-down ms-1"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="<?= site_url('photo-gallery') ?>">Photo Gallery</a></li>
+            <li><a class="dropdown-item" href="<?= site_url('video-gallery') ?>">Video Gallery</a></li>
+          </ul>
+        </div>
+        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#qteModal">Enquiry</a>
         <a href="<?= site_url('contact-us') ?>" class="nav-link<?= $active_tab === 'contact' ? ' active' : '' ?>">Contact Us</a>
       </nav>
 
@@ -80,35 +96,52 @@
         <div class="mobile-nav-item<?= $active_tab === 'home' ? ' active' : '' ?>">
           <a href="<?= site_url() ?>" class="mobile-nav-link">Home</a>
         </div>
-        <div class="mobile-nav-item<?= $active_tab === 'about' ? ' active' : '' ?>">
-          <a href="<?= site_url('about-us') ?>" class="mobile-nav-link">About Us</a>
+        <div class="mobile-nav-item mobile-dropdown<?= $active_tab === 'about' ? ' active' : '' ?>">
+          <button class="mobile-nav-link mobile-dropdown-toggle">
+            <span>About Us</span>
+            <i class="bi bi-chevron-down toggle-icon"></i>
+          </button>
+          <div class="mobile-dropdown-menu">
+            <a href="<?= site_url('about-us') ?>">About Us</a>
+            <a href="<?= site_url('why-us') ?>">Why Choose Us</a>
+            <a href="<?= site_url('how-it-works') ?>">How It Works</a>
+            <a href="<?= site_url('careers') ?>">Careers</a>
+            <a href="<?= site_url('faqs') ?>">FAQs</a>
+            <a href="<?= site_url('blog') ?>">Blog</a>
+            <a href="<?= site_url('terms-and-conditions') ?>">Terms & Conditions</a>
+            <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>
+          </div>
         </div>
         <div class="mobile-nav-item mobile-dropdown<?= $active_tab === 'services' ? ' active' : '' ?>">
           <button class="mobile-nav-link mobile-dropdown-toggle">
-            <span>Our Services</span>
+            <span>Services</span>
             <i class="bi bi-chevron-down toggle-icon"></i>
           </button>
           <div class="mobile-dropdown-menu">
-            <a href="<?= site_url('home-shifting') ?>">Home Shifting in Hyderabad</a>
-            <a href="<?= site_url('office-relocation') ?>">Office Relocation in Hyderabad</a>
-            <a href="<?= site_url('car-transportation') ?>">Car Transportation in Hyderabad</a>
+            <a href="<?= site_url('home-shifting') ?>">Packing and Moving Services</a>
+            <a href="<?= site_url('loading-unloading') ?>">Loading and Unloading Services</a>
+            <a href="<?= site_url('car-transportation') ?>">Car Carrier Services</a>
+            <a href="<?= site_url('office-relocation') ?>">Office Shifting Services</a>
+            <a href="<?= site_url('bike-transportation') ?>">Bike Transportation Services</a>
+            <a href="<?= site_url('corporate-shifting') ?>">Commercial Shifting Services</a>
+            <a href="<?= site_url('warehouse-and-storage') ?>">Household Goods Warehousing Services</a>
           </div>
         </div>
         <div class="mobile-nav-item">
-          <a href="<?= site_url('why-us') ?>" class="mobile-nav-link">Why Us</a>
+          <a href="<?= site_url('our-branches') ?>" class="mobile-nav-link">Network</a>
         </div>
-        <div class="mobile-nav-item">
-          <a href="<?= site_url('how-it-works') ?>" class="mobile-nav-link">How It Works</a>
-        </div>
-        <div class="mobile-nav-item mobile-dropdown<?= $active_tab === 'resources' ? ' active' : '' ?>">
+        <div class="mobile-nav-item mobile-dropdown">
           <button class="mobile-nav-link mobile-dropdown-toggle">
-            <span>Resources</span>
+            <span>Gallery</span>
             <i class="bi bi-chevron-down toggle-icon"></i>
           </button>
           <div class="mobile-dropdown-menu">
-            <a href="<?= site_url('blog') ?>">Blog</a>
-            <a href="<?= site_url('faqs') ?>">FAQ</a>
+            <a href="<?= site_url('photo-gallery') ?>">Photo Gallery</a>
+            <a href="<?= site_url('video-gallery') ?>">Video Gallery</a>
           </div>
+        </div>
+        <div class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link" data-bs-toggle="modal" data-bs-target="#qteModal">Enquiry</a>
         </div>
         <div class="mobile-nav-item<?= $active_tab === 'contact' ? ' active' : '' ?>">
           <a href="<?= site_url('contact-us') ?>" class="mobile-nav-link">Contact Us</a>

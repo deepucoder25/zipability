@@ -6,6 +6,9 @@ $route['search'] = 'home/search';
 
 // Company Routes
 $route['about-us'] = 'about/index';
+$route['why-us'] = 'about/choose';
+$route['how-it-works'] = 'about/how_it_works';
+$route['careers'] = 'about/careers';
 $route['contact-us'] = 'contacts/index';
 $route['faqs'] = 'about/faqs';
 $route['photo-gallery'] = "gallery/photo_gallery";
