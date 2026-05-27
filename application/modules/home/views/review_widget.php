@@ -33,7 +33,7 @@
                             <!-- Left Content Col -->
                             <div class="col-lg-8 col-12">
                                 <div class="d-flex align-items-start mb-3 flex-column flex-sm-row text-center text-sm-start">
-                                    <img src="<?= base_url('assets/images/reviews/rohit_avatar.png') ?>" alt="Rohit Sharma" class="testimonial-avatar shadow-sm mb-3 mb-sm-0 mx-auto mx-sm-0 me-sm-4">
+                                    <img src="<?= base_url('assets/images/reviews/rohit_avatar.png') ?>" alt="Rohit Sharma" class="testimonial-avatar shadow-sm mb-3 mb-sm-0 mx-auto mx-sm-0 me-sm-4" loading="lazy">
                                     <div class="d-flex flex-column">
                                         <div class="testimonial-quote-icon mb-1">“</div>
                                         <p class="testimonial-text mb-3">
@@ -58,7 +58,7 @@
                             </div>
                             <!-- Right Image Col -->
                             <div class="col-lg-4 col-12 text-center">
-                                <img src="<?= base_url('assets/images/reviews/sports_bike.png') ?>" alt="Relocated Sports Bike" class="testimonial-product-img img-fluid">
+                                <img src="<?= base_url('assets/images/reviews/sports_bike.png') ?>" alt="Relocated Sports Bike" class="testimonial-product-img img-fluid" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                             </div>
                             <!-- Right Image Col -->
                             <div class="col-lg-4 col-12 text-center">
-                                <img src="<?= base_url('assets/images/reviews/sports_bike.png') ?>" alt="Relocated Vehicle" class="testimonial-product-img img-fluid">
+                                <img src="<?= base_url('assets/images/reviews/sports_bike.png') ?>" alt="Relocated Vehicle" class="testimonial-product-img img-fluid" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -165,7 +165,7 @@
                             </div>
                             <!-- Right Image Col -->
                             <div class="col-lg-4 col-12 text-center">
-                                <img src="<?= base_url('assets/images/reviews/sports_bike.png') ?>" alt="Household Relocation" class="testimonial-product-img img-fluid">
+                                <img src="<?= base_url('assets/images/reviews/sports_bike.png') ?>" alt="Household Relocation" class="testimonial-product-img img-fluid" loading="lazy">
                             </div>
                         </div>
                     </div>

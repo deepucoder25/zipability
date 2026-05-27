@@ -51,15 +51,15 @@ class MX_Controller
         $this->load = clone load_class('Loader');
         $this->load->initialize($this);
 
-        $this->comp['phone'] = '+91 0000000000';
-        $this->comp['phonehtml'] = 'tel:+910000000000';
+        $this->comp['phone'] = '+91 9155657049';
+        $this->comp['phonehtml'] = 'tel:+919155657049';
         $this->comp['phone1'] = '+91 0000000000';
         $this->comp['phonehtml1'] = 'tel:+910000000000';
         $this->comp['supportmail'] = 'support@mycompany.com';
         $this->comp['replyToMail'] = 'support@mycompany.com';
-        $this->comp['mail'] = 'support@mycompany.com';    
-        $this->comp['mailhtml'] = "mailto:support@mycompany.com";
-        $this->comp['company3'] = 'MyCompany';
+        $this->comp['mail'] = 'info@bikeparcel.in';    
+        $this->comp['mailhtml'] = "mailto:info@bikeparcel.in";
+        $this->comp['company3'] = 'Zipability Relocation Pvt.Ltd.';
         $this->comp['companydomain'] = 'mycompany.com';
 
         $this->comp['facebookhtml'] = "";

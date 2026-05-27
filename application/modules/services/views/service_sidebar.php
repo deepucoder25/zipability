@@ -7,18 +7,13 @@
         <ul class="sidebar-services-list" id="sidebarServiceList">
             <?php
             $sidebar_services = [
-                ['slug' => 'home-shifting',        'name' => 'Home Shifting',        'icon' => 'bi-house-heart'],
-                ['slug' => 'office-relocation',    'name' => 'Office Relocation',    'icon' => 'bi-building-gear'],
-                ['slug' => 'car-transportation',   'name' => 'Car Transportation',   'icon' => 'bi-car-front'],
-                ['slug' => 'bike-transportation',  'name' => 'Bike Transportation',  'icon' => 'bi-bicycle'],
-                ['slug' => 'warehouse-and-storage','name' => 'Warehouse & Storage',  'icon' => 'bi-box-seam'],
-                ['slug' => 'domestic-relocation',  'name' => 'Domestic Relocation',  'icon' => 'bi-truck'],
-                ['slug' => 'international-shifting','name' => 'International Shifting','icon' => 'bi-globe-americas'],
-                ['slug' => 'corporate-shifting',   'name' => 'Corporate Shifting',   'icon' => 'bi-briefcase'],
-                ['slug' => 'intercity-shifting',   'name' => 'Intercity Shifting',   'icon' => 'bi-signpost-split'],
-                ['slug' => 'local-shifting',       'name' => 'Local Shifting',       'icon' => 'bi-geo-alt'],
-                ['slug' => 'logistic-services',    'name' => 'Logistic Services',    'icon' => 'bi-truck-flatbed'],
-                ['slug' => 'pet-relocation',       'name' => 'Pet Relocation',       'icon' => 'bi-heart-pulse'],
+                ['slug' => 'home-shifting',         'name' => "Packing and Moving Services in hyderabad",         'icon' => 'bi-house-heart-fill'],
+        ['slug' => 'loading-unloading',     'name' => "Loading and Unloading Services in hyderabad",     'icon' => 'bi-box-seam'],
+        ['slug' => 'car-transportation',    'name' => "Car Carrier Services in hyderabad",    'icon' => 'bi-car-front-fill'],
+        ['slug' => 'office-relocation',   'name' => "Office Shifting Services in hyderabad",   'icon' => 'bi-building'],
+        ['slug' => 'bike-transportation', 'name' => "Bike Transportation Services in hyderabad",   'icon' => 'bi-bicycle'],
+        ['slug' => 'corporate-shifting',   'name' => "Commercial Shifting Services in hyderabad",   'icon' => 'bi-person-workspace'],
+        ['slug' => 'warehouse-and-storage', 'name' => "Household Goods Warehousing Services in hyderabad", 'icon' => 'bi-shop-window'],
             ];
 
             foreach ($sidebar_services as $index => $s):
@@ -37,13 +32,6 @@
                 </li>
             <?php endforeach; ?>
         </ul>
-
-        <!-- Show All / Show Less Toggle -->
-        <a href="<?= site_url('our-services') ?>" class="sidebar-show-all-btn" id="sidebarToggleBtn">
-            <i class="bi bi-grid-3x3-gap-fill me-2"></i>
-            View All Services
-            <i class="bi bi-arrow-right ms-1"></i>
-        </a>
     </div>
 
     <!-- Contact & Action CTA Widget -->

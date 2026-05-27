@@ -82,7 +82,7 @@ $services = [
                             <p class="srv-desc mb-4"><?= htmlspecialchars($service['desc']) ?></p>
                         </div>
                         <div class="srv-image-wrap mt-auto">
-                            <img src="<?= base_url('assets/images/services/' . $service['image']) ?>" alt="<?= $service['title'] ?>" class="img-fluid w-100 srv-img">
+                            <img src="<?= base_url('assets/images/services/' . $service['image']) ?>" alt="<?= $service['title'] ?>" class="img-fluid w-100 srv-img" loading="lazy">
                         </div>
                     </a>
                 </div>

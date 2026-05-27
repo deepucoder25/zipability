@@ -16,7 +16,7 @@
             <div class="col-xl-8 col-lg-12 col-12">
                 <div class="row g-4 justify-content-center">
                     <!-- Feature 1: Experienced Team -->
-                    <div class="col-xl-3 col-md-6 col-12">
+                    <div class="col-xl-3 col-md-6 col-6">
                         <div class="why-choose-item">
                             <div class="why-choose-icon-wrap">
                                 <i class="bi bi-people"></i>
@@ -27,7 +27,7 @@
                     </div>
                     
                     <!-- Feature 2: Safety First -->
-                    <div class="col-xl-3 col-md-6 col-12">
+                    <div class="col-xl-3 col-md-6 col-6">
                         <div class="why-choose-item">
                             <div class="why-choose-icon-wrap">
                                 <i class="bi bi-shield-check"></i>
@@ -38,7 +38,7 @@
                     </div>
                     
                     <!-- Feature 3: Timely Delivery -->
-                    <div class="col-xl-3 col-md-6 col-12">
+                    <div class="col-xl-3 col-md-6 col-6">
                         <div class="why-choose-item">
                             <div class="why-choose-icon-wrap">
                                 <i class="bi bi-clock"></i>
@@ -49,7 +49,7 @@
                     </div>
                     
                     <!-- Feature 4: Affordable Pricing -->
-                    <div class="col-xl-3 col-md-6 col-12">
+                    <div class="col-xl-3 col-md-6 col-6">
                         <div class="why-choose-item">
                             <div class="why-choose-icon-wrap">
                                 <i class="bi bi-cash-coin"></i>
@@ -80,7 +80,7 @@
             <div class="col-xl-8 col-lg-12 col-12">
                 <div class="row g-4 justify-content-center">
                     <!-- Step 1: Get a Quote -->
-                    <div class="col-xl-3 col-md-6 col-12 process-step">
+                    <div class="col-xl-3 col-md-6 col-6 process-step">
                         <div class="process-card">
                             <div class="process-icon-wrap">
                                 <i class="bi bi-display"></i>
@@ -91,7 +91,7 @@
                     </div>
                     
                     <!-- Step 2: Plan Your Move -->
-                    <div class="col-xl-3 col-md-6 col-12 process-step">
+                    <div class="col-xl-3 col-md-6 col-6 process-step">
                         <div class="process-card">
                             <div class="process-icon-wrap">
                                 <i class="bi bi-clipboard2-check"></i>
@@ -102,7 +102,7 @@
                     </div>
                     
                     <!-- Step 3: Pack & Move -->
-                    <div class="col-xl-3 col-md-6 col-12 process-step">
+                    <div class="col-xl-3 col-md-6 col-6 process-step">
                         <div class="process-card">
                             <div class="process-icon-wrap">
                                 <i class="bi bi-box-seam"></i>
@@ -113,7 +113,7 @@
                     </div>
                     
                     <!-- Step 4: Safe Delivery -->
-                    <div class="col-xl-3 col-md-6 col-12 process-step">
+                    <div class="col-xl-3 col-md-6 col-6 process-step">
                         <div class="process-card">
                             <div class="process-icon-wrap">
                                 <i class="bi bi-house-check"></i>

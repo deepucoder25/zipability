@@ -25,7 +25,7 @@
     <div class="container-fluid d-flex align-items-center justify-content-between">
       <!-- Brand Logo -->
       <a href="<?= site_url() ?>" class="brand-wrap text-decoration-none">
-        <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="ZIPABILITY RELOCATION" class="brand-logo">
+        <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?=$company3?>" class="brand-logo" loading="lazy">
       </a>
 
       <!-- Desktop Navigation Menu -->

@@ -56,7 +56,7 @@ $companyState = isset($companystate) ? $companystate : '';
 
                     <!-- Features List Grid -->
                     <div class="row g-3 mb-4">
-                        <div class="col-md-6 col-12">
+                        <div class="col-md-6 col-6">
                             <div class="about-feature-item d-flex align-items-center">
                                 <div class="feature-icon-circle mr-3">
                                     <i class="bi bi-shield-check"></i>
@@ -64,7 +64,7 @@ $companyState = isset($companystate) ? $companystate : '';
                                 <span class="feature-text">Multi-Layer Bike Packing</span>
                             </div>
                         </div>
-                        <div class="col-md-6 col-12">
+                        <div class="col-md-6 col-6">
                             <div class="about-feature-item d-flex align-items-center">
                                 <div class="feature-icon-circle mr-3">
                                     <i class="bi bi-geo-alt"></i>
@@ -72,7 +72,7 @@ $companyState = isset($companystate) ? $companystate : '';
                                 <span class="feature-text">Local Hyderabad Shifting</span>
                             </div>
                         </div>
-                        <div class="col-md-6 col-12">
+                        <div class="col-md-6 col-6">
                             <div class="about-feature-item d-flex align-items-center">
                                 <div class="feature-icon-circle mr-3">
                                     <i class="bi bi-truck"></i>
@@ -80,7 +80,7 @@ $companyState = isset($companystate) ? $companystate : '';
                                 <span class="feature-text">Dedicated Bike Carriers</span>
                             </div>
                         </div>
-                        <div class="col-md-6 col-12">
+                        <div class="col-md-6 col-6">
                             <div class="about-feature-item d-flex align-items-center">
                                 <div class="feature-icon-circle mr-3">
                                     <i class="bi bi-clock-history"></i>

@@ -68,7 +68,7 @@
         ['slug' => 'loading-unloading',     'name' => "Loading and Unloading Services in $city",     'icon' => 'bi-box-seam'],
         ['slug' => 'car-transportation',    'name' => "Car Carrier Services in $city",    'icon' => 'bi-car-front-fill'],
         ['slug' => 'office-relocation',   'name' => "Office Shifting Services in $city",   'icon' => 'bi-building'],
-        ['slug' => 'bike-transportation', 'name' => "Bike Transportation Services in $city",   'icon' => 'bi-bike'],
+        ['slug' => 'bike-transportation', 'name' => "Bike Transportation Services in $city",   'icon' => 'bi-bicycle'],
         ['slug' => 'corporate-shifting',   'name' => "Commercial Shifting Services in $city",   'icon' => 'bi-person-workspace'],
         ['slug' => 'warehouse-and-storage', 'name' => "Household Goods Warehousing Services in $city", 'icon' => 'bi-shop-window'],
       ];
