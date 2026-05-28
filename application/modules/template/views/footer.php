@@ -52,11 +52,22 @@ $floatingWhatsappLink = !empty($whatsapphtml)
           <li><a href="<?= site_url('our-services') ?>">Services</a></li>
           <li><a href="<?= site_url('our-branches') ?>">Network</a></li>
           <li><a href="<?= site_url('photo-gallery') ?>">Gallery</a></li>
-          <li><a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a></li>
+          <li><a href="<?= site_url('contact-us') ?>">Contact Us</a></li>
         </ul>
       </div>
 
-      <!-- Col 3: Services -->
+      <!-- Col 3: Quick Links -->
+      <div class="col-lg-2 col-md-6 col-6">
+        <h5 class="footer-heading">COMPANY</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="<?= site_url('blog') ?>">Blog</a></li>
+          <li><a href="<?= site_url('reviews') ?>">Reviews</a></li>
+          <li><a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a></li>
+          <li><a href="<?= site_url('terms-and-conditions') ?>">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Services -->
       <div class="col-lg-3 col-md-6 col-12">
         <h5 class="footer-heading">OUR SERVICES</h5>
         <ul class="footer-links list-unstyled">
@@ -68,16 +79,6 @@ $floatingWhatsappLink = !empty($whatsapphtml)
           <li><a href="<?= site_url('corporate-shifting') ?>">Commercial Shifting Services in Hyderabad</a></li>
           <li><a href="<?= site_url('warehouse-and-storage') ?>">Household Goods Warehousing Services in Hyderabad</a></li>
           <li><a href="<?= site_url('goods-insurance') ?>">Household Goods Insurance Services in Hyderabad</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 4: Quick Links -->
-      <div class="col-lg-2 col-md-6 col-6">
-        <h5 class="footer-heading">COMPANY</h5>
-        <ul class="footer-links list-unstyled">
-          <li><a href="<?= site_url('terms-and-conditions') ?>">Terms & Conditions</a></li>
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#qteModal">Enquiry</a></li>
-          <li><a href="<?= site_url('contact-us') ?>">Contact Us</a></li>
         </ul>
       </div>
 

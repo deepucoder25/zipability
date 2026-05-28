@@ -17,6 +17,10 @@
       $active_tab = 'resources';
   } elseif ($class === 'contacts' || $segment1 === 'contact-us') {
       $active_tab = 'contact';
+  } elseif ($class === 'blog' || $segment1 === 'blog') {
+      $active_tab = 'blog';
+  } elseif ($class === 'reviews' || $segment1 === 'reviews') {
+      $active_tab = 'reviews';
   }
   ?>
 
@@ -39,7 +43,6 @@
             <li><a class="dropdown-item" href="<?= site_url('how-it-works') ?>">How It Works</a></li>
             <li><a class="dropdown-item" href="<?= site_url('careers') ?>">Careers</a></li>
             <li><a class="dropdown-item" href="<?= site_url('faqs') ?>">FAQs</a></li>
-            <li><a class="dropdown-item" href="<?= site_url('blog') ?>">Blog</a></li>
             <li><a class="dropdown-item" href="<?= site_url('terms-and-conditions') ?>">Terms & Conditions</a></li>
             <li><a class="dropdown-item" href="<?= site_url('privacy-policy') ?>">Privacy Policy</a></li>
           </ul>
@@ -65,7 +68,7 @@
             <li><a class="dropdown-item" href="<?= site_url('video-gallery') ?>">Video Gallery</a></li>
           </ul>
         </div>
-        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#qteModal">Enquiry</a>
+        <a href="<?= site_url('blog') ?>" class="nav-link<?= $active_tab === 'blog' ? ' active' : '' ?>">Blog</a>
         <a href="<?= site_url('contact-us') ?>" class="nav-link<?= $active_tab === 'contact' ? ' active' : '' ?>">Contact Us</a>
       </nav>
 
@@ -108,7 +111,6 @@
             <a href="<?= site_url('how-it-works') ?>">How It Works</a>
             <a href="<?= site_url('careers') ?>">Careers</a>
             <a href="<?= site_url('faqs') ?>">FAQs</a>
-            <a href="<?= site_url('blog') ?>">Blog</a>
             <a href="<?= site_url('terms-and-conditions') ?>">Terms & Conditions</a>
             <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>
           </div>
@@ -142,8 +144,8 @@
             <a href="<?= site_url('video-gallery') ?>">Video Gallery</a>
           </div>
         </div>
-        <div class="mobile-nav-item">
-          <a href="#" class="mobile-nav-link" data-bs-toggle="modal" data-bs-target="#qteModal">Enquiry</a>
+        <div class="mobile-nav-item<?= $active_tab === 'blog' ? ' active' : '' ?>">
+          <a href="<?= site_url('blog') ?>" class="mobile-nav-link">Blog</a>
         </div>
         <div class="mobile-nav-item<?= $active_tab === 'contact' ? ' active' : '' ?>">
           <a href="<?= site_url('contact-us') ?>" class="mobile-nav-link">Contact Us</a>
