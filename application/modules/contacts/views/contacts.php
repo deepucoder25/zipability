@@ -96,10 +96,10 @@
                     <!-- Social Quick Connections -->
                     <div class="contact-social-bar">
                         <span>Connect:</span>
-                        <a href="<?= $facebookhtml ?>" target="_blank" rel="noopener" class="social-circle-link social-fb" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="<?= $twitterhtml ?>" target="_blank" rel="noopener" class="social-circle-link social-tw" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="<?= $linkedinhtml ?>" target="_blank" rel="noopener" class="social-circle-link social-ln" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="<?= $youtubehtml ?>" target="_blank" rel="noopener" class="social-circle-link social-yt" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="<?= $facebookhtml ?>"  class="social-circle-link social-fb" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="<?= $twitterhtml ?>"  class="social-circle-link social-tw" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="<?= $linkedinhtml ?>"  class="social-circle-link social-ln" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="<?= $youtubehtml ?>"  class="social-circle-link social-yt" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
             </div>

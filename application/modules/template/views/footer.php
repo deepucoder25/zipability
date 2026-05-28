@@ -30,7 +30,7 @@ $floatingWhatsappLink = !empty($whatsapphtml)
       <!-- Col 1: Brand & About -->
       <div class="col-lg-3 col-md-6 pe-lg-4">
         <a href="<?= site_url() ?>" class="d-inline-block mb-3">
-          <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= @$company3 ?> RELOCATION" class="footer-brand-logo">
+          <img src="<?= base_url('assets/images/logo/footer_logo.png') ?>" alt="<?= @$company3 ?> RELOCATION" class="footer-brand-logo">
         </a>
         <p class="footer-copy-text mb-4">
           Your trusted partner for safe, secure, and hassle-free relocations across India. We move your world with care.

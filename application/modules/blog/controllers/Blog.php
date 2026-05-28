@@ -2,10 +2,18 @@
 
 class Blog extends MX_Controller {
 
+    /**
+     * Blog Controller Constructor
+     * Initializes core controller logic.
+     */
     function __construct(){
         parent::__construct();
     }
 
+    /**
+     * SEO Slug Generator
+     * Converts raw titles into clean, search engine friendly URL slugs.
+     */
     private function slugify($text) {
         $text = strtolower($text);
         $text = preg_replace('~[^a-z0-9\s-]~', '', $text);
@@ -13,16 +21,28 @@ class Blog extends MX_Controller {
         return trim($text, '-');
     }
 
+    /**
+     * JSON Blog Loader
+     * Accesses local files to fetch published blog content data.
+     */
     private function loadBlogs() {
         $path = FCPATH . 'admin_data/blogs.json';
         if (!file_exists($path)) return [];
         return json_decode(file_get_contents($path), true) ?: [];
     }
 
+    /**
+     * Blog Main Route
+     * Redirects root blog route to the view listing route.
+     */
     function index() {
         redirect('blog/view');
     }
 
+    /**
+     * Blog View List Page
+     * Renders a clean grid of all published blog posts with custom pagination.
+     */
     function view(){
         $this->load->library('pagination');
         $this->load->helper('text'); 
@@ -62,14 +82,18 @@ class Blog extends MX_Controller {
         $data['total'] = $total_rows;
         $data['recent_posts'] = array_slice($all_blogs, 0, 5);
 
-        $data['title'] = "Official Blog of ".$this->comp['company3']." India";
-        $data['description'] = "Latest blog of ".$this->comp['company3'];
+        $data['title'] = "Official Packers and Movers Blog | " . $this->comp['company3'];
+        $data['description'] = "Explore the official " . $this->comp['company3'] . " blog for expert packers and movers tips, home shifting checklists, vehicle transportation safety guides, and relocation pricing updates.";
         $data['module'] = "blog";
         $data['view_file'] = "blog"; 
 
         echo Modules::run('template/layout2', $data);
     }
 
+    /**
+     * Single Blog Read Page
+     * Renders a detailed view of a selected blog post based on its slug.
+     */
     function read($slug = '') {
         // die("DEBUG: Slug received: " . $slug);
         $this->load->helper('text');
@@ -98,8 +122,8 @@ class Blog extends MX_Controller {
             $data['query'] = [$selected_blog];
             $data['recent_posts'] = array_slice(array_reverse($all_blogs), 0, 5);
             
-            $data['title'] = ucfirst($selected_blog->title);
-            $data['description'] = word_limiter(strip_tags($selected_blog->description), 200);
+            $data['title'] = ucfirst($selected_blog->title) . " | Shifting & Relocation Blog | " . $this->comp['company3'];
+            $data['description'] = word_limiter(strip_tags($selected_blog->description), 160);
             
             $image_file = $selected_blog->image;
             $data['img'] = ($image_file && file_exists(FCPATH . 'uploads/blogs/' . $image_file)) ? base_url('uploads/blogs/'.$image_file) : base_url('assets/images/about/packers_movers.jpg');
