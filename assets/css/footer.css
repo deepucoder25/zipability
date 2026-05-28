@@ -5,7 +5,7 @@
     --footer-text: #8A96A3;
     --footer-heading: #00B5B8;
     --footer-link: #D1D5DB;
-    --footer-link-hover: #00B5B8;
+    --footer-link-hover: #02a6a8;
     --border-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -181,135 +181,192 @@
     }
 }
 
-/* --- Floating Actions Bar (Preserved) --- */
+/* --- New Premium Floating Actions Stack (Fully Responsive) --- */
 .floating-actions {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  bottom: 20px;
+  right: 15px;
   display: flex;
-  background: #ffffff;
-  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
-  z-index: 1040;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1050;
+  pointer-events: none;
 }
 
 .float-btn {
-  flex: 1;
+  pointer-events: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px 0;
-  color: #555;
+  position: relative;
   text-decoration: none;
-  font-size: 12px;
-  font-weight: 600;
-  border-right: 1px solid #eee;
-  transition: background-color 0.3s;
   background: transparent;
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.float-btn:last-child {
-  border-right: none;
+
+.float-btn:hover {
+  transform: translateY(-4px) scale(1.05);
 }
 
 .float-btn .icon-wrap {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
 }
 
+/* Glassy top hemisphere highlight */
+.float-btn .icon-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 50%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.float-btn i {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  z-index: 3;
+}
+
+/* Span Labels (Tooltips) */
 .float-btn span {
+  position: absolute;
+  right: 60px;
+  background: var(--footer-bg);
+  backdrop-filter: blur(4px);
+  color: var(--footer-link);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
   white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateX(10px) scale(0.9);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  border: 1px solid var(--border-color);
 }
 
-/* Call Now Button */
+.float-btn:hover span {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* Call Now */
 .float-call .icon-wrap {
-  background: #0a4ebd;
-  animation: floatPulseBlue 2s infinite;
+  background: linear-gradient(135deg, var(--footer-heading) 0%, var(--footer-bg) 100%);
+  animation: glowBlue 2.5s infinite;
 }
-.float-call:hover { color: #0a4ebd; background: #f4f8ff; }
+.float-call i {
+  animation: phoneWiggle 4s infinite ease-in-out;
+}
+.float-call:hover i {
+  animation: phoneWiggleSupercharged 0.6s infinite ease-in-out;
+}
 
-/* WhatsApp Button */
+/* WhatsApp */
 .float-whatsapp .icon-wrap {
-  background: #25d366;
-  animation: floatPulseGreen 2s infinite;
+  background: linear-gradient(135deg, #2ecc71 0%, #1e9f50 100%);
+  animation: glowGreen 2.5s infinite;
 }
-.float-whatsapp:hover { color: #25d366; background: #f0fdf4; }
+.float-whatsapp i {
+  animation: whatsappPulse 4s infinite ease-in-out;
+}
+.float-whatsapp:hover i {
+  transform: scale(1.3) rotate(15deg);
+}
 
-/* Call Me Back Button */
+/* Call Me Back */
 .float-callback .icon-wrap {
-  background: #ffb300;
-  color: #030f26; 
-  animation: floatPulseYellow 2s infinite;
+  background: linear-gradient(135deg, #ffb800 0%, #ea580c 100%);
+  animation: glowGold 2.5s infinite;
 }
-.float-callback:hover { color: #d69600; background: #fffdf5; }
-
-@keyframes floatPulseBlue {
-  0% { box-shadow: 0 0 0 0 rgba(10, 78, 189, 0.5); }
-  70% { box-shadow: 0 0 0 8px rgba(10, 78, 189, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(10, 78, 189, 0); }
+.float-callback i {
+  animation: callbackWiggle 4s infinite ease-in-out;
 }
-@keyframes floatPulseGreen {
-  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-  70% { box-shadow: 0 0 0 8px rgba(37, 211, 102, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-}
-@keyframes floatPulseYellow {
-  0% { box-shadow: 0 0 0 0 rgba(255, 179, 0, 0.5); }
-  70% { box-shadow: 0 0 0 8px rgba(255, 179, 0, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(255, 179, 0, 0); }
+.float-callback:hover i {
+  transform: rotate(360deg);
 }
 
+/* Keyframes for Glow and Idle Animations */
+@keyframes glowBlue {
+  0% { box-shadow: 0 0 0 0 var(--footer-heading), 0 6px 20px rgba(0, 0, 0, 0.2); }
+  70% { box-shadow: 0 0 0 10px rgba(0, 0, 0, 0), 0 6px 20px rgba(0, 0, 0, 0.2); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 6px 20px rgba(0, 0, 0, 0.2); }
+}
+
+@keyframes glowGreen {
+  0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.5), 0 6px 20px rgba(0, 0, 0, 0.2); }
+  70% { box-shadow: 0 0 0 10px rgba(46, 204, 113, 0), 0 6px 20px rgba(0, 0, 0, 0.2); }
+  100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0), 0 6px 20px rgba(0, 0, 0, 0.2); }
+}
+
+@keyframes glowGold {
+  0% { box-shadow: 0 0 0 0 rgba(255, 184, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.2); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 184, 0, 0), 0 6px 20px rgba(0, 0, 0, 0.2); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 184, 0, 0), 0 6px 20px rgba(0, 0, 0, 0.2); }
+}
+
+@keyframes phoneWiggle {
+  0%, 90%, 100% { transform: rotate(0); }
+  92%, 96% { transform: rotate(-15deg); }
+  94%, 98% { transform: rotate(15deg); }
+}
+
+@keyframes phoneWiggleSupercharged {
+  0%, 100% { transform: rotate(0) scale(1.2); }
+  25% { transform: rotate(-20deg) scale(1.2); }
+  75% { transform: rotate(20deg) scale(1.2); }
+}
+
+@keyframes whatsappPulse {
+  0%, 90%, 100% { transform: scale(1); }
+  95% { transform: scale(1.25); }
+}
+
+@keyframes callbackWiggle {
+  0%, 90%, 100% { transform: rotate(0); }
+  92%, 96% { transform: rotate(-12deg); }
+  94%, 98% { transform: rotate(12deg); }
+}
+
+/* Responsive Overrides */
 @media (min-width: 992px) {
   .floating-actions {
-    position: fixed;
     bottom: 30px;
-    left: auto;
     right: 30px;
-    width: auto;
-    flex-direction: column;
-    gap: 15px;
-    background: transparent;
-    box-shadow: none;
-    border: none;
+    gap: 16px;
   }
-  .float-btn {
-    flex-direction: row;
-    align-items: center;
-    border: none;
-    padding: 0;
-    gap: 10px;
-    background: transparent !important;
-  }
-  .float-btn span {
-    background: #fff;
-    padding: 6px 14px;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    font-size: 14px;
-    opacity: 0;
-    transform: translateX(10px);
-    transition: all 0.3s ease;
-    pointer-events: none;
-    order: -1;
-  }
-  .float-btn:hover span {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  
   .float-btn .icon-wrap {
-    width: 54px;
-    height: 54px;
-    margin-bottom: 0;
-    font-size: 24px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    width: 56px;
+    height: 56px;
+    font-size: 23px;
+  }
+  
+  .float-btn span {
+    right: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .float-btn span {
+    display: none; /* Hide tooltips on small screens to prevent clutter */
   }
 }

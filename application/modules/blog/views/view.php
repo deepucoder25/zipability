@@ -51,9 +51,9 @@
                             <?php 
                             $image_path = FCPATH . 'uploads/blogs/' . @$query[0]->image;
                             if (@$query[0]->image && file_exists($image_path)): ?>
-                                <img src="<?= base_url('uploads/blogs/' . @$query[0]->image) ?>" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100" style="max-height: 450px; object-fit: cover;">
+                                <img src="<?= base_url('uploads/blogs/' . @$query[0]->image) ?>" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100" style="max-height: 450px; object-fit: cover;" loading="lazy">
                             <?php else: ?>
-                                <img src="<?= base_url('assets/images/about/packers_movers.jpg') ?>" alt="Default Image" class="img-fluid w-100" style="max-height: 450px; object-fit: cover;">
+                                <img src="<?= base_url('assets/images/about/packers_movers.jpg') ?>" alt="Default Image" class="img-fluid w-100" style="max-height: 450px; object-fit: cover;" loading="lazy">
                             <?php endif; ?>
                         </div>
                         
@@ -64,14 +64,14 @@
                                 <span class="d-flex align-items-center gap-2"><i class="bi bi-person-circle text-success"></i> By Admin</span>
                             </div>
                             <div>
-                                <button class="btn btn-sm px-3 rounded-pill fw-bold" style="background: rgba(7, 60, 145, 0.1); color: #073c91; border: none; transition: background 0.3s;" onmouseover="this.style.background='rgba(7, 60, 145, 0.2)'" onmouseout="this.style.background='rgba(7, 60, 145, 0.1)'" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                <button class="btn btn-sm px-3 rounded-pill fw-bold" style="background: color-mix(in srgb, var(--footer-heading, #073c91) 10%, transparent); color: var(--footer-heading, #073c91); border: none; transition: all 0.3s;" onmouseover="this.style.background='color-mix(in srgb, var(--footer-heading, #073c91) 20%, transparent)'" onmouseout="this.style.background='color-mix(in srgb, var(--footer-heading, #073c91) 10%, transparent)'" data-bs-toggle="modal" data-bs-target="#shareModal">
                                     <i class="bi bi-share me-1"></i> Share Post
                                 </button>
                             </div>
                         </div>
 
                         <!-- Blog Details -->
-                        <h2 class="fw-bold mb-4" style="color: #073c91; line-height: 1.4;"><?= @$query[0]->title ?></h2>
+                        <h2 class="fw-bold mb-4" style="color: var(--footer-heading, #073c91); line-height: 1.4;"><?= @$query[0]->title ?></h2>
                         <div class="blog-content-wrapper text-muted" style="line-height: 1.8; font-size: 1.05rem;">
                             <?= nl2br(@$query[0]->content) ?>
                         </div>
@@ -82,7 +82,7 @@
                 <div class="col-lg-4">
                     <aside class="blog-sidebar sticky-top" style="top: 100px; z-index: 1;">
                         <div class="bg-white p-4 rounded-4 shadow-sm mb-4">
-                            <h5 class="fw-bold mb-4 pb-2 border-bottom" style="color: #073c91;">Recent Posts</h5>
+                            <h5 class="fw-bold mb-4 pb-2 border-bottom" style="color: var(--footer-heading, #073c91);">Recent Posts</h5>
                             <div class="recent-posts-list">
                                 <?php if (!empty($recent_posts)): ?>
                                     <?php foreach ($recent_posts as $post_arr): $post = (object)$post_arr; ?>
@@ -94,7 +94,7 @@
                                         ?>
                                         <a href="<?= site_url('blog/'.$custom_slug) ?>" class="d-flex align-items-center gap-3 mb-3 text-decoration-none post-link-item">
                                             <div class="flex-shrink-0">
-                                                <img src="<?= $imagePath ?>" alt="thumb" class="rounded-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover; transition: transform 0.3s ease;">
+                                                <img src="<?= $imagePath ?>" alt="Recent Blog thumbnail: <?= htmlspecialchars($post->title) ?>" class="rounded-3 shadow-sm" style="width: 80px; height: 80px; object-fit: cover; transition: transform 0.3s ease;" loading="lazy">
                                             </div>
                                             <div>
                                                 <h6 class="fw-bold text-dark mb-1 post-title" style="font-size: 0.95rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; transition: color 0.2s;"><?= $post->title ?></h6>
@@ -111,7 +111,7 @@
                         <!-- Sticky CTA Widget -->
                         <div class="bg-light p-4 rounded-4 shadow-sm text-center border-top border-4" style="border-color: #ffb800 !important;">
                             <div class="mb-3">
-                                <i class="bi bi-headset" style="font-size: 3rem; color: #073c91;"></i>
+                                <i class="bi bi-headset" style="font-size: 3rem; color: var(--footer-heading, #073c91);"></i>
                             </div>
                             <h5 class="fw-bold mb-3">Need Moving Help?</h5>
                             <p class="text-muted small mb-4">Get a quick and free estimate for your relocation directly from our experts.</p>
@@ -173,7 +173,7 @@
     margin: 15px 0;
 }
 .blog-content-wrapper a {
-    color: #073c91;
+    color: var(--footer-heading, #073c91);
     text-decoration: none;
 }
 .blog-content-wrapper a:hover {

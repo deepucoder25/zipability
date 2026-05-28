@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $rev = $reviews->result();
 ?>
 <section id="breadcrumbs" class="page_breadcrumbs ds parallax section_padding_65 table_section table_section_md">
@@ -33,7 +33,7 @@ $rev = $reviews->result();
             <div class="row">
                 <div class="col-sm-6 offset-sm-3 mb-4 text-left wow fadeInUp">
 
-                    <button type="button" class="btn float-left btn-xs" style="background:#f4854a;color:white;border:none;width:100%;font-size:100%;font-weight:bold;" data-toggle="modal" data-target="#rvwmdl">Write a Review <i class="bi bi-pencil"></i></button>
+                    <button type="button" class="btn float-left btn-xs" style="background:var(--footer-heading, #f4854a);color:white;border:none;width:100%;font-size:100%;font-weight:bold;" data-toggle="modal" data-target="#rvwmdl">Write a Review <i class="bi bi-pencil"></i></button>
                 </div>
             </div>
             <div class="row">
@@ -90,7 +90,7 @@ $rev = $reviews->result();
                                     <?php if (@$r->r_img) { ?>
                                         <div class="content-icon">
                                             <a target="_blank" href="<?= base_url('assets/uploads/reviewimg/') . $r->r_img ?>" alt="<?= $r->name ?> review <?= $company3 ?>">
-                                                <img class="img4 img-fluid" src="<?= base_url('assets/uploads/reviewimg/thumb/') . $r->r_img ?>" alt="<?= $r->name ?> review <?= $company3 ?>">
+                                                <img class="img4 img-fluid" src="<?= base_url('assets/uploads/reviewimg/thumb/') . $r->r_img ?>" alt="<?= $r->name ?> review <?= $company3 ?>" loading="lazy">
                                             </a>
                                         </div>
                                     <?php } ?>

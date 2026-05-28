@@ -816,19 +816,9 @@
 }
 
 .about-desc-lead {
-    font-family: 'Outfit', sans-serif;
-    font-size: 13.5px;
     font-weight: 500;
-    color: #031633;
-    line-height: 1.6;
 }
 
-.about-desc {
-    font-family: 'Outfit', sans-serif;
-    font-size: 12.5px;
-    color: #556880;
-    line-height: 1.6;
-}
 
 /* Features grid */
 .about-feature-item {
@@ -933,12 +923,6 @@
     }
     .about-title {
         font-size: 20px;
-    }
-    .about-desc-lead {
-        font-size: 12.5px;
-    }
-    .about-desc {
-        font-size: 12px;
     }
     .about-experience-badge {
         bottom: 15px;

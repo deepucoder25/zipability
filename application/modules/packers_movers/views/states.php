@@ -37,9 +37,9 @@
 <?php
 $state = [
     [
-        "image" => "maharashtra.jpg",
-        "category" => "Maharashtra",
-        "link" => "maharashtra"
+        "image" => "telangana.jpg",
+        "category" => "Telangana",
+        "link" => "telangana"
     ],
     [
         "image" => "bangalore.jpg",
@@ -48,15 +48,10 @@ $state = [
     ],
 
     [
-        "image" => "west-bengal.jpg",
-        "category" => "West Bengal",
-        "link" => "west-bengal"
-    ],
-    [
-        "image" => "uttar-pradesh.jpg",
-        "category" => "Uttar Pradesh",
-        "link" => "uttar-pradesh"
-    ],
+        "image" => "tamil-nadu.jpg",
+        "category" => "Tamil Nadu",
+        "link" => "tamil-nadu"
+    ]
 ];
 ?>
 
@@ -87,7 +82,8 @@ $state = [
                         <div class="state-img position-relative overflow-hidden">
                             <img class="img-fluid w-100"
                                 src="<?= base_url() ?>/assets/images/state/<?= $item['image'] ?>"
-                                alt="<?= $item['category'] ?>">
+                                alt="<?= $item['category'] ?>"
+                                loading="lazy">
 
                             <div class="state-overlay">
                                 <a href="<?= site_url($item['link']) ?>" class="btn btn-warning btn-sm rounded-pill px-3">

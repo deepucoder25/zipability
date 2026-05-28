@@ -92,7 +92,7 @@
                         <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden blog-card transition-hover">
                             <div class="position-relative">
                                 <a href="<?= $link ?>">
-                                    <img src="<?= $img ?>" class="card-img-top" alt="<?= htmlspecialchars($b->title) ?>" style="height: 240px; object-fit: cover; width: 100%; transition: transform 0.4s ease;">
+                                    <img src="<?= $img ?>" class="card-img-top" alt="<?= htmlspecialchars($b->title) ?>" style="height: 240px; object-fit: cover; width: 100%; transition: transform 0.4s ease;" loading="lazy">
                                 </a>
                                 <div class="position-absolute top-0 end-0 bg-warning text-dark fw-bold px-3 py-2 rounded-bottom-start shadow-sm" style="font-size: 0.9rem;">
                                     <?= $day ?> <?= $month ?>
@@ -100,7 +100,7 @@
                             </div>
                             <div class="card-body p-4 d-flex flex-column">
                                 <div class="d-flex align-items-center gap-3 mb-3 text-muted small">
-                                    <span class="d-flex align-items-center gap-1"><i class="bi bi-person-circle" style="color: var(--primary-cyan);"></i> By Admin</span>
+                                    <span class="d-flex align-items-center gap-1"><i class="bi bi-person-circle" style="color: var(--footer-heading);"></i> By Admin</span>
                                     <span class="d-flex align-items-center gap-1"><i class="bi bi-patch-check-fill text-success"></i> Verified</span>
                                 </div>
                                 <h5 class="card-title fw-bold mb-3">
@@ -110,7 +110,7 @@
                                     <?= substr(strip_tags($b->description), 0, 110) ?>...
                                 </p>
                                 <div>
-                                    <a href="<?= $link ?>" class="btn btn-sm px-4 rounded-pill fw-bold" style="background: var(--primary-cyan); color: #fff; transition: background 0.3s ease;">
+                                    <a href="<?= $link ?>" class="btn btn-sm px-4 rounded-pill fw-bold" style="background: var(--footer-heading); color: #fff; transition: background 0.3s ease;">
                                         Read More <i class="bi bi-arrow-right ms-1"></i>
                                     </a>
                                 </div>
@@ -156,7 +156,7 @@
     color: #ffb800 !important;
 }
 .blog-card .btn:hover {
-    background: var(--primary-cyan) !important;
+    background: var(--footer-link-hover) !important;
 }
 </style>
 
