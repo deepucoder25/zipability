@@ -1,0 +1,401 @@
+/* ==========================================================================
+   COMPACT PREMIUM CSS FOR CONTACTS MODULE
+   Reduced footprint, enhanced micro-details, and timeline process assets
+   ========================================================================== */
+
+/* Compact Section Styling */
+.contact-section {
+    background-color: #fafbfc !important;
+    background-image: 
+        radial-gradient(at 8% 12%, rgba(0, 181, 184, 0.05) 0px, transparent 40%),
+        radial-gradient(at 92% 88%, rgba(4, 18, 30, 0.03) 0px, transparent 45%) !important;
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+    padding: 35px 0 !important;
+}
+
+/* Glassmorphism Details Box */
+.contact-details-box {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 181, 184, 0.15) !important;
+    border-radius: 20px !important;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 24px rgba(4, 18, 30, 0.03) !important;
+}
+
+.contact-details-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0, 181, 184, 0.08) !important;
+    border-color: var(--footer-heading, #00B5B8) !important;
+}
+
+/* Tighter typography */
+.contact-section h2 {
+    font-size: 1.65rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--footer-bg, #04121E) 30%, var(--footer-heading, #00B5B8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px !important;
+}
+
+.contact-details-box p.text-muted {
+    font-size: 13px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Compact Interactive Cards */
+.contact-item-card {
+    background: #f8fafc;
+    border: 1px solid #eef2f6;
+    border-radius: 12px !important;
+    padding: 12px 16px !important;
+    margin-bottom: 10px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 12px !important;
+    text-decoration: none !important;
+}
+
+.contact-item-card:hover {
+    background: #ffffff;
+    border-color: rgba(0, 181, 184, 0.4);
+    transform: scale(1.015) translateX(3px);
+    box-shadow: 0 6px 15px rgba(0, 181, 184, 0.04);
+}
+
+/* Compact Rotating Icon Circles */
+.contact-icon-wrap {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem !important;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.contact-item-card:hover .contact-icon-wrap {
+    transform: scale(1.08) rotate(5deg);
+}
+
+/* Color Presets */
+.icon-office {
+    background: color-mix(in srgb, var(--footer-heading, #00B5B8) 10%, transparent);
+    color: var(--footer-heading, #00B5B8);
+}
+.contact-item-card:hover .icon-office {
+    background: var(--footer-heading, #00B5B8);
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 181, 184, 0.4);
+}
+
+.icon-phone {
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+}
+.contact-item-card:hover .icon-phone {
+    background: #22c55e;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+}
+
+.icon-email {
+    background: rgba(234, 88, 12, 0.1);
+    color: #ea580c;
+}
+.contact-item-card:hover .icon-email {
+    background: #ea580c;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(234, 88, 12, 0.4);
+}
+
+.icon-hours {
+    background: rgba(14, 165, 233, 0.12);
+    color: #0ea5e9;
+}
+.contact-item-card:hover .icon-hours {
+    background: #0ea5e9;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(14, 165, 233, 0.4);
+}
+
+/* Text Sizing */
+.contact-info-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #94a3b8;
+    margin-bottom: 1px;
+}
+
+.contact-info-value {
+    font-size: 13.5px !important;
+    font-weight: 600;
+    color: #334155;
+    margin: 0;
+    line-height: 1.35;
+}
+
+.contact-item-card:hover .contact-info-value {
+    color: var(--footer-heading, #00B5B8);
+}
+
+/* Live Support Ribbon */
+.live-status-ribbon {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(34, 197, 94, 0.08);
+    border: 1px solid rgba(34, 197, 94, 0.15);
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #16a34a;
+    margin-bottom: 12px;
+}
+
+.live-pulse-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #22c55e;
+    position: relative;
+}
+
+.live-pulse-dot::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    border: 1.5px solid #22c55e;
+    animation: ribbonPulse 1.8s infinite ease-out;
+}
+
+@keyframes ribbonPulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* Social Quick Connections */
+.contact-social-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px dashed #e2e8f0;
+}
+
+.contact-social-bar span {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.social-circle-link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    background: #f1f5f9;
+    color: #475569;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-circle-link:hover {
+    transform: translateY(-3px) rotate(8deg);
+    color: #ffffff;
+}
+
+.social-fb:hover { background: #1877f2; }
+.social-tw:hover { background: #000000; }
+.social-ln:hover { background: #0a66c2; }
+.social-yt:hover { background: #ff0000; }
+
+/* Sleek Compact Form Card */
+.contact-form-box {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.03) !important;
+    border-top: 4px solid var(--footer-heading, #00B5B8) !important;
+    border-radius: 20px !important;
+    padding: 24px 30px !important;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 24px rgba(4, 18, 30, 0.03) !important;
+}
+
+.contact-form-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(4, 18, 30, 0.07) !important;
+}
+
+/* Sleeker Form Controls */
+.contact-form-box .form-label {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #475569 !important;
+    margin-bottom: 4px;
+}
+
+.contact-form-box .form-control {
+    border: 1.5px solid #e2e8f0 !important;
+    padding: 8px 12px !important;
+    font-size: 13.5px;
+    border-radius: 8px !important;
+    background-color: #fafbfc;
+    transition: all 0.25s ease;
+}
+
+.contact-form-box .form-control:focus {
+    background-color: #ffffff;
+    border-color: var(--footer-heading, #00B5B8) !important;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--footer-heading, #00B5B8) 12%, transparent) !important;
+}
+
+/* Theme Button styling - No inline CSS required */
+.contact-form-box .theme-btn {
+    background: linear-gradient(135deg, var(--footer-heading, #00B5B8) 0%, var(--footer-bg, #04121E) 100%) !important;
+    border: none !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px;
+    border-radius: 8px !important;
+    font-size: 1.1rem !important;
+    padding: 12px 24px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 12px rgba(0, 181, 184, 0.3) !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.contact-form-box .theme-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--footer-bg, #04121E) 0%, var(--footer-heading, #00B5B8) 100%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.4s ease;
+}
+
+.contact-form-box .theme-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 181, 184, 0.5) !important;
+}
+
+.contact-form-box .theme-btn:hover::before {
+    opacity: 1;
+}
+
+/* Process Timeline Styles */
+.timeline-section-title {
+    font-size: 1.5rem !important;
+    font-weight: 800;
+    text-align: center;
+    background: linear-gradient(135deg, var(--footer-bg, #04121E) 30%, var(--footer-heading, #00B5B8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px !important;
+}
+
+.process-timeline-wrapper {
+    background: #ffffff;
+    border: 1px solid rgba(0, 181, 184, 0.12);
+    border-radius: 20px;
+    padding: 30px 24px;
+    box-shadow: 0 10px 30px rgba(4, 18, 30, 0.04);
+}
+
+.timeline-step-card {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.timeline-step-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Timeline Icons with steps numbers */
+.timeline-icon-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--footer-heading, #00B5B8) 8%, transparent);
+    color: var(--footer-heading, #00B5B8);
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 16px;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 181, 184, 0.15);
+}
+
+.timeline-step-card:hover .timeline-icon-wrap {
+    background: var(--footer-heading, #00B5B8);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 181, 184, 0.4);
+    transform: scale(1.05) rotate(5deg);
+}
+
+.timeline-number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--footer-bg, #04121E);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    border: 2px solid #ffffff;
+}
+
+.timeline-step-card:hover .timeline-number {
+    background: #ffb800;
+}
+
+.timeline-title {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--footer-bg, #04121E);
+    margin-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+.timeline-step-card:hover .timeline-title {
+    color: var(--footer-heading, #00B5B8);
+}
+
+.timeline-desc {
+    font-size: 12px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+}

@@ -37,77 +37,161 @@
 </section>
 
 <!-- Contact Details & Form Section -->
-<section class="contact-section py-5 bg-light">
+<section class="contact-section py-5">
     <div class="container my-4">
-        <div class="row g-5">
+        <div class="row g-4">
             <!-- Contact Details -->
             <div class="col-lg-5">
-                <div class="contact-details-box bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
-                    <h2 class="fw-bold mb-4" style="color: #073c91;">Get In Touch</h2>
-                    <p class="text-muted mb-5">Have questions or need a custom quote? Reach out to us, and our team will get back to you as soon as possible.</p>
+                <div class="contact-details-box p-3 p-md-4 h-100">
+                    <!-- Live Ribbon -->
+                    <div class="live-status-ribbon">
+                        <div class="live-pulse-dot"></div>
+                        <span>Live Shifting Support</span>
+                    </div>
+
+                    <h2>Get In Touch</h2>
+                    <p class="text-muted mb-4">Have questions or need a custom quote? Reach out to us, and our team will get back to you as soon as possible.</p>
                     
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="contact-icon rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 60px; height: 60px; font-size: 1.5rem; background: rgba(7, 60, 145, 0.1); color: #073c91;">
+                    <!-- Detail Cards Flow -->
+                    <div class="contact-item-card">
+                        <div class="contact-icon-wrap icon-office">
                             <i class="bi bi-geo-alt-fill"></i>
                         </div>
                         <div>
-                            <h6 class="fw-bold mb-1">Head Office</h6>
-                            <p class="mb-0 text-muted"><?= $address ?></p>
+                            <div class="contact-info-title">Head Office</div>
+                            <p class="contact-info-value"><?= $address ?></p>
                         </div>
                     </div>
                     
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="contact-icon rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 60px; height: 60px; font-size: 1.5rem; background: rgba(25, 135, 84, 0.1); color: #198754;">
+                    <a href="<?= $phonehtml ?>" class="contact-item-card">
+                        <div class="contact-icon-wrap icon-phone">
                             <i class="bi bi-telephone-fill"></i>
                         </div>
                         <div>
-                            <h6 class="fw-bold mb-1">Phone Number</h6>
-                            <p class="mb-0 text-muted"><a href="<?= $phonehtml ?>" class="text-decoration-none text-muted"><?= $phone ?></a></p>
+                            <div class="contact-info-title">Phone Number</div>
+                            <p class="contact-info-value"><?= $phone ?></p>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="contact-icon rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 60px; height: 60px; font-size: 1.5rem; background: rgba(255, 193, 7, 0.1); color: #ffc107;">
+                    <a href="<?= $mailhtml ?>" class="contact-item-card">
+                        <div class="contact-icon-wrap icon-email">
                             <i class="bi bi-envelope-fill"></i>
                         </div>
                         <div>
-                            <h6 class="fw-bold mb-1">Email Address</h6>
-                            <p class="mb-0 text-muted"><a href="<?= $mailhtml ?>" class="text-decoration-none text-muted"><?= $mail ?></a></p>
+                            <div class="contact-info-title">Email Address</div>
+                            <p class="contact-info-value"><?= $mail ?></p>
                         </div>
+                    </a>
+
+                    <div class="contact-item-card">
+                        <div class="contact-icon-wrap icon-hours">
+                            <i class="bi bi-clock-fill"></i>
+                        </div>
+                        <div>
+                            <div class="contact-info-title">Business Hours</div>
+                            <p class="contact-info-value">Monday – Sunday: 24/7 Shifting Support</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Quick Connections -->
+                    <div class="contact-social-bar">
+                        <span>Connect:</span>
+                        <a href="<?= $facebookhtml ?>" target="_blank" rel="noopener" class="social-circle-link social-fb" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="<?= $twitterhtml ?>" target="_blank" rel="noopener" class="social-circle-link social-tw" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="<?= $linkedinhtml ?>" target="_blank" rel="noopener" class="social-circle-link social-ln" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="<?= $youtubehtml ?>" target="_blank" rel="noopener" class="social-circle-link social-yt" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
             </div>
             
             <!-- Contact Form -->
             <div class="col-lg-7">
-                <div class="contact-form-box bg-white p-4 p-md-5 rounded-4 shadow-sm h-100 border-top border-4" style="border-color: #ffb800 !important;">
-                    <h2 class="fw-bold mb-4" style="color: #073c91;">Send Us A Message</h2>
+                <div class="contact-form-box p-3 p-md-4 h-100">
+                    <h2 class="fw-bold mb-4">Send Us A Message</h2>
                     <form id="contactform" class="ajax-form" data-url="<?php echo site_url('contacts/contact') ?>" data-result="contactformresults" onsubmit="return false;">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label class="form-label fw-semibold text-dark">Your Name *</label>
-                                <input type="text" name="name" class="form-control py-2" placeholder="John Doe"  style="border-radius: 8px;">
+                                <input type="text" name="name" class="form-control py-2" placeholder="John Doe">
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label fw-semibold text-dark">Phone Number *</label>
-                                <input type="tel" name="phone" class="form-control py-2" placeholder="Mobile Number"  style="border-radius: 8px;">
+                                <input type="tel" name="phone" class="form-control py-2" placeholder="Mobile Number">
                             </div>
                             <div class="col-12">
                                 <label class="form-label fw-semibold text-dark">Email Address</label>
-                                <input type="email" name="email" class="form-control py-2" placeholder="hello@example.com" style="border-radius: 8px;">
+                                <input type="email" name="email" class="form-control py-2" placeholder="hello@example.com">
                             </div>
                             <div class="col-12">
                                 <label class="form-label fw-semibold text-dark">Your Message</label>
-                                <textarea name="message" class="form-control py-2" rows="5" placeholder="How can we help you?" style="border-radius: 8px;"></textarea>
+                                <textarea name="message" class="form-control py-2" rows="5" placeholder="How can we help you?"></textarea>
                             </div>
                             <div class="col-12 mt-4">
-                                <button type="submit" class="theme-btn w-100 py-3" style="border-radius: 8px; font-size: 1.1rem;">
+                                <button type="submit" class="theme-btn w-100 py-3">
                                     <i class="bi bi-send me-2"></i> Send Message
                                 </button>
                             </div>
                         </div>
                         <div id="contactformresults" class="mt-3"></div>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Process Timeline Section -->
+        <div class="row mt-5 pt-3">
+            <div class="col-12">
+                <div class="process-timeline-wrapper">
+                    <h3 class="timeline-section-title">Our 4-Step Hassle-Free Shifting Process</h3>
+                    <div class="row g-4 mt-2">
+                        <!-- Step 1 -->
+                        <div class="col-6 col-md-3">
+                            <div class="timeline-step-card">
+                                <div class="timeline-icon-wrap">
+                                    <i class="bi bi-pencil-square"></i>
+                                    <div class="timeline-number">1</div>
+                                </div>
+                                <h4 class="timeline-title">Quick Booking</h4>
+                                <p class="timeline-desc">Fill out the quick quote form or call our support line directly.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="col-6 col-md-3">
+                            <div class="timeline-step-card">
+                                <div class="timeline-icon-wrap">
+                                    <i class="bi bi-box-seam-fill"></i>
+                                    <div class="timeline-number">2</div>
+                                </div>
+                                <h4 class="timeline-title">Safe Packing</h4>
+                                <p class="timeline-desc">Multi-layer bubble wrapping and heavy carton protection.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="col-6 col-md-3">
+                            <div class="timeline-step-card">
+                                <div class="timeline-icon-wrap">
+                                    <i class="bi bi-truck"></i>
+                                    <div class="timeline-number">3</div>
+                                </div>
+                                <h4 class="timeline-title">Secure Transit</h4>
+                                <p class="timeline-desc">Enclosed container transport driven by certified experts.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="col-6 col-md-3">
+                            <div class="timeline-step-card">
+                                <div class="timeline-icon-wrap">
+                                    <i class="bi bi-house-heart-fill"></i>
+                                    <div class="timeline-number">4</div>
+                                </div>
+                                <h4 class="timeline-title">Doorstep Delivery</h4>
+                                <p class="timeline-desc">Careful unloading, unpacking, and placement in your new home.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
