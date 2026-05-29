@@ -90,7 +90,7 @@ $chennai_localities = [
             </div>
             <div>
                 <h2 class="h4 fw-bold mb-1 text-dark">Search By Location</h2>
-                <p class="text-muted mb-0 small">Select your locality to find local packers and movers in your city.</p>
+                <p class="text-muted mb-0 small">Select your locality to find local bike transportation services in your city.</p>
             </div>
         </div>
 
@@ -101,18 +101,18 @@ $chennai_localities = [
             <div class="col-12 col-md-6 col-lg-4 d-flex">
                 <div class="city-locality-box bg-white shadow-sm rounded-4 overflow-hidden border border-secondary border-opacity-10 d-flex flex-column w-100">
                     <div class="city-box-header px-4 py-3 text-white d-flex align-items-center justify-content-between">
-                        <h3 class="h6 fw-bold mb-0 text-white"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Packers and Movers in Hyderabad</h3>
+                        <h3 class="h6 fw-bold mb-0 text-white"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Bike Transportation in Hyderabad</h3>
                         <span class="badge bg-white bg-opacity-20 text-dark rounded-pill px-2.5 py-1" style="font-size: 11px;"><?= count($hyderabad_localities) ?> Areas</span>
                     </div>
                     <div class="city-box-scroll px-3 py-2 flex-grow-1 overflow-y-auto" style="max-height: 350px;">
                         <ul class="locality-list list-unstyled mb-0">
                             <?php foreach ($hyderabad_localities as $loc): 
                                 $slug = strtolower(str_replace(' ', '-', $loc));
-                                $link = $slug . "-packers-movers-telangana";
+                                $link = $slug . "-bike-transportation-telangana";
                             ?>
                                 <li>
-                                    <a href="<?= site_url($link) ?>" class="locality-item d-flex align-items-center justify-content-between" aria-label="Packers and Movers in <?= $loc ?>, Hyderabad">
-                                        <span class="loc-text">Packers &amp; Movers <strong><?= $loc ?></strong></span>
+                                    <a href="<?= site_url($link) ?>" class="locality-item d-flex align-items-center justify-content-between" aria-label="Bike Transportation in <?= $loc ?>, Hyderabad">
+                                        <span class="loc-text">Bike Transportation <strong><?= $loc ?></strong></span>
                                         <i class="bi bi-arrow-right-short loc-arrow"></i>
                                     </a>
                                 </li>
@@ -126,18 +126,18 @@ $chennai_localities = [
             <div class="col-12 col-md-6 col-lg-4 d-flex">
                 <div class="city-locality-box bg-white shadow-sm rounded-4 overflow-hidden border border-secondary border-opacity-10 d-flex flex-column w-100">
                     <div class="city-box-header px-4 py-3 text-white d-flex align-items-center justify-content-between">
-                        <h3 class="h6 fw-bold mb-0 text-white"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Packers and Movers in Bangalore</h3>
+                        <h3 class="h6 fw-bold mb-0 text-white"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Bike Transportation in Bangalore</h3>
                         <span class="badge bg-white bg-opacity-20 text-dark rounded-pill px-2.5 py-1" style="font-size: 11px;"><?= count($bangalore_localities) ?> Areas</span>
                     </div>
                     <div class="city-box-scroll px-3 py-2 flex-grow-1 overflow-y-auto" style="max-height: 350px;">
                         <ul class="locality-list list-unstyled mb-0">
                             <?php foreach ($bangalore_localities as $loc): 
                                 $slug = strtolower(str_replace(' ', '-', $loc));
-                                $link = $slug . "-packers-movers-bangalore";
+                                $link = $slug . "-bike-transportation-bangalore";
                             ?>
                                 <li>
-                                    <a href="<?= site_url($link) ?>" class="locality-item d-flex align-items-center justify-content-between" aria-label="Packers and Movers in <?= $loc ?>, Bangalore">
-                                        <span class="loc-text">Packers &amp; Movers <strong><?= $loc ?></strong></span>
+                                    <a href="<?= site_url($link) ?>" class="locality-item d-flex align-items-center justify-content-between" aria-label="Bike Transportation in <?= $loc ?>, Bangalore">
+                                        <span class="loc-text">Bike Transportation <strong><?= $loc ?></strong></span>
                                         <i class="bi bi-arrow-right-short loc-arrow"></i>
                                     </a>
                                 </li>
@@ -151,18 +151,18 @@ $chennai_localities = [
             <div class="col-12 col-md-6 col-lg-4 d-flex">
                 <div class="city-locality-box bg-white shadow-sm rounded-4 overflow-hidden border border-secondary border-opacity-10 d-flex flex-column w-100">
                     <div class="city-box-header px-4 py-3 text-white d-flex align-items-center justify-content-between">
-                        <h3 class="h6 fw-bold mb-0 text-white"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Packers and Movers in Chennai</h3>
+                        <h3 class="h6 fw-bold mb-0 text-white"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Bike Transportation in Chennai</h3>
                         <span class="badge bg-white bg-opacity-20 text-dark rounded-pill px-2.5 py-1" style="font-size: 11px;"><?= count($chennai_localities) ?> Areas</span>
                     </div>
                     <div class="city-box-scroll px-3 py-2 flex-grow-1 overflow-y-auto" style="max-height: 350px;">
                         <ul class="locality-list list-unstyled mb-0">
                             <?php foreach ($chennai_localities as $loc): 
                                 $slug = strtolower(str_replace(' ', '-', $loc));
-                                $link = $slug . "-packers-movers-tamil-nadu";
+                                $link = $slug . "-bike-transportation-tamil-nadu";
                             ?>
                                 <li>
-                                    <a href="<?= site_url($link) ?>" class="locality-item d-flex align-items-center justify-content-between" aria-label="Packers and Movers in <?= $loc ?>, Chennai">
-                                        <span class="loc-text">Packers &amp; Movers <strong><?= $loc ?></strong></span>
+                                    <a href="<?= site_url($link) ?>" class="locality-item d-flex align-items-center justify-content-between" aria-label="Bike Transportation in <?= $loc ?>, Chennai">
+                                        <span class="loc-text">Bike Transportation <strong><?= $loc ?></strong></span>
                                         <i class="bi bi-arrow-right-short loc-arrow"></i>
                                     </a>
                                 </li>
