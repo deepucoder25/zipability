@@ -115,7 +115,7 @@
         $link      = urlencode(strtolower(str_replace(" ", "-", $ct['nm'])));
         $statename = urlencode(strtolower(str_replace(" ", "-", $st)));
       ?>
-      <a href="<?= site_url("$link-packers-movers-$statename") ?>"
+      <a href="<?= site_url("$link-bike-transportation-$statename") ?>"
          class="city-tag"
          id="relatedCity-<?= $count ?>">
         <i class="bi bi-arrow-right-short"></i><?= $ct['nm'] ?>

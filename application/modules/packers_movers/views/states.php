@@ -61,7 +61,7 @@ $state = [
 
         <!-- Section Heading -->
         <div class="text-center mb-5 mt-3">
-            <span class="badge rounded-pill text-uppercase px-3 py-1.5 mb-2" style="background: rgba(7, 98, 247, 0.08); color: #073c91; font-weight: 700; letter-spacing: 1px; font-size: 0.75rem;">Network Coverage</span>
+            <span class="badge rounded-pill text-uppercase px-3 py-1.5 mb-2" style="background: rgba(7, 98, 247, 0.08); color: var(--primary-cyan); font-weight: 700; letter-spacing: 1px; font-size: 0.75rem;">Network Coverage</span>
             <h2 class="fw-black text-dark mb-3" style="font-size: 2.5rem; letter-spacing: -0.5px;">
                 Our Presence Across <span style="background: linear-gradient(135deg, #ff6b16, #ff8a00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800;">India</span>
             </h2>
@@ -75,7 +75,7 @@ $state = [
             <?php foreach ($state as $item): ?>
                 
                 <!-- Circular Profile Cards -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
 
                     <div class="state-circle-card text-center bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-center justify-content-between position-relative border-0">
                         
@@ -165,7 +165,7 @@ $state = [
 }
 
 .state-circle-card:hover .inner-ring {
-    border-color: #073c91;
+    border-color: var(--primary-cyan);
     transform: scale(1.03);
 }
 
@@ -201,7 +201,7 @@ $state = [
 }
 
 .state-circle-card:hover .state-title-text {
-    color: #073c91;
+    color: var(--primary-cyan);
 }
 
 .state-desc-text {
@@ -234,7 +234,7 @@ $state = [
 /* Explore Button (Fills with gradient on hover) */
 .state-circle-card .explore-btn {
     border: 1.5px solid rgba(7, 98, 247, 0.2) !important;
-    color: #073c91 !important;
+    color: var(--primary-cyan) !important;
     background: transparent !important;
     font-size: 0.85rem;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
@@ -242,7 +242,7 @@ $state = [
 
 .state-circle-card:hover .explore-btn {
     color: #ffffff !important;
-    background: linear-gradient(135deg, #073c91, #0a4ebd) !important;
+    background: linear-gradient(135deg, var(--primary-cyan), #0a4ebd) !important;
     border-color: transparent !important;
     box-shadow: 0 10px 20px rgba(7, 98, 247, 0.25) !important;
     transform: translateY(-2px);
@@ -251,9 +251,7 @@ $state = [
 .state-circle-card:hover .explore-btn i {
     transform: translateX(4px);
     transition: transform 0.3s ease;
-}
-
-/* Breadcrumb styles */
+}/* Breadcrumb styles */
 .city-breadcrumb .breadcrumb-item a {
     color: #fff;
 }
@@ -265,15 +263,30 @@ $state = [
 /* Responsive Styles */
 @media(max-width: 576px) {
     .circle-avatar-wrap {
-        width: 110px;
-        height: 110px;
+        width: 80px !important;
+        height: 80px !important;
     }
     .state-title-text {
-        font-size: 1.15rem;
+        font-size: 0.95rem !important;
     }
     .state-circle-card {
-        padding: 1.5rem !important;
-        padding-top: 2rem !important;
+        padding: 1rem 0.75rem !important;
+        padding-top: 1.75rem !important;
+    }
+    .state-desc-text {
+        font-size: 0.7rem !important;
+        line-height: 1.3 !important;
+        padding: 0 !important;
+    }
+    .state-circle-card .explore-btn {
+        padding: 6px 12px !important;
+        font-size: 0.75rem !important;
+    }
+    .active-badge {
+        font-size: 0.55rem !important;
+        padding: 2px 6px !important;
+        top: 6px !important;
+        right: 6px !important;
     }
 }
 </style>

@@ -2,11 +2,11 @@
   <div class="container-fluid px-4 px-xl-5 h-100 position-relative z-2">
     <div class="row h-100 align-items-center">
       <div class="col-lg-7 col-md-10 text-start hero-content-wrapper">
-        <div class="hero-eyebrow">TRUSTED PACKERS & MOVERS IN <?= $city ?></div>
+        <div class="hero-eyebrow">TRUSTED BIKE TRANSPORTATION IN <?= $city ?></div>
         
         <h1 class="hero-title">
-          <span class="text-dark">Reliable Shifting</span><br/>
-          <span class="text-cyan">Services in <?= $city ?></span>
+          <span class="text-dark">Professional Bike</span><br/>
+          <span class="text-cyan">Transportation in <?= $city ?></span>
         </h1>
 
         <p class="hero-lead">

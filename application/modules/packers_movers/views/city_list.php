@@ -14,7 +14,7 @@ $state = ucwords($state);
             <span class="bc-sep">›</span>
             <span class="bc-current"><?= $state ?></span>
         </nav>
-        <h1><span class="bc-title-white">Packers and Movers in</span> <span class="bc-title-orange"><?= $state ?></span></h1>
+        <h1><span class="bc-title-white">Bike Transportation in</span> <span class="bc-title-orange"><?= $state ?></span></h1>
         <p class="bc-desc">Professional relocation and shifting services across all major cities in <?= $state ?>.</p>
         <div class="bc-features">
             <div class="bc-feature-pill">
@@ -47,7 +47,7 @@ $state = ucwords($state);
         <!-- Premium Section Header -->
         <div class="text-center mb-5">
             <h2 class="fw-bold mb-2">
-                Explore Shifting Hubs in <span class="theme-accent-text text-primary"><?= $state ?></span>
+                Explore Shifting Hubs in <span class="theme-accent-text"><?= $state ?></span>
             </h2>
             <p class="text-muted max-width-600 mx-auto">
                 Find localized, certified packing and moving solutions across major cities in <?= $state ?>. Type to filter your city instantly.
@@ -74,7 +74,7 @@ $state = ucwords($state);
                 $statename = urlencode(strtolower(str_replace(" ", "-", $st)));
             ?>
                 <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 city-card-col" data-city="<?= htmlspecialchars($ct['nm']) ?>">
-                    <a href="<?= site_url("$link-packers-movers-$statename") ?>" class="city-card-link d-block h-100 text-decoration-none">
+                    <a href="<?= site_url("$link-bike-transportation-$statename") ?>" class="city-card-link d-block h-100 text-decoration-none">
                         <div class="city-card card border-0 shadow-sm h-100">
                             <div class="card-body">
                                 <!-- Location Icon with Live Radar Wave -->
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .city-card-link:hover .pulse-dot {
-    background: rgba(7, 98, 247, 0.3);
+    background: var(--primary-cyan);
     animation: radar-pulse-hover 1.5s infinite ease-out;
 }
 
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .city-card-link:hover .city-title {
-    color: #073c91;
+    color: var(--primary-cyan);
 }
 
 .city-status {
