@@ -11,8 +11,6 @@ if (file_exists("./application/modules/packers_movers/views/data/$st.php")) {
         <nav class="bc-nav">
             <a href="<?= site_url() ?>">Home</a>
             <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-branches') ?>">Our Branches</a>
-            <span class="bc-sep">›</span>
             <span class="bc-current"><?= htmlspecialchars($state) ?> to <?= htmlspecialchars($city) ?> Route</span>
         </nav>
         <h1>
