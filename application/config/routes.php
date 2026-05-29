@@ -50,6 +50,7 @@ $route["our-branches"] = "packers_movers/state";
 $route["packers-movers-(:any)-india"] = "packers_movers/state_services/$1";
 $route["(:any)-bike-transportation-(:any)"] = "packers_movers/city/$2/$1";
 $route["(:any)/bike-transportation-(:any)"] = "packers_movers/city/$1/$2";
+$route["bike-transportation-service-from-(:any)-to-(:any)"] = "packers_movers/city_to_city/$1/$2";
 $route["bihar"] = "packers_movers/state_services/bihar";
 $route["delhi"] = "packers_movers/state_services/delhi";
 $route["west-bengal"] = "packers_movers/state_services/west-bengal";

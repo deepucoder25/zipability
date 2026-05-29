@@ -101,5 +101,29 @@ class Packers_movers extends MX_Controller
         );
         echo Modules::run('template/layout2', $data);
     }
+
+    /**
+     * SEO Intercity From-To Relocation Landing Page
+     * Serves highly optimized state-to-city Packers and Movers landing pages.
+     */
+    function city_to_city($state = 'telangana', $city = 'bangalore')
+    {
+        $this->load->helper('text');
+        $state = str_replace("_", " ", $state);
+        $state = ucwords(str_replace("-", " ", $state));
+        $city = str_replace("_", " ", $city);
+        $city = urldecode(ucwords(str_replace("-", " ", $city)));
+        
+        $data = array(
+            "city" => $city,
+            "state" => $state,
+            "title" => "Best Bike Transportation from $state to $city | " . $this->comp['company3'],
+            "description" => "Hire professional bike transportation from $state to $city with " . $this->comp['company3'] . ". Covered container carrier transport, multi-layer packing, and safe door delivery.",
+            "keywords" => "bike transportation from $state to $city, bike shifting from $state to $city, two wheeler shifting from $state to $city",
+            "module" => "packers_movers",
+            "view_file" => "city_to_city",
+        );
+        echo Modules::run('template/layout2', $data);
+    }
    
 }
