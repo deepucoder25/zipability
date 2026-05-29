@@ -51,11 +51,32 @@
     color: #073c91;
     text-decoration: underline;
 }
+@media (max-width: 767px) {
+    .city-srv-card {
+        padding: 15px 10px !important;
+    }
+    .city-srv-icon-wrap {
+        height: 50px !important;
+        margin-bottom: 10px !important;
+    }
+    .city-srv-title {
+        font-size: 0.95rem !important;
+        margin-bottom: 8px !important;
+    }
+    .city-srv-desc {
+        font-size: 0.75rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 10px !important;
+    }
+    .city-srv-link {
+        font-size: 0.8rem !important;
+    }
+}
 </style>
 <div class="container">
 <div class="row g-4 mt-5 mb-4">
     <!-- Home Shifting -->
-    <div class="col-md-6 col-lg-3 d-flex">
+    <div class="col-6 col-md-6 col-lg-3 d-flex">
         <div class="city-srv-card w-100 d-flex flex-column">
             <div class="city-srv-icon-wrap">
                 <img src="<?= base_url('assets/images/services_modules/home-shifting-services.webp') ?>" alt="Home Shifting in <?= $city ?>" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'" loading="lazy">
@@ -67,7 +88,7 @@
     </div>
     
     <!-- Office Shifting -->
-    <div class="col-md-6 col-lg-3 d-flex">
+    <div class="col-6 col-md-6 col-lg-3 d-flex">
         <div class="city-srv-card w-100 d-flex flex-column">
             <div class="city-srv-icon-wrap">
                 <img src="<?= base_url('assets/images/services_modules/office-relocation-services.webp') ?>" alt="Office Shifting in <?= $city ?>" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'" loading="lazy">
@@ -79,7 +100,7 @@
     </div>
     
     <!-- Car Shifting -->
-    <div class="col-md-6 col-lg-3 d-flex">
+    <div class="col-6 col-md-6 col-lg-3 d-flex">
         <div class="city-srv-card w-100 d-flex flex-column">
             <div class="city-srv-icon-wrap">
                 <img src="<?= base_url('assets/images/services_modules/car-transportation-services.webp') ?>" alt="Car Shifting in <?= $city ?>" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'" loading="lazy">
@@ -91,7 +112,7 @@
     </div>
     
     <!-- Bike Shifting -->
-    <div class="col-md-6 col-lg-3 d-flex">
+    <div class="col-6 col-md-6 col-lg-3 d-flex">
         <div class="city-srv-card w-100 d-flex flex-column">
             <div class="city-srv-icon-wrap">
                 <img src="<?= base_url('assets/images/services_modules/bike-transportation-services.webp') ?>" alt="Bike Shifting in <?= $city ?>" onerror="this.src='<?= base_url('assets/images/about/packers_movers.jpg') ?>'" loading="lazy">

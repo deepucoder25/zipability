@@ -104,3 +104,37 @@
 .srv-card:hover .srv-img {
     transform: scale(1.05);
 }
+
+@media (max-width: 767px) {
+    .srv-content {
+        padding: 1rem !important;
+    }
+    
+    .srv-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .srv-icon {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 16px !important;
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .srv-title {
+        font-size: 0.95rem !important;
+    }
+    
+    .srv-desc {
+        font-size: 0.8rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .srv-img {
+        height: 120px !important;
+    }
+}

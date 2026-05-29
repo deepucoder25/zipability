@@ -70,7 +70,7 @@ $services = [
         <!-- Grid of Services -->
         <div class="row g-4 justify-content-center">
             <?php foreach ($services as $index => $service): ?>
-                <div class="col-lg-3 col-md-6 col-12 d-flex">
+                <div class="col-lg-3 col-md-6 col-6 d-flex">
                     <a href="<?= site_url($service['link']) ?>" class="srv-card w-100 d-flex flex-column text-decoration-none">
                         <div class="srv-content p-4 pb-0">
                             <div class="srv-header d-flex align-items-center mb-3">
