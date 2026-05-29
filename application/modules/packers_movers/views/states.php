@@ -56,51 +56,55 @@ $state = [
 ?>
 
 <!-- Branch Section -->
-<section class="portfolio-area py-5 bg-light">
+<section class="portfolio-area py-5" style="background-color: #fafbfc;">
     <div class="container">
 
         <!-- Section Heading -->
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">
-                Our Presence Across <span style="color:#073c91;">India</span>
+        <div class="text-center mb-5 mt-3">
+            <span class="badge rounded-pill text-uppercase px-3 py-1.5 mb-2" style="background: rgba(7, 98, 247, 0.08); color: #073c91; font-weight: 700; letter-spacing: 1px; font-size: 0.75rem;">Network Coverage</span>
+            <h2 class="fw-black text-dark mb-3" style="font-size: 2.5rem; letter-spacing: -0.5px;">
+                Our Presence Across <span style="background: linear-gradient(135deg, #ff6b16, #ff8a00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800;">India</span>
             </h2>
-            <p class="text-muted">
-                Reliable packing and moving services available in major states.
+            <p class="text-muted max-width-600 mx-auto" style="font-size: 1rem; line-height: 1.6;">
+                Select your state to explore localized city branches, custom transit options, and certified shifting teams near you.
             </p>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
 
             <?php foreach ($state as $item): ?>
                 
-                <!-- 4 Columns in One Row on Desktop -->
+                <!-- Circular Profile Cards -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
 
-                    <div class="state-card bg-white rounded-4 overflow-hidden shadow-sm h-100">
+                    <div class="state-circle-card text-center bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column align-items-center justify-content-between position-relative border-0">
+                        
+                        <!-- Top Floating Badge -->
+                        <span class="active-badge"><i class="bi bi-geo-alt-fill me-1"></i> Active Hub</span>
 
-                        <!-- Image -->
-                        <div class="state-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100"
-                                src="<?= base_url() ?>/assets/images/state/<?= $item['image'] ?>"
-                                alt="<?= $item['category'] ?>"
-                                loading="lazy">
-
-                            <div class="state-overlay">
-                                <a href="<?= site_url($item['link']) ?>" class="btn btn-warning btn-sm rounded-pill px-3">
-                                    View
-                                </a>
+                        <div class="card-top-content">
+                            <!-- Circular Image with Double-Ring Spinner -->
+                            <div class="circle-avatar-wrap position-relative mx-auto mb-4">
+                                <div class="outer-ring"></div>
+                                <div class="inner-ring"></div>
+                                <div class="avatar-img-box">
+                                    <img class="img-fluid"
+                                        src="<?= base_url() ?>/assets/images/state/<?= $item['image'] ?>"
+                                        alt="<?= $item['category'] ?>"
+                                        loading="lazy">
+                                </div>
                             </div>
+
+                            <!-- State Name & Details -->
+                            <h4 class="state-title-text mb-2"><?= htmlspecialchars($item['category']) ?></h4>
+                            <p class="state-desc-text text-muted small px-2">Premium household shifting and auto-transportation services available.</p>
                         </div>
 
-                        <!-- Content -->
-                        <div class="p-3 text-start d-flex align-items-center gap-2">
-                            <span class="yellow-dash"></span>
-                            <h6 class="fw-semibold mb-0">
-                                <a href="<?= site_url($item['link']) ?>"
-                                    class="text-dark text-decoration-none">
-                                    <?= htmlspecialchars($item['category']) ?>
-                                </a>
-                            </h6>
+                        <!-- CTA Button -->
+                        <div class="card-bottom-content w-100 mt-3">
+                            <a href="<?= site_url($item['link']) ?>" class="btn btn-outline-primary rounded-pill px-4 py-2 w-100 fw-bold explore-btn d-flex align-items-center justify-content-center gap-2">
+                                Explore State <i class="bi bi-arrow-right-short fs-5"></i>
+                            </a>
                         </div>
 
                     </div>
@@ -113,61 +117,143 @@ $state = [
     </div>
 </section>
 
-
 <style>
-/* Card Design */
-.state-card {
-    transition: all 0.35s ease;
-    border: 1px solid #eef1f5;
+.max-width-600 {
+    max-width: 600px;
 }
 
-.state-card:hover {
+/* Card Container Styles */
+.state-circle-card {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    border: 1px solid #edf2f7 !important;
+    padding-top: 2.5rem !important;
+}
+
+.state-circle-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    box-shadow: 0 20px 45px rgba(7, 60, 145, 0.08) !important;
+    border-color: rgba(7, 98, 247, 0.12) !important;
 }
 
-/* Image */
-.state-img {
-    height: 180px;
+/* Circular Image Wrapper */
+.circle-avatar-wrap {
+    width: 130px;
+    height: 130px;
 }
 
-.state-img img {
+/* Outer Ring (Spins/Pulses on hover) */
+.outer-ring {
+    position: absolute;
+    inset: -6px;
+    border: 2px dashed rgba(255, 107, 22, 0.2);
+    border-radius: 50%;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.state-circle-card:hover .outer-ring {
+    transform: rotate(180deg);
+    border-color: #ff6b16;
+}
+
+/* Inner Ring */
+.inner-ring {
+    position: absolute;
+    inset: -2px;
+    border: 2px solid rgba(7, 98, 247, 0.1);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.state-circle-card:hover .inner-ring {
+    border-color: #073c91;
+    transform: scale(1.03);
+}
+
+/* Avatar Image Box */
+.avatar-img-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    z-index: 2;
+}
+
+.avatar-img-box img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.state-card:hover img {
-    transform: scale(1.08);
+.state-circle-card:hover .avatar-img-box img {
+    transform: scale(1.15);
 }
 
-/* Overlay */
-.state-overlay {
+/* Typography styles */
+.state-title-text {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #1e293b;
+    transition: color 0.3s ease;
+}
+
+.state-circle-card:hover .state-title-text {
+    color: #073c91;
+}
+
+.state-desc-text {
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: #64748b !important;
+}
+
+/* Floating Top Badge */
+.active-badge {
     position: absolute;
-    inset: 0;
-    background: rgba(7, 60, 145, 0.75);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: 0.3s ease;
+    top: 12px;
+    right: 12px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #ff6b16;
+    background: rgba(255, 107, 22, 0.08);
+    padding: 3px 8px;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+    border: 1px solid rgba(255, 107, 22, 0.1);
+    transition: all 0.3s ease;
 }
 
-.state-card:hover .state-overlay {
-    opacity: 1;
+.state-circle-card:hover .active-badge {
+    color: #ffffff;
+    background: #ff6b16;
 }
 
-/* Yellow Dash styling */
-.yellow-dash {
-    display: inline-block;
-    width: 24px;
-    height: 3px;
-    background-color: #ffb800;
-    border-radius: 2px;
-    flex-shrink: 0;
+/* Explore Button (Fills with gradient on hover) */
+.state-circle-card .explore-btn {
+    border: 1.5px solid rgba(7, 98, 247, 0.2) !important;
+    color: #073c91 !important;
+    background: transparent !important;
+    font-size: 0.85rem;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
 }
 
-/* Breadcrumb */
+.state-circle-card:hover .explore-btn {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #073c91, #0a4ebd) !important;
+    border-color: transparent !important;
+    box-shadow: 0 10px 20px rgba(7, 98, 247, 0.25) !important;
+    transform: translateY(-2px);
+}
+
+.state-circle-card:hover .explore-btn i {
+    transform: translateX(4px);
+    transition: transform 0.3s ease;
+}
+
+/* Breadcrumb styles */
 .city-breadcrumb .breadcrumb-item a {
     color: #fff;
 }
@@ -176,14 +262,18 @@ $state = [
     color: #ffc107;
 }
 
-/* Responsive */
-@media(max-width: 767px) {
-    .state-img {
-        height: 140px;
+/* Responsive Styles */
+@media(max-width: 576px) {
+    .circle-avatar-wrap {
+        width: 110px;
+        height: 110px;
     }
-
-    .display-4 {
-        font-size: 2rem;
+    .state-title-text {
+        font-size: 1.15rem;
+    }
+    .state-circle-card {
+        padding: 1.5rem !important;
+        padding-top: 2rem !important;
     }
 }
 </style>

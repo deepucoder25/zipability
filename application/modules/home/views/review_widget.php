@@ -37,7 +37,7 @@
                                     <div class="d-flex flex-column">
                                         <div class="testimonial-quote-icon mb-1">“</div>
                                         <p class="testimonial-text mb-3">
-                                            Zipability made my bike relocation from Bangalore to Delhi incredibly smooth. The pickup was on time, the team was professional, and my bike reached in perfect condition. Highly recommended!
+                                            <?= $company3 ?> made my bike relocation from Bangalore to Delhi incredibly smooth. The pickup was on time, the team was professional, and my bike reached in perfect condition. Highly recommended!
                                         </p>
                                         <!-- Rating block -->
                                         <div class="d-flex align-items-center justify-content-center justify-content-sm-start mb-3">

@@ -30,16 +30,16 @@ $floatingWhatsappLink = !empty($whatsapphtml)
       <!-- Col 1: Brand & About -->
       <div class="col-lg-3 col-md-6 pe-lg-4">
         <a href="<?= site_url() ?>" class="d-inline-block mb-3">
-          <img src="<?= base_url('assets/images/logo/footer_logo.png') ?>" alt="<?= @$company3 ?> RELOCATION" class="footer-brand-logo">
+          <img src="<?= base_url('assets/images/logo/footer_logo.png') ?>" alt="<?= $company3 ?> RELOCATION" class="footer-brand-logo">
         </a>
         <p class="footer-copy-text mb-4">
           Your trusted partner for safe, secure, and hassle-free relocations across India. We move your world with care.
         </p>
         <div class="footer-socials d-flex gap-2">
-          <a href="<?= @$facebookhtml ?>" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="<?= @$instagramhtml ?>" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="<?= @$linkedinhtml ?>" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="<?= $facebookhtml ?>" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="<?= $instagramhtml ?>" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="<?= $twitterhtml ?>" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="<?= $linkedinhtml ?>" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
 
@@ -89,20 +89,20 @@ $floatingWhatsappLink = !empty($whatsapphtml)
           <li class="d-flex align-items-start mb-3">
             <div class="contact-icon"><i class="bi bi-telephone"></i></div>
             <div class="contact-text">
-              <a href="<?= @$phonehtml ?>"><?= @$phone ?></a><br>
-              <a href="<?= @$phonehtml1 ?>"><?= @$phone1 ?></a>
+              <a href="<?= $phonehtml ?>"><?= $phone ?></a><br>
+              <a href="<?= $phonehtml1 ?>"><?= $phone1 ?></a>
             </div>
           </li>
           <li class="d-flex align-items-start mb-3">
             <div class="contact-icon"><i class="bi bi-envelope"></i></div>
             <div class="contact-text">
-              <a href="<?= @$mailhtml ?>"><?= @$mail ?></a>
+              <a href="<?= $mailhtml ?>"><?= $mail ?></a>
             </div>
           </li>
           <li class="d-flex align-items-start mb-3">
             <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
             <div class="contact-text">
-              <?= @$address ?>
+              <?= $address ?>
             </div>
           </li>
         </ul>
@@ -110,7 +110,7 @@ $floatingWhatsappLink = !empty($whatsapphtml)
     </div>
     
     <div class="footer-bottom-bar text-center py-4">
-      <p class="mb-0 footer-copyright">&copy; <?= date('Y') ?> <?= @$company3 ?>. All Rights Reserved.</p>
+      <p class="mb-0 footer-copyright">&copy; <?= date('Y') ?> <?= $company3 ?>. All Rights Reserved.</p>
     </div>
   </div>
 </footer>

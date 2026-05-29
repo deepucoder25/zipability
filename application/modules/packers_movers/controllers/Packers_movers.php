@@ -8,8 +8,8 @@ class Packers_movers extends MX_Controller
      */
     function index()
     {
-        $data['title'] = "Our Pan-India Shifting & Relocation Network | " . $this->comp['company3'];
-        $data['description'] = "Trusted pan-India packers and movers service provider. Explore our extensive network across major states and cities for secure household shifting and vehicle relocation at " . $this->comp['company3'] . ".";
+        $data['title'] = "Our Shifting & Relocation Network | " . $this->comp['company3'];
+        $data['description'] = "Trusted packers and movers service provider. Explore our extensive network across major states and cities for secure household shifting and vehicle relocation at " . $this->comp['company3'] . ".";
         $data['module'] = "packers_movers";
         $data['view_file'] = "states";
         echo Modules::run('template/layout2', $data);
@@ -21,7 +21,7 @@ class Packers_movers extends MX_Controller
      */
     function state()
     {
-        $data['title'] = "Pan-India Packers and Movers Services - State Shifting | " . $this->comp['company3'];
+        $data['title'] = "State Shifting | " . $this->comp['company3'];
         $data['description'] = "Browse " . $this->comp['company3'] . "'s comprehensive list of active states and cities for professional packing, moving, vehicle transport, and warehousing across India.";
         $data['module'] = "packers_movers";
         $data['view_file'] = "states";
