@@ -1,6 +1,7 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-$stateSlug = strtolower(str_replace(" ", "-", $state));
+$fromLocation = !empty($city) ? $city : $state;
+$fromSlug = strtolower(str_replace(" ", "-", $fromLocation));
 
 // Box 1 destinations (20 southern & western cities)
 $box1_destinations = [
@@ -51,9 +52,9 @@ $box2_destinations = [
 ];
 
 // Helper to filter out self-referential routes
-$filter_routes = function($destinations) use ($stateSlug) {
-    return array_filter($destinations, function($dest) use ($stateSlug) {
-        return strtolower(str_replace(" ", "-", $dest['state'])) != $stateSlug && strtolower(str_replace(" ", "-", $dest['city'])) != $stateSlug;
+$filter_routes = function($destinations) use ($fromSlug) {
+    return array_filter($destinations, function($dest) use ($fromSlug) {
+        return strtolower(str_replace(" ", "-", $dest['state'])) != $fromSlug && strtolower(str_replace(" ", "-", $dest['city'])) != $fromSlug;
     });
 };
 
@@ -68,10 +69,10 @@ $box2_list = array_values($filter_routes($box2_destinations));
         <div class="text-center mb-5">
             <span class="badge rounded-pill text-uppercase px-3 py-1.5 mb-2" style="background: rgba(0, 181, 184, 0.08); color: #00B5B8; font-weight: 700; letter-spacing: 1px; font-size: 0.75rem;">Direct Shifting Network</span>
             <h2 class="fw-bold mb-2" style="color: #031633;">
-                Bike Transportation from <span style="color: #00B5B8;"><?= $state ?></span>
+                Bike Transportation from <span style="color: #00B5B8;"><?= htmlspecialchars($fromLocation) ?></span>
             </h2>
             <p class="text-muted max-width-600 mx-auto" style="font-size: 0.95rem;">
-                Select your destination city to explore direct two-wheeler courier routes, transport rates, and schedules from <?= $state ?>.
+                Select your destination city to explore direct two-wheeler courier routes, transport rates, and schedules from <?= htmlspecialchars($fromLocation) ?>.
             </p>
         </div>
 
@@ -83,7 +84,7 @@ $box2_list = array_values($filter_routes($box2_destinations));
                     <div class="route-card-header">
                         <h3 class="route-card-title">
                             <i class="bi bi-geo-alt-fill"></i>
-                            From <?= $state ?> to South &amp; West Hubs
+                            From <?= htmlspecialchars($fromLocation) ?> to South &amp; West Hubs
                         </h3>
                         <span class="route-card-badge"><?= count($box1_list) ?> Routes</span>
                     </div>
@@ -91,11 +92,11 @@ $box2_list = array_values($filter_routes($box2_destinations));
                         <ul class="route-list">
                             <?php foreach ($box1_list as $dest): 
                                 $citySlug = strtolower(str_replace(" ", "-", $dest['city']));
-                                $link = "bike-transportation-service-from-" . $stateSlug . "-to-" . $citySlug;
+                                $link = "bike-transportation-service-from-" . $fromSlug . "-to-" . $citySlug;
                             ?>
                                 <li class="route-item">
                                     <a href="<?= site_url($link) ?>" class="route-item-link">
-                                        Bike Transportation Service from <?= $state ?> to <?= $dest['city'] ?>
+                                        Bike Transportation Service from <?= htmlspecialchars($fromLocation) ?> to <?= htmlspecialchars($dest['city']) ?>
                                         <i class="bi bi-chevron-right"></i>
                                     </a>
                                 </li>
@@ -111,7 +112,7 @@ $box2_list = array_values($filter_routes($box2_destinations));
                     <div class="route-card-header">
                         <h3 class="route-card-title">
                             <i class="bi bi-geo-alt-fill"></i>
-                            From <?= $state ?> to North &amp; East Hubs
+                            From <?= htmlspecialchars($fromLocation) ?> to North &amp; East Hubs
                         </h3>
                         <span class="route-card-badge"><?= count($box2_list) ?> Routes</span>
                     </div>
@@ -119,11 +120,11 @@ $box2_list = array_values($filter_routes($box2_destinations));
                         <ul class="route-list">
                             <?php foreach ($box2_list as $dest): 
                                 $citySlug = strtolower(str_replace(" ", "-", $dest['city']));
-                                $link = "bike-transportation-service-from-" . $stateSlug . "-to-" . $citySlug;
+                                $link = "bike-transportation-service-from-" . $fromSlug . "-to-" . $citySlug;
                             ?>
                                 <li class="route-item">
                                     <a href="<?= site_url($link) ?>" class="route-item-link">
-                                        Bike Transportation Service from <?= $state ?> to <?= $dest['city'] ?>
+                                        Bike Transportation Service from <?= htmlspecialchars($fromLocation) ?> to <?= htmlspecialchars($dest['city']) ?>
                                         <i class="bi bi-chevron-right"></i>
                                     </a>
                                 </li>

@@ -13,3 +13,5 @@ if (file_exists("./application/modules/packers_movers/views/data/$st.php")) {
 <?php include 'city_page_design/city_slider.php'; ?>
 
 <?php include 'city_page_design/city_about.php'; ?>
+ 
+<?php $this->load->view('from_to_list'); ?>

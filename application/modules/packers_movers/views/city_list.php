@@ -112,13 +112,6 @@ $state = ucwords($state);
     </div>
 </div>
 
-<?php 
-$state_check = strtolower(trim($state));
-if ($state_check == 'telangana' || $state_check == 'bangalore' || $state_check == 'tamil nadu'): 
-?>
-    <?php $this->load->view('from_to_list'); ?>
-<?php endif; ?>
-
 <!-- Instant Search Script -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {

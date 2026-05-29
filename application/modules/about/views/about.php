@@ -44,42 +44,49 @@
             <div class="col-lg-8">
                 <div class="service-main-content">
                     
-                    <h2 class="service-section-title">About <?= $company3 ?></h2>
+                    <h2 class="service-section-title"><?= $company3 ?> – Hyderabad </h2>
                     <div class="about-service-text">
                         <p>
-                            <strong><?= $company3 ?></strong> is a fastest growing packers &amp; movers company and specializes in providing multi-modal transport solutions. We offer our professional services with the help of our highly motivated team and modern infrastructural back up. With a personal touch to our client's requirements, <strong><?= $company3 ?></strong> provides a complete range of assurance for the safety &amp; movement of their goods.
+                            Zipability Packers and Movers Pvt. Ltd. – Hyderabad was established a year ago with the sole aim of spreading its core competency throughout the nation. Located in Hyderabad (Telangana), India, we, “Zipability Packers and Movers”, are one of the prominent goods transport companies of India. Our comprehensive array includes Industrial Mover Services, House hold packing Services, Household Goods Shifting Services, Packers Services, Vehicle Packers Services & Corporate Relocation Services & warehouse services.
                         </p>
-                        <p> 
-                            We are a nation-wide company that specializes in offering Logistics, Transportation and Movers and Packing services, which includes Warehousing Facilities, Movers &amp; Packing Solutions for Household, Office &amp; Factory Shifting, Car Transportation services by Car Containers, Loading &amp; Unloading Services and Railway Moving Facility.
+
+                    </div>
+
+                    <h3 class="service-section-title mt-5">Service Portfolio:-</h3>
+                    <div class="about-service-text">
+                        <p>Zipability Movers and Packers – Hyderabad offers our clients a comprehensive range of packing and moving services to domestic destinations. Packing and Moving Services in Hyderabad (Zipability Packers Movers) is one of the trusted service providers, who are engaged in offering Logistics & packing moving Services. Packing and Shifting Company in Hyderabad (Zipability Movers Packers) have earned a significant number of corporate clientele with some big brand names. Packers and Movers in Hyderabad (Zipability Packers & Movers) ensure them about the safety and security of their valuables and successfully meet their expectations within their budget limitations.
+                        </p>
+                        <p>Some of the highlighting features of the services offered by us are:
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Strict adherence to delivery schedules</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Tailor-made services</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Services performed by able and experienced staff</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Use of high quality packaging material</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Competitive charges</li>
+                            </ul>
                         </p>
                     </div>
 
-                    <h2 class="service-section-title mt-5">Bike Transportation Experts</h2>
+                    <h4 class="service-section-title mt-5">Quality Assurance:-</h4>
                     <div class="about-service-text">
-                        <p>
-                            We provide comprehensive and reliable <strong>Bike Parcel Services</strong> with complete safety assurance. Whether you need Local Bike Shifting or Intercity Bike Parcel Services, our team guarantees timely pickup and on-time delivery at competitive prices.
-                        </p>
-                        <p>
-                            We transport all types of two-wheelers including scooters, commuter bikes, sports bikes, and premium motorcycles. We use premium packing materials, proper strapping, and containerized transport for maximum protection. Optional insurance coverage is also available for added security during transit.
-                        </p>
+                        <p>Being a quality driven organization, Movers and Packers in Hyderabad (Zipability Movers & Packers) strictly follow industry defined parameters in our complete range of Packing and moving services. With our rich industry experience, Home Shifting Company in Hyderabad (Zipability Packers Movers) have earned a high reputation for the quality services offered by us. Zipability Packers and Movers Pvt. Ltd. – Hyderabad is committed to serve the clients with best solutions in terms of packing of goods as well as transporting them safely to the desired destination. Packers and Movers in Hyderabad (Zipability Movers Packers) have also connected our all supply and logistic centers with an integrated control system to get current status of cargo shipment.</p>
                     </div>
 
-                    <h2 class="service-section-title mt-5">Our Process</h2>
+                    <h5 class="service-section-title mt-5">Infrastructure:</h5>
                     <div class="about-service-text">
+                        <p>Team of experienced and experts of Household Goods Relocation Company in Hyderabad (Zipability Movers and Packers) helps us in prompt and hassle free execution of the entire processes. Our expanded infrastructure is segregated in various wings such as Warehousing and Packaging, Procurement, Customer support and logistics. Various wings of the Zipability Packers and Movers Company – Hyderabad are provided with latest machines and tools to cater the variegated demands of the customers. Packers and Movers in Hyderabad (Zipability Packers and Movers) has well advanced technological machinery and equipment that are essential for ensuring smooth and hassle-free transportation of goods of the customers.</p>
+                    </div>
+
+                    <h5 class="service-section-title mt-5">Why Us?</h5>
+                    <div class="about-service-text">
+                        <p>Zipability Packers and Movers Pvt. Ltd. – Hyderabad has become one of the foremost Packers and movers of India due to the below mentioned factors:</p>
                         <ul class="list-unstyled mt-3">
-                            <li class="mb-3">
-                                <strong>1. Schedule Your Door Pick-Up:</strong> The first step is to schedule a pickup time that is convenient for you. We will send one of our experienced team members to pick up your bike from your given location.
-                            </li>
-                            <li class="mb-3">
-                                <strong>2. Prepare Your Bike For Shipment:</strong> Once we have picked up your bike, we will thoroughly inspect it and take care of any necessary preparation, packing it securely in our specially designed shipping containers.
-                            </li>
-                            <li class="mb-3">
-                                <strong>3. Shipping Your Bike:</strong> We use only the safest and most reliable shipping methods to ensure that your bike reaches its destination securely.
-                            </li>
-                            <li>
-                                <strong>4. Door Delivery:</strong> Once your bike has reached its destination, we will notify you and arrange for a safe delivery. We will also unpack the bike for you so that it is ready to ride.
-                            </li>
-                        </ul>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Wide range of client specific packing and transport services</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Low cost effective services</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Customized grade of packing in accordance to our client's requirements</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Tamper proof packing of goods</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Delivery of cargo within the client specific time schedule</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Complete protection from external hazards</li>
                     </div>
 
                     <h2 class="service-section-title mt-5">Our Mission &amp; Vision</h2>
