@@ -22,7 +22,7 @@ $cities = array(
 		// array('nm' => 'Ghatkesar','lat' => '17.45081000','lon' => '78.68366000','sc' => 'TG'),
 		// array('nm' => 'Gopalur','lat' => '16.61220000','lon' => '77.80728000','sc' => 'TG'),
 		// array('nm' => 'Gudur','lat' => '17.49174000','lon' => '78.82302000','sc' => 'TG'),
-		// array('nm' => 'Hyderabad','lat' => '17.38405000','lon' => '78.45636000','sc' => 'TG'),
+		array('nm' => 'Hyderabad','lat' => '17.38405000','lon' => '78.45636000','sc' => 'TG'),
 		// array('nm' => 'Jagtial','lat' => '18.79473000','lon' => '78.91661000','sc' => 'TG'),
 		// array('nm' => 'Jangaon','lat' => '17.72602000','lon' => '79.15236000','sc' => 'TG'),
 		// array('nm' => 'Jangoan','lat' => '17.72943000','lon' => '79.16096000','sc' => 'TG'),

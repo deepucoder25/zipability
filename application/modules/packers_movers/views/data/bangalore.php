@@ -39,7 +39,7 @@ $cities = array(
 		// array('nm' => 'Bhattarahalli','lat' => '13.0255971','lon' => '77.7145545','sc' => 'KA'),
 		// array('nm' => 'Bidaraguppe','lat' => '12.8060574','lon' => '77.7862873','sc' => 'KA'),
 		// array('nm' => 'Bidrahalli','lat' => '12.971598','lon' => '77.594562','sc' => 'KA'),
-		// array('nm' => 'Bangalore Viswavidalaya','lat' => '12.971598','lon' => '77.594562','sc' => 'KA'),
+		array('nm' => 'Bangalore','lat' => '12.971598','lon' => '77.594562','sc' => 'KA'),
 		// array('nm' => 'Bommanahalli','lat' => '12.9034581','lon' => '77.6230028','sc' => 'KA'),
 		// array('nm' => 'Brigade Road','lat' => '12.9673497','lon' => '77.6064374','sc' => 'KA'),
 		// array('nm' => 'Byatarayanapura','lat' => '13.0683220','lon' => '77.5910060','sc' => 'KA'),

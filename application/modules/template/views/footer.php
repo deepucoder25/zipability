@@ -1,8 +1,13 @@
 <?php
-$floatingPhoneNumber = preg_replace('/\D+/', '', (string) $phone);
-$floatingWhatsappLink = !empty($whatsapphtml)
-  ? $whatsapphtml
-  : (!empty($floatingPhoneNumber) ? 'https://wa.me/' . $floatingPhoneNumber : '#');
+// Retrieve branch variables and active branch details from the controller
+$hyd_phone       = $phone_hyd;
+$hyd_phone_html  = $phonehtml_hyd;
+$blr_phone       = $phone_blr;
+$blr_phone_html  = $phonehtml_blr;
+$chn_phone       = $phone_chn;
+$chn_phone_html  = $phonehtml_chn;
+
+$active_branch_name = $active_branch;
 ?>
 <!-- TRUSTED BY SECTION -->
 <section class="trusted-by-section bg-white py-3 border-top">
@@ -88,21 +93,25 @@ $floatingWhatsappLink = !empty($whatsapphtml)
         <ul class="footer-contact-list list-unstyled">
           <li class="d-flex align-items-start mb-3">
             <div class="contact-icon"><i class="bi bi-telephone"></i></div>
-            <div class="contact-text">
-              <a href="<?= $phonehtml ?>"><?= $phone ?></a><br>
-              <a href="<?= $phonehtml1 ?>"><?= $phone1 ?></a>
-            </div>
-          </li>
-          <li class="d-flex align-items-start mb-3">
-            <div class="contact-icon"><i class="bi bi-envelope"></i></div>
-            <div class="contact-text">
-              <a href="<?= $mailhtml ?>"><?= $mail ?></a>
+            <div class="contact-text" style="font-size: 12.5px;">
+              <span class="d-block text-white-50 fw-bold mb-1" style="font-size: 10px; letter-spacing: 0.5px;">OUR BRANCHES</span>
+              <div class="mb-1"><strong>Hyderabad:</strong> <a href="<?= $hyd_phone_html ?>" class="text-nowrap"><?= $hyd_phone ?></a></div>
+              <div class="mb-1"><strong>Bangalore:</strong> <a href="<?= $blr_phone_html ?>" class="text-nowrap"><?= $blr_phone ?></a></div>
+              <div><strong>Chennai:</strong> <a href="<?= $chn_phone_html ?>" class="text-nowrap"><?= $chn_phone ?></a></div>
             </div>
           </li>
           <li class="d-flex align-items-start mb-3">
             <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
-            <div class="contact-text">
-              <?= $address ?>
+            <div class="contact-text" style="font-size: 12.5px;">
+              <span class="d-block text-white-50 fw-bold mb-1" style="font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase;"><?= $active_branch_name ?></span>
+              <span class="lh-base"><?= $active_address ?></span>
+            </div>
+          </li>
+          <li class="d-flex align-items-start mb-3">
+            <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+            <div class="contact-text" style="font-size: 12.5px;">
+              <span class="d-block text-white-50 fw-bold mb-1" style="font-size: 10px; letter-spacing: 0.5px;">EMAIL ID</span>
+              <a href="mailto:info@bikeparcel.in">info@bikeparcel.in</a>
             </div>
           </li>
         </ul>
@@ -116,11 +125,11 @@ $floatingWhatsappLink = !empty($whatsapphtml)
 </footer>
 
 <div class="floating-actions">
-  <a href="<?= $phonehtml ?>" class="float-btn float-call" title="Call Now" aria-label="Call <?= $company3 ?> now">
+  <a href="<?= $active_phone_html ?>" class="float-btn float-call" title="Call Now" aria-label="Call <?= $company3 ?> now">
     <div class="icon-wrap"><i class="bi bi-telephone-fill"></i></div>
     <span>Call Now</span>
   </a>
-  <a href="<?= $floatingWhatsappLink ?>" class="float-btn float-whatsapp" title="WhatsApp Us" target="_blank" rel="noopener" aria-label="Message <?= $company3 ?> on WhatsApp">
+  <a href="<?= $whatsapphtml ?>" class="float-btn float-whatsapp" title="WhatsApp Us" target="_blank" rel="noopener" aria-label="Message <?= $company3 ?> on WhatsApp">
     <div class="icon-wrap"><i class="bi bi-whatsapp"></i></div>
     <span>WhatsApp Us</span>
   </a>

@@ -4,12 +4,12 @@
 
 .location-heading h2 {
     display: inline-block;
-    color: #e10d0d;
+    color: var(--primary-cyan);
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 0;
     padding-bottom: 10px;
-    border-bottom: 3px solid #e10d0d;
+    border-bottom: 3px solid var(--primary-cyan);
     position: relative;
 }
 

@@ -37,7 +37,7 @@ $cities = array(
 		// array('nm' => 'Bhavani','lat' => '11.44553000','lon' => '77.68215000','sc' => 'TN'),
 		// array('nm' => 'Bodinayakkanur','lat' => '10.01171000','lon' => '77.34976000','sc' => 'TN'),
 		// array('nm' => 'Chengam','lat' => '12.30889000','lon' => '78.79137000','sc' => 'TN'),
-		// array('nm' => 'Chennai','lat' => '13.08784000','lon' => '80.27847000','sc' => 'TN'),
+		array('nm' => 'Chennai','lat' => '13.08784000','lon' => '80.27847000','sc' => 'TN'),
 		// array('nm' => 'Chennimalai','lat' => '11.16378000','lon' => '77.60388000','sc' => 'TN'),
 		// array('nm' => 'Chetput','lat' => '13.07000000','lon' => '80.24083000','sc' => 'TN'),
 		// array('nm' => 'Chettipalaiyam','lat' => '10.91248000','lon' => '77.03699000','sc' => 'TN'),
