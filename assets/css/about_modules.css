@@ -1,3 +1,40 @@
+.team-member-card {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+    border: 1px solid #eef1f6 !important;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 181, 184, 0.15) !important;
+    border-color: var(--primary-cyan) !important;
+}
+
+.border-light-green {
+    border-color: rgba(0, 181, 184, 0.15) !important;
+}
+
+.transition-hover {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+}
+
+.transition-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 181, 184, 0.15) !important;
+    border-color: var(--primary-cyan) !important;
+}
+
+/* Override green accents to match the brand color */
+.team-member-card .text-success,
+.team-member-card .text-success a,
+.card-title.text-success,
+.card-title.text-success i {
+    color: var(--primary-cyan) !important;
+}
+
+.team-member-card .contact-details {
+    border-top-color: rgba(0, 181, 184, 0.1) !important;
+}
+
 .about-z2 {
     z-index: 2 !important;
 }
@@ -45,4 +82,542 @@
     background-color: #F4F8FB !important;
     color: var(--primary-cyan) !important;
     border: 1px solid rgba(0, 181, 184, 0.1) !important;
+}
+
+/* careers page overrides */
+.custom-faq-accordion .accordion-item {
+    border: 1px solid #eef1f6 !important;
+}
+
+.custom-faq-accordion .accordion-button:not(.collapsed) {
+    color: var(--primary-cyan) !important;
+    background-color: rgba(0, 181, 184, 0.05) !important;
+    box-shadow: none !important;
+}
+
+.custom-faq-accordion .accordion-button:focus {
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+/* Override green accents with primary-cyan brand color */
+.border-success,
+.text-success,
+.text-success a {
+    color: var(--primary-cyan) !important;
+    border-color: var(--primary-cyan) !important;
+}
+
+/* --- Why Choose Us Section Styles --- */
+
+.why-choose-section {
+    background-color: var(--footer-bg);
+    padding: 70px 0;
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Eyebrow styling */
+.why-choose-eyebrow {
+    color: var(--primary-cyan);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+/* Title styling */
+.why-choose-title {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 0;
+    letter-spacing: -0.5px;
+    color: var(--white);
+}
+
+.why-choose-title span.accent-text {
+    color: var(--primary-cyan);
+}
+
+/* Feature Item Grid card */
+.why-choose-item {
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+
+
+/* Icon container circle */
+.why-choose-icon-wrap {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    font-size: 26px;
+    color: var(--primary-cyan);
+    background: transparent;
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+}
+
+/* Sub-circle glow/decor inside icon wrap */
+.why-choose-icon-wrap::after {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border: 1px dashed rgba(0, 181, 184, 0.2);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+/* Hover effects */
+.why-choose-item:hover .why-choose-icon-wrap {
+    transform: scale(1.08) translateY(-4px);
+    color: var(--white);
+    background: var(--primary-cyan);
+    box-shadow: 0 0 20px rgba(0, 181, 184, 0.5);
+    border-color: var(--primary-cyan);
+}
+
+.why-choose-item:hover .why-choose-icon-wrap::after {
+    inset: -9px;
+    border-color: var(--primary-cyan);
+    transform: rotate(45deg);
+}
+
+/* Feature typography */
+.why-choose-feat-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.why-choose-item:hover .why-choose-feat-title {
+    color: var(--primary-cyan);
+}
+
+.why-choose-feat-desc {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--footer-text);
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+/* Responsive adjustements */
+@media (max-width: 991px) {
+    .why-choose-section {
+        padding: 55px 0;
+    }
+
+    .why-choose-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .why-choose-eyebrow {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .why-choose-section {
+        padding: 45px 0;
+    }
+
+    .why-choose-title {
+        font-size: 28px;
+    }
+
+    .why-choose-feat-title {
+        font-size: 16px;
+    }
+
+    .why-choose-feat-desc {
+        font-size: 12.5px;
+    }
+}
+
+/* --- Process / How It Works Section Styles --- */
+
+.process-section {
+    background-color: var(--white);
+    padding: 40px 0;
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Eyebrow styling */
+.process-eyebrow {
+    color: var(--primary-cyan);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+/* Title styling */
+.process-title {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 0;
+    letter-spacing: -0.5px;
+    color: var(--text-dark);
+}
+
+.process-title span.accent-text {
+    color: var(--primary-cyan);
+}
+
+/* Feature Item Grid card */
+.process-card {
+    background-color: #F4F8FB;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+    border: 1px solid rgba(0, 181, 184, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 181, 184, 0.02);
+}
+
+.process-card:hover {
+    transform: translateY(-6px);
+    background-color: #EDF5FB;
+    box-shadow: 0 12px 30px rgba(0, 181, 184, 0.1);
+    border-color: rgba(0, 181, 184, 0.2);
+}
+
+/* Icon container styling */
+.process-icon-wrap {
+    font-size: 40px;
+    color: var(--primary-cyan);
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.process-card:hover .process-icon-wrap {
+    transform: scale(1.12) rotate(6deg);
+}
+
+/* Feature typography */
+.process-feat-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.process-card:hover .process-feat-title {
+    color: var(--primary-cyan);
+}
+
+.process-feat-desc {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--text-light);
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+/* Dotted Connectors & Arrowheads for Desktop (>= 1200px) */
+@media (min-width: 1200px) {
+    .process-step {
+        position: relative;
+    }
+
+    .process-step:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 38%;
+        right: -15%;
+        width: 30%;
+        height: 1px;
+        border-top: 2.5px dotted var(--primary-cyan);
+        opacity: 0.5;
+        z-index: 10;
+        transition: all 0.3s ease;
+    }
+
+    .process-step:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        top: calc(38% - 4.5px);
+        right: -15%;
+        width: 10px;
+        height: 10px;
+        border-top: 2.5px solid var(--primary-cyan);
+        border-right: 2.5px solid var(--primary-cyan);
+        transform: rotate(45deg);
+        opacity: 0.7;
+        z-index: 10;
+        transition: all 0.3s ease;
+    }
+
+    /* Interactive connector animations on hover */
+    .process-step:hover:not(:last-child)::after {
+        opacity: 0.95;
+        transform: scaleX(1.05);
+    }
+
+    .process-step:hover:not(:last-child)::before {
+        opacity: 0.95;
+        transform: rotate(45deg) scale(1.1) translateX(4px);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199px) {
+    .process-section {
+        padding: 45px 0;
+    }
+
+    .process-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .process-eyebrow {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .process-section {
+        padding: 40px 0;
+    }
+
+    .process-title {
+        font-size: 28px;
+    }
+
+    .process-feat-title {
+        font-size: 15px;
+    }
+
+    .process-feat-desc {
+        font-size: 12.5px;
+    }
+}
+
+/* --- Modern Testimonial Slider Styles --- */
+
+/* Review details */
+.review-header {
+    background: #f8fafc;
+    padding: 60px 0;
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.review-header h1 {
+    font-weight: 800;
+    color: #001846;
+    margin-bottom: 15px;
+}
+
+.review-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    border: 1px solid #f1f5f9;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.review-rating {
+    color: #f59e0b;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    background: #e2e8f0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.author-info h6 {
+    margin: 0;
+    font-weight: 700;
+    color: #001846;
+}
+
+.author-info span {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 12px 15px;
+}
+
+.form-control:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 0 4px rgba(255, 102, 0, 0.1);
+}
+
+.rating-select {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.rating-item {
+    cursor: pointer;
+    font-size: 24px;
+    color: #cbd5e1;
+    transition: 0.2s;
+}
+
+.rating-item.active {
+    color: #f59e0b;
+}
+
+.btn-submit {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 100%;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background: #e65c00;
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+
+
+.bg-success-soft {
+    background-color: rgba(0, 181, 184, 0.1) !important;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.testimonial-card {
+    border: 1px solid #eef1f6 !important;
+}
+
+.testimonial-card:hover {
+    border-color: var(--primary-cyan) !important;
+}
+
+.btn-success {
+    background-color: var(--primary-cyan) !important;
+    border-color: var(--primary-cyan) !important;
+}
+
+.btn-success:hover {
+    background-color: #009CA0 !important;
+    border-color: #009CA0 !important;
+}
+
+/* --- Gallery & Testimonial Extracted Inline Styles --- */
+.photo-gallery-card, .video-gallery-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid #eef1f6 !important;
+}
+.photo-gallery-card:hover, .video-gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 181, 184, 0.15) !important;
+    border-color: var(--primary-cyan) !important;
+}
+.gallery-img-wrapper:hover .gallery-hover-overlay {
+    opacity: 1 !important;
+}
+.bg-dark-50 {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.testimonial-card-quote {
+    font-size: 3rem;
+}
+.testimonial-card-route {
+    font-size: 0.75rem;
+}
+.testimonial-card-badge {
+    font-size: 0.7rem;
+}
+.strength-icon {
+    font-size: 2rem;
+}
+
+/* Gallery Views Styling Extracted */
+.gallery-card-img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.gallery-hover-icon {
+    font-size: 2rem;
+}
+
+.gallery-badge {
+    font-size: 0.75rem;
+}
+
+.gallery-card-title {
+    font-size: 1rem;
 }

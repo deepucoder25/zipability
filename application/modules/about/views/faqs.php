@@ -151,18 +151,4 @@
     </div>
 </section>
 
-<style>
-.custom-faq-accordion .accordion-item {
-    border: 1px solid #eef1f6 !important;
-}
-.custom-faq-accordion .accordion-button:not(.collapsed) {
-    color: var(--primary-cyan) !important;
-    background-color: rgba(0, 181, 184, 0.05) !important;
-    box-shadow: none !important;
-}
-.custom-faq-accordion .accordion-button:focus {
-    box-shadow: none !important;
-    border-color: transparent !important;
-}
-</style>
 

@@ -123,31 +123,3 @@
         </div>
     </div>
 </section>
-
-<style>
-.team-member-card {
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
-    border: 1px solid #eef1f6 !important;
-}
-.team-member-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 181, 184, 0.15) !important;
-    border-color: var(--primary-cyan) !important;
-}
-.border-light-green {
-    border-color: rgba(0, 181, 184, 0.15) !important;
-}
-.transition-hover {
-    transition: all 0.3s ease;
-}
-/* Override green accents to match the brand color */
-.team-member-card .text-success,
-.team-member-card .text-success a,
-.card-title.text-success,
-.card-title.text-success i {
-    color: var(--primary-cyan) !important;
-}
-.team-member-card .contact-details {
-    border-top-color: rgba(0, 181, 184, 0.1) !important;
-}
-</style>

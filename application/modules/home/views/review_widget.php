@@ -70,8 +70,8 @@
                             <div class="col-lg-8 col-12">
                                 <div class="d-flex align-items-start mb-3 flex-column flex-sm-row text-center text-sm-start">
                                     <!-- Priya Avatar SVG -->
-                                    <div class="mb-3 mb-sm-0 mx-auto mx-sm-0 me-sm-4 shadow-sm" style="width: 75px; height: 75px; flex-shrink: 0; border-radius: 50%; overflow: hidden;">
-                                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                                    <div class="mb-3 mb-sm-0 mx-auto mx-sm-0 me-sm-4 shadow-sm testimonial-avatar-wrapper">
+                                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="testimonial-avatar-svg">
                                             <circle cx="30" cy="30" r="30" fill="url(#priyaGradSlider)"/>
                                             <path d="M12 28 C 12 15, 48 15, 48 28 C 48 38, 44 48, 44 48 L 16 48 C 16 48, 12 38, 12 28 Z" fill="#2d1c18"/>
                                             <circle cx="30" cy="27" r="11" fill="#fed8cc"/>
@@ -123,8 +123,8 @@
                             <div class="col-lg-8 col-12">
                                 <div class="d-flex align-items-start mb-3 flex-column flex-sm-row text-center text-sm-start">
                                     <!-- Amit Avatar SVG -->
-                                    <div class="mb-3 mb-sm-0 mx-auto mx-sm-0 me-sm-4 shadow-sm" style="width: 75px; height: 75px; flex-shrink: 0; border-radius: 50%; overflow: hidden;">
-                                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                                    <div class="mb-3 mb-sm-0 mx-auto mx-sm-0 me-sm-4 shadow-sm testimonial-avatar-wrapper">
+                                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="testimonial-avatar-svg">
                                             <circle cx="30" cy="30" r="30" fill="url(#amitGradSlider)"/>
                                             <circle cx="30" cy="26" r="11" fill="#fedcbe"/>
                                             <path d="M19 22 C 19 16, 41 16, 41 22 C 41 14, 19 14, 19 22 Z" fill="#1f2421"/>

@@ -1,12 +1,7 @@
-@import "footer.css";
-@import "slider.css";
 @import "navigation.css";
+@import "slider.css";
+@import "footer.css";
 @import "home_modules.css";
 @import "about_modules.css";
-@import "contact_modules.css";
-@import "services_modules.css";
-@import "service_widget.css";
-@import "city_list.css";
-@import "why_choose.css";
-@import "review_widget.css";
-@import "from_to.css";
+@import "service_modules.css";
+@import "city.css";

@@ -67,11 +67,11 @@ $box2_list = array_values($filter_routes($box2_destinations));
         
         <!-- Premium Section Header -->
         <div class="text-center mb-5">
-            <span class="badge rounded-pill text-uppercase px-3 py-1.5 mb-2" style="background: rgba(0, 181, 184, 0.08); color: #00B5B8; font-weight: 700; letter-spacing: 1px; font-size: 0.75rem;">Direct Shifting Network</span>
-            <h2 class="fw-bold mb-2" style="color: #031633;">
-                Bike Transportation from <span style="color: #00B5B8;"><?= htmlspecialchars($fromLocation) ?></span>
+            <span class="badge rounded-pill text-uppercase px-3 py-1.5 mb-2 route-section-eyebrow">Direct Shifting Network</span>
+            <h2 class="fw-bold mb-2 route-main-title">
+                Bike Transportation from <span class="route-accent-span"><?= htmlspecialchars($fromLocation) ?></span>
             </h2>
-            <p class="text-muted max-width-600 mx-auto" style="font-size: 0.95rem;">
+            <p class="text-muted max-width-600 mx-auto route-intro-text">
                 Select your destination city to explore direct two-wheeler courier routes, transport rates, and schedules from <?= htmlspecialchars($fromLocation) ?>.
             </p>
         </div>

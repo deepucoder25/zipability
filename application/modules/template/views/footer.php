@@ -93,8 +93,8 @@ $active_branch_name = $active_branch;
         <ul class="footer-contact-list list-unstyled">
           <li class="d-flex align-items-start mb-3">
             <div class="contact-icon"><i class="bi bi-telephone"></i></div>
-            <div class="contact-text" style="font-size: 12.5px;">
-              <span class="d-block text-white-50 fw-bold mb-1" style="font-size: 10px; letter-spacing: 0.5px;">OUR BRANCHES</span>
+            <div class="contact-text">
+              <span class="contact-label">OUR BRANCHES</span>
               <div class="mb-1"><strong>Hyderabad:</strong> <a href="<?= $hyd_phone_html ?>" class="text-nowrap"><?= $hyd_phone ?></a></div>
               <div class="mb-1"><strong>Bangalore:</strong> <a href="<?= $blr_phone_html ?>" class="text-nowrap"><?= $blr_phone ?></a></div>
               <div><strong>Chennai:</strong> <a href="<?= $chn_phone_html ?>" class="text-nowrap"><?= $chn_phone ?></a></div>
@@ -102,15 +102,15 @@ $active_branch_name = $active_branch;
           </li>
           <li class="d-flex align-items-start mb-3">
             <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
-            <div class="contact-text" style="font-size: 12.5px;">
-              <span class="d-block text-white-50 fw-bold mb-1" style="font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase;"><?= $active_branch_name ?></span>
+            <div class="contact-text">
+              <span class="contact-label text-uppercase"><?= $active_branch_name ?></span>
               <span class="lh-base"><?= $active_address ?></span>
             </div>
           </li>
           <li class="d-flex align-items-start mb-3">
             <div class="contact-icon"><i class="bi bi-envelope"></i></div>
-            <div class="contact-text" style="font-size: 12.5px;">
-              <span class="d-block text-white-50 fw-bold mb-1" style="font-size: 10px; letter-spacing: 0.5px;">EMAIL ID</span>
+            <div class="contact-text">
+              <span class="contact-label">EMAIL ID</span>
               <a href="mailto:info@bikeparcel.in">info@bikeparcel.in</a>
             </div>
           </li>

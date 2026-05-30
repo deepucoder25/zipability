@@ -60,8 +60,8 @@
                                     <iframe src="https://www.youtube.com/embed/zH0uYvK_3_g" title="Household Shifting &amp; Premium Packing Demo" allowfullscreen class="border-0"></iframe>
                                 </div>
                                 <div class="card-body p-3">
-                                    <span class="badge bg-success-soft text-success mb-2" style="font-size: 0.75rem;">Household Shifting</span>
-                                    <h5 class="fw-bold mb-1" style="font-size: 1rem;">Premium Packing &amp; Moving Demo</h5>
+                                    <span class="badge bg-success-soft text-success mb-2 gallery-badge">Household Shifting</span>
+                                    <h5 class="fw-bold mb-1 gallery-card-title">Premium Packing &amp; Moving Demo</h5>
                                     <p class="small text-muted mb-0">
                                         Watch our team pack fragile items, electronics, and heavy furniture using multi-layer bubble wrap, foam, and specialized cartons.
                                     </p>
@@ -76,8 +76,8 @@
                                     <iframe src="https://www.youtube.com/embed/5Nco02r6vDk" title="Car Carrier Loading &amp; Safe Transport" allowfullscreen class="border-0"></iframe>
                                 </div>
                                 <div class="card-body p-3">
-                                    <span class="badge bg-success-soft text-success mb-2" style="font-size: 0.75rem;">Vehicle Shifting</span>
-                                    <h5 class="fw-bold mb-1" style="font-size: 1rem;">Car Carrier Loading Process</h5>
+                                    <span class="badge bg-success-soft text-success mb-2 gallery-badge">Vehicle Shifting</span>
+                                    <h5 class="fw-bold mb-1 gallery-card-title">Car Carrier Loading Process</h5>
                                     <p class="small text-muted mb-0">
                                         See how we load passenger vehicles onto our double-deck enclosed car carriers, securing them safely for long-distance transport.
                                     </p>
@@ -92,8 +92,8 @@
                                     <iframe src="https://www.youtube.com/embed/q6C_9eKkH9Q" title="Office Relocation &amp; IT Shifting" allowfullscreen class="border-0"></iframe>
                                 </div>
                                 <div class="card-body p-3">
-                                    <span class="badge bg-success-soft text-success mb-2" style="font-size: 0.75rem;">Office Relocation</span>
-                                    <h5 class="fw-bold mb-1" style="font-size: 1rem;">Commercial Office Shifting</h5>
+                                    <span class="badge bg-success-soft text-success mb-2 gallery-badge">Office Relocation</span>
+                                    <h5 class="fw-bold mb-1 gallery-card-title">Commercial Office Shifting</h5>
                                     <p class="small text-muted mb-0">
                                         Watch our specialized IT relocations crew package servers, workstations, and office records for minimal downtime.
                                     </p>
@@ -108,8 +108,8 @@
                                     <iframe src="https://www.youtube.com/embed/FwVn02gC21A" title="Warehousing &amp; Self Storage" allowfullscreen class="border-0"></iframe>
                                 </div>
                                 <div class="card-body p-3">
-                                    <span class="badge bg-success-soft text-success mb-2" style="font-size: 0.75rem;">Storage Facility</span>
-                                    <h5 class="fw-bold mb-1" style="font-size: 1rem;">Warehouse &amp; Storage Walkthrough</h5>
+                                    <span class="badge bg-success-soft text-success mb-2 gallery-badge">Storage Facility</span>
+                                    <h5 class="fw-bold mb-1 gallery-card-title">Warehouse &amp; Storage Walkthrough</h5>
                                     <p class="small text-muted mb-0">
                                         Take a tour of our clean, moisture-controlled, fire-safe, and 24/7 CCTV-monitored warehouse and storage facilities.
                                     </p>
@@ -137,18 +137,5 @@
     </div>
 </section>
 
-<style>
-.video-gallery-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    border: 1px solid #eef1f6 !important;
-}
-.video-gallery-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(95, 150, 24, 0.08) !important;
-    border-color: #5f9618 !important;
-}
-.bg-success-soft {
-    background-color: rgba(25, 135, 84, 0.1) !important;
-}
-</style>
+
 

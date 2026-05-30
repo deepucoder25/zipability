@@ -57,14 +57,14 @@
                         <div class="col-md-6 mb-4">
                             <div class="card border-0 shadow-sm rounded-3 overflow-hidden photo-gallery-card h-100">
                                 <div class="gallery-img-wrapper position-relative">
-                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/home-shifting-services.webp') ?>" class="w-100 img-fluid" alt="Household Packing and Shifting Services" style="height: 220px; object-fit: cover;">
+                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/home-shifting-services.webp') ?>" class="w-100 img-fluid gallery-card-img" alt="Household Packing and Shifting Services">
                                     <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 bg-dark-50 transition-all">
-                                        <i class="bi bi-zoom-in text-white" style="font-size: 2rem;"></i>
+                                        <i class="bi bi-zoom-in text-white gallery-hover-icon"></i>
                                     </div>
                                 </div>
                                 <div class="card-body p-3">
-                                    <span class="badge bg-success-soft text-success mb-2" style="font-size: 0.75rem;">Household Packing</span>
-                                    <h5 class="fw-bold mb-1" style="font-size: 1rem;">Multi-Layer Furniture Protection</h5>
+                                    <span class="badge bg-success-soft text-success mb-2 gallery-badge">Household Packing</span>
+                                    <h5 class="fw-bold mb-1 gallery-card-title">Multi-Layer Furniture Protection</h5>
                                     <p class="small text-muted mb-0">Careful packing of household furniture using bubble wrap and edge guards to prevent transit scratches.</p>
                                 </div>
                             </div>
@@ -74,14 +74,14 @@
                         <div class="col-md-6 mb-4">
                             <div class="card border-0 shadow-sm rounded-3 overflow-hidden photo-gallery-card h-100">
                                 <div class="gallery-img-wrapper position-relative">
-                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/car-transportation-services.webp') ?>" class="w-100 img-fluid" alt="Car Transportation Carriers" style="height: 220px; object-fit: cover;">
+                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/car-transportation-services.webp') ?>" class="w-100 img-fluid gallery-card-img" alt="Car Transportation Carriers">
                                     <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 bg-dark-50 transition-all">
-                                        <i class="bi bi-zoom-in text-white" style="font-size: 2rem;"></i>
+                                        <i class="bi bi-zoom-in text-white gallery-hover-icon"></i>
                                     </div>
                                 </div>
                                 <div class="card-body p-3">
-                                    <span class="badge bg-success-soft text-success mb-2" style="font-size: 0.75rem;">Car Carrier</span>
-                                    <h5 class="fw-bold mb-1" style="font-size: 1rem;">Enclosed Double-Deck Car Transport</h5>
+                                    <span class="badge bg-success-soft text-success mb-2 gallery-badge">Car Carrier</span>
+                                    <h5 class="fw-bold mb-1 gallery-card-title">Enclosed Double-Deck Car Transport</h5>
                                     <p class="small text-muted mb-0">Loading passenger cars inside fully enclosed containers to protect them from weather and road debris.</p>
                                 </div>
                             </div>
@@ -91,14 +91,14 @@
                         <div class="col-md-6 mb-4">
                             <div class="card border-0 shadow-sm rounded-3 overflow-hidden photo-gallery-card h-100">
                                 <div class="gallery-img-wrapper position-relative">
-                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/bike-transportation-services.webp') ?>" class="w-100 img-fluid" alt="Two-Wheeler Bike Shifting" style="height: 220px; object-fit: cover;">
+                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/bike-transportation-services.webp') ?>" class="w-100 img-fluid gallery-card-img" alt="Two-Wheeler Bike Shifting">
                                     <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 bg-dark-50 transition-all">
-                                        <i class="bi bi-zoom-in text-white" style="font-size: 2rem;"></i>
+                                        <i class="bi bi-zoom-in text-white gallery-hover-icon"></i>
                                     </div>
                                 </div>
                                 <div class="card-body p-3">
-                                    <span class="badge bg-success-soft text-success mb-2" style="font-size: 0.75rem;">Bike Shifting</span>
-                                    <h5 class="fw-bold mb-1" style="font-size: 1rem;">Scratch-Free Two-Wheeler Packing</h5>
+                                    <span class="badge bg-success-soft text-success mb-2 gallery-badge">Bike Shifting</span>
+                                    <h5 class="fw-bold mb-1 gallery-card-title">Scratch-Free Two-Wheeler Packing</h5>
                                     <p class="small text-muted mb-0">Secure wheel lock straps and heavy foam sheeting applied to bikes before long-distance transport.</p>
                                 </div>
                             </div>
@@ -108,14 +108,14 @@
                         <div class="col-md-6 mb-4">
                             <div class="card border-0 shadow-sm rounded-3 overflow-hidden photo-gallery-card h-100">
                                 <div class="gallery-img-wrapper position-relative">
-                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/loading.webp') ?>" class="w-100 img-fluid" alt="Cargo Loading Operations" style="height: 220px; object-fit: cover;">
+                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/loading.webp') ?>" class="w-100 img-fluid gallery-card-img" alt="Cargo Loading Operations">
                                     <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 bg-dark-50 transition-all">
-                                        <i class="bi bi-zoom-in text-white" style="font-size: 2rem;"></i>
+                                        <i class="bi bi-zoom-in text-white gallery-hover-icon"></i>
                                     </div>
                                 </div>
                                 <div class="card-body p-3">
-                                    <span class="badge bg-success-soft text-success mb-2" style="font-size: 0.75rem;">Cargo Loading</span>
-                                    <h5 class="fw-bold mb-1" style="font-size: 1rem;">Organized Goods Stacking &amp; Loading</h5>
+                                    <span class="badge bg-success-soft text-success mb-2 gallery-badge">Cargo Loading</span>
+                                    <h5 class="fw-bold mb-1 gallery-card-title">Organized Goods Stacking &amp; Loading</h5>
                                     <p class="small text-muted mb-0">Professional loaders stacking boxes systematically inside our trucks to ensure stability during transit.</p>
                                 </div>
                             </div>
@@ -133,27 +133,5 @@
     </div>
 </section>
 
-<style>
-.photo-gallery-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    border: 1px solid #eef1f6 !important;
-}
-.photo-gallery-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(95, 150, 24, 0.08) !important;
-    border-color: #5f9618 !important;
-}
-.bg-success-soft {
-    background-color: rgba(25, 135, 84, 0.1) !important;
-}
-.gallery-img-wrapper:hover .gallery-hover-overlay {
-    opacity: 1 !important;
-}
-.bg-dark-50 {
-    background-color: rgba(0, 0, 0, 0.4) !important;
-}
-.transition-all {
-    transition: all 0.3s ease-in-out;
-}
-</style>
+
 

@@ -54,16 +54,16 @@ $services = [
 ?>
 
 <section class="services-section py-5 bg-white">
-    <div class="container position-relative" style="z-index: 2;">
+    <div class="container position-relative services-container">
         
         <!-- Top Header Layout matching screenshot -->
         <div class="row mb-5 align-items-end">
             <div class="col-lg-6">
-                <div class="text-uppercase fw-bold mb-2" style="color: #00B5B8; font-size: 13px; letter-spacing: 1px;">COMPLETE RELOCATION SOLUTIONS</div>
-                <h2 class="fw-bolder" style="font-size: 42px; line-height: 1.2; color: #111827;">We Move More <br><span style="color: #00B5B8;">Than You Imagine.</span></h2>
+                <div class="text-uppercase fw-bold mb-2 services-eyebrow">COMPLETE RELOCATION SOLUTIONS</div>
+                <h2 class="fw-bolder services-main-title">We Move More <br><span class="services-title-accent">Than You Imagine.</span></h2>
             </div>
             <div class="col-lg-6">
-                <p class="text-muted mb-0 ps-lg-5" style="font-size: 17px; line-height: 1.6;">Whether it's your home, office, vehicle, or valuables—we offer end-to-end relocation solutions tailored to your needs.</p>
+                <p class="text-muted mb-0 ps-lg-5 services-intro-text">Whether it's your home, office, vehicle, or valuables—we offer end-to-end relocation solutions tailored to your needs.</p>
             </div>
         </div>
 

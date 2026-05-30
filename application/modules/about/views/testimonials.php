@@ -57,7 +57,7 @@
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light position-relative transition-hover testimonial-card">
                                 <div class="quote-icon text-success position-absolute top-0 end-0 m-3 opacity-25">
-                                    <i class="bi bi-quote" style="font-size: 3rem;"></i>
+                                    <i class="bi bi-quote testimonial-card-quote"></i>
                                 </div>
                                 <div class="rating text-warning mb-2">
                                     <i class="bi bi-star-fill"></i>
@@ -73,9 +73,9 @@
                                 <div class="user-details pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
                                     <div>
                                         <strong class="d-block small">Ramanuj Sharma</strong>
-                                        <small class="text-muted text-uppercase" style="font-size: 0.75rem;">Delhi to Bangalore</small>
+                                        <small class="text-muted text-uppercase testimonial-card-route">Delhi to Bangalore</small>
                                     </div>
-                                    <span class="badge bg-success-soft text-success rounded-pill px-2 py-1 small" style="font-size: 0.7rem;">
+                                    <span class="badge bg-success-soft text-success rounded-pill px-2 py-1 small testimonial-card-badge">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
                                     </span>
                                 </div>
@@ -86,7 +86,7 @@
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light position-relative transition-hover testimonial-card">
                                 <div class="quote-icon text-success position-absolute top-0 end-0 m-3 opacity-25">
-                                    <i class="bi bi-quote" style="font-size: 3rem;"></i>
+                                    <i class="bi bi-quote testimonial-card-quote"></i>
                                 </div>
                                 <div class="rating text-warning mb-2">
                                     <i class="bi bi-star-fill"></i>
@@ -102,9 +102,9 @@
                                 <div class="user-details pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
                                     <div>
                                         <strong class="d-block small">Priya Nair</strong>
-                                        <small class="text-muted text-uppercase" style="font-size: 0.75rem;">Mumbai to Gurgaon</small>
+                                        <small class="text-muted text-uppercase testimonial-card-route">Mumbai to Gurgaon</small>
                                     </div>
-                                    <span class="badge bg-success-soft text-success rounded-pill px-2 py-1 small" style="font-size: 0.7rem;">
+                                    <span class="badge bg-success-soft text-success rounded-pill px-2 py-1 small testimonial-card-badge">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
                                     </span>
                                 </div>
@@ -115,7 +115,7 @@
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light position-relative transition-hover testimonial-card">
                                 <div class="quote-icon text-success position-absolute top-0 end-0 m-3 opacity-25">
-                                    <i class="bi bi-quote" style="font-size: 3rem;"></i>
+                                    <i class="bi bi-quote testimonial-card-quote"></i>
                                 </div>
                                 <div class="rating text-warning mb-2">
                                     <i class="bi bi-star-fill"></i>
@@ -131,9 +131,9 @@
                                 <div class="user-details pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
                                     <div>
                                         <strong class="d-block small">Vikram Malhotra</strong>
-                                        <small class="text-muted text-uppercase" style="font-size: 0.75rem;">Pune to Hyderabad</small>
+                                        <small class="text-muted text-uppercase testimonial-card-route">Pune to Hyderabad</small>
                                     </div>
-                                    <span class="badge bg-success-soft text-success rounded-pill px-2 py-1 small" style="font-size: 0.7rem;">
+                                    <span class="badge bg-success-soft text-success rounded-pill px-2 py-1 small testimonial-card-badge">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
                                     </span>
                                 </div>
@@ -144,7 +144,7 @@
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light position-relative transition-hover testimonial-card">
                                 <div class="quote-icon text-success position-absolute top-0 end-0 m-3 opacity-25">
-                                    <i class="bi bi-quote" style="font-size: 3rem;"></i>
+                                    <i class="bi bi-quote testimonial-card-quote"></i>
                                 </div>
                                 <div class="rating text-warning mb-2">
                                     <i class="bi bi-star-fill"></i>
@@ -160,9 +160,9 @@
                                 <div class="user-details pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
                                     <div>
                                         <strong class="d-block small">Amitava Bose</strong>
-                                        <small class="text-muted text-uppercase" style="font-size: 0.75rem;">Local Kolkata Shifting</small>
+                                        <small class="text-muted text-uppercase testimonial-card-route">Local Kolkata Shifting</small>
                                     </div>
-                                    <span class="badge bg-success-soft text-success rounded-pill px-2 py-1 small" style="font-size: 0.7rem;">
+                                    <span class="badge bg-success-soft text-success rounded-pill px-2 py-1 small testimonial-card-badge">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
                                     </span>
                                 </div>
@@ -173,7 +173,7 @@
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light position-relative transition-hover testimonial-card">
                                 <div class="quote-icon text-success position-absolute top-0 end-0 m-3 opacity-25">
-                                    <i class="bi bi-quote" style="font-size: 3rem;"></i>
+                                    <i class="bi bi-quote testimonial-card-quote"></i>
                                 </div>
                                 <div class="rating text-warning mb-2">
                                     <i class="bi bi-star-fill"></i>
@@ -189,9 +189,9 @@
                                 <div class="user-details pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
                                     <div>
                                         <strong class="d-block small">Dr. Rajesh Patel</strong>
-                                        <small class="text-muted text-uppercase" style="font-size: 0.75rem;">Siliguri to Chennai</small>
+                                        <small class="text-muted text-uppercase testimonial-card-route">Siliguri to Chennai</small>
                                     </div>
-                                    <span class="badge bg-success-soft text-success rounded-pill px-2 py-1 small" style="font-size: 0.7rem;">
+                                    <span class="badge bg-success-soft text-success rounded-pill px-2 py-1 small testimonial-card-badge">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
                                     </span>
                                 </div>
@@ -202,7 +202,7 @@
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light position-relative transition-hover testimonial-card">
                                 <div class="quote-icon text-success position-absolute top-0 end-0 m-3 opacity-25">
-                                    <i class="bi bi-quote" style="font-size: 3rem;"></i>
+                                    <i class="bi bi-quote testimonial-card-quote"></i>
                                 </div>
                                 <div class="rating text-warning mb-2">
                                     <i class="bi bi-star-fill"></i>
@@ -218,9 +218,9 @@
                                 <div class="user-details pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
                                     <div>
                                         <strong class="d-block small">Siddharth Sen</strong>
-                                        <small class="text-muted text-uppercase" style="font-size: 0.75rem;">Patna to Lucknow</small>
+                                        <small class="text-muted text-uppercase testimonial-card-route">Patna to Lucknow</small>
                                     </div>
-                                    <span class="badge bg-success-soft text-success rounded-pill px-2 py-1 small" style="font-size: 0.7rem;">
+                                    <span class="badge bg-success-soft text-success rounded-pill px-2 py-1 small testimonial-card-badge">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
                                     </span>
                                 </div>
@@ -250,40 +250,4 @@
     </div>
 </section>
 
-<style>
-.transition-hover {
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
-}
-.transition-hover:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 181, 184, 0.15) !important;
-}
-.bg-success-soft {
-    background-color: rgba(0, 181, 184, 0.1) !important;
-}
-.italic-text {
-    font-style: italic;
-}
-.testimonial-card {
-    border: 1px solid #eef1f6 !important;
-}
-.testimonial-card:hover {
-    border-color: var(--primary-cyan) !important;
-}
-/* Override green accents with brand primary-cyan */
-.quote-icon.text-success,
-.badge.text-success,
-.text-success,
-.border-success {
-    color: var(--primary-cyan) !important;
-}
-.btn-success {
-    background-color: var(--primary-cyan) !important;
-    border-color: var(--primary-cyan) !important;
-}
-.btn-success:hover {
-    background-color: #009CA0 !important;
-    border-color: #009CA0 !important;
-}
-</style>
 

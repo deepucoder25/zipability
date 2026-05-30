@@ -59,7 +59,7 @@
                     <div class="row mt-4">
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light text-center transition-hover">
-                                <div class="icon-box text-success mb-3" style="font-size: 2rem;">
+                                <div class="icon-box text-success mb-3 strength-icon">
                                     <i class="bi bi-shield-lock-fill"></i>
                                 </div>
                                 <h5 class="fw-bold">100% Safe Shifting</h5>
@@ -70,7 +70,7 @@
                         </div>
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light text-center transition-hover">
-                                <div class="icon-box text-success mb-3" style="font-size: 2rem;">
+                                <div class="icon-box text-success mb-3 strength-icon">
                                     <i class="bi bi-truck"></i>
                                 </div>
                                 <h5 class="fw-bold">Specialized Vehicle Carriers</h5>
@@ -81,7 +81,7 @@
                         </div>
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light text-center transition-hover">
-                                <div class="icon-box text-success mb-3" style="font-size: 2rem;">
+                                <div class="icon-box text-success mb-3 strength-icon">
                                     <i class="bi bi-tags-fill"></i>
                                 </div>
                                 <h5 class="fw-bold">Transparent Fair Pricing</h5>
@@ -92,7 +92,7 @@
                         </div>
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light text-center transition-hover">
-                                <div class="icon-box text-success mb-3" style="font-size: 2rem;">
+                                <div class="icon-box text-success mb-3 strength-icon">
                                     <i class="bi bi-clock-history"></i>
                                 </div>
                                 <h5 class="fw-bold">Punctual &amp; Prompt Delivery</h5>
@@ -134,21 +134,4 @@
     </div>
 </section>
 
-<style>
-.transition-hover {
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
-}
-.transition-hover:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 181, 184, 0.15) !important;
-    border-color: var(--primary-cyan) !important;
-}
-/* Override green accents to match the brand color */
-.icon-box.text-success,
-.text-success,
-.border-success {
-    color: var(--primary-cyan) !important;
-    border-color: var(--primary-cyan) !important;
-}
-</style>
 

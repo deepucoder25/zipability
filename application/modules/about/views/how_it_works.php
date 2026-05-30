@@ -118,11 +118,4 @@
     </div>
 </section>
 
-<style>
-/* Override green borders/text to use primary-cyan brand color */
-.border-success,
-.text-success {
-    color: var(--primary-cyan) !important;
-    border-color: var(--primary-cyan) !important;
-}
-</style>
+

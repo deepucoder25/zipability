@@ -138,10 +138,19 @@
 }
 
 .footer-contact-list .contact-text {
-    font-size: 13px;
+    font-size: 12.5px;
     line-height: 1.6;
     color: var(--footer-link);
     padding-top: 3px;
+}
+
+.footer-contact-list .contact-label {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    font-weight: 700;
+    margin-bottom: 4px;
 }
 
 .footer-contact-list a {

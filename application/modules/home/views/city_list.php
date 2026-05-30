@@ -102,9 +102,9 @@ $chennai_localities = [
                 <div class="city-locality-box bg-white shadow-sm rounded-4 overflow-hidden border border-secondary border-opacity-10 d-flex flex-column w-100">
                     <div class="city-box-header px-4 py-3 text-white d-flex align-items-center justify-content-between">
                         <h3 class="h6 fw-bold mb-0 text-white"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Bike Transportation in Hyderabad</h3>
-                        <span class="badge bg-white bg-opacity-20 text-dark rounded-pill px-2.5 py-1" style="font-size: 11px;"><?= count($hyderabad_localities) ?> Areas</span>
+                        <span class="badge bg-white bg-opacity-20 text-dark rounded-pill px-2.5 py-1 city-badge-pill"><?= count($hyderabad_localities) ?> Areas</span>
                     </div>
-                    <div class="city-box-scroll px-3 py-2 flex-grow-1 overflow-y-auto" style="max-height: 350px;">
+                    <div class="city-box-scroll px-3 py-2 flex-grow-1 overflow-y-auto city-box-scroll-pane">
                         <ul class="locality-list list-unstyled mb-0">
                             <?php foreach ($hyderabad_localities as $loc): 
                                 $slug = strtolower(str_replace(' ', '-', $loc));
@@ -127,9 +127,9 @@ $chennai_localities = [
                 <div class="city-locality-box bg-white shadow-sm rounded-4 overflow-hidden border border-secondary border-opacity-10 d-flex flex-column w-100">
                     <div class="city-box-header px-4 py-3 text-white d-flex align-items-center justify-content-between">
                         <h3 class="h6 fw-bold mb-0 text-white"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Bike Transportation in Bangalore</h3>
-                        <span class="badge bg-white bg-opacity-20 text-dark rounded-pill px-2.5 py-1" style="font-size: 11px;"><?= count($bangalore_localities) ?> Areas</span>
+                        <span class="badge bg-white bg-opacity-20 text-dark rounded-pill px-2.5 py-1 city-badge-pill"><?= count($bangalore_localities) ?> Areas</span>
                     </div>
-                    <div class="city-box-scroll px-3 py-2 flex-grow-1 overflow-y-auto" style="max-height: 350px;">
+                    <div class="city-box-scroll px-3 py-2 flex-grow-1 overflow-y-auto city-box-scroll-pane">
                         <ul class="locality-list list-unstyled mb-0">
                             <?php foreach ($bangalore_localities as $loc): 
                                 $slug = strtolower(str_replace(' ', '-', $loc));
@@ -152,9 +152,9 @@ $chennai_localities = [
                 <div class="city-locality-box bg-white shadow-sm rounded-4 overflow-hidden border border-secondary border-opacity-10 d-flex flex-column w-100">
                     <div class="city-box-header px-4 py-3 text-white d-flex align-items-center justify-content-between">
                         <h3 class="h6 fw-bold mb-0 text-white"><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Bike Transportation in Chennai</h3>
-                        <span class="badge bg-white bg-opacity-20 text-dark rounded-pill px-2.5 py-1" style="font-size: 11px;"><?= count($chennai_localities) ?> Areas</span>
+                        <span class="badge bg-white bg-opacity-20 text-dark rounded-pill px-2.5 py-1 city-badge-pill"><?= count($chennai_localities) ?> Areas</span>
                     </div>
-                    <div class="city-box-scroll px-3 py-2 flex-grow-1 overflow-y-auto" style="max-height: 350px;">
+                    <div class="city-box-scroll px-3 py-2 flex-grow-1 overflow-y-auto city-box-scroll-pane">
                         <ul class="locality-list list-unstyled mb-0">
                             <?php foreach ($chennai_localities as $loc): 
                                 $slug = strtolower(str_replace(' ', '-', $loc));
@@ -177,95 +177,4 @@ $chennai_localities = [
     </div>
 </section>
 
-<style>
-/* --- Search By Location Redesign --- */
-.search-location-section {
-    background-color: #fafbfd;
-    font-family: 'Outfit', sans-serif;
-}
-
-.location-heading-icon {
-    width: 38px;
-    height: 38px;
-    border-radius: 10px;
-    background: color-mix(in srgb, var(--footer-heading, #00B5B8) 12%, transparent);
-    color: var(--footer-heading, #00B5B8);
-    font-size: 17px;
-    animation: bouncePin 3s infinite ease-in-out;
-}
-
-@keyframes bouncePin {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-4px); }
-}
-
-.city-locality-box {
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.city-locality-box:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08) !important;
-}
-
-.city-box-header {
-    background: linear-gradient(135deg, var(--footer-heading, #00B5B8) 0%, var(--footer-bg, #04121E) 100%);
-}
-
-.locality-list li {
-    margin-bottom: 2px;
-}
-
-.locality-item {
-    display: flex;
-    align-items: center;
-    padding: 10px 12px;
-    border-radius: 8px;
-    color: #475569;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 500;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid transparent;
-}
-
-.locality-item:hover {
-    background: #f8fafc;
-    border-color: #f1f5f9;
-    color: var(--footer-heading, #00B5B8);
-    padding-left: 18px;
-}
-
-.loc-arrow {
-    font-size: 16px;
-    opacity: 0;
-    transform: translateX(-6px);
-    transition: all 0.25s ease;
-    color: var(--footer-heading, #00B5B8);
-}
-
-.locality-item:hover .loc-arrow {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-/* Custom Scrollbars */
-.city-box-scroll::-webkit-scrollbar {
-    width: 6px;
-}
-
-.city-box-scroll::-webkit-scrollbar-track {
-    background: #f1f5f9;
-    border-radius: 4px;
-}
-
-.city-box-scroll::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
-    border-radius: 4px;
-}
-
-.city-box-scroll::-webkit-scrollbar-thumb:hover {
-    background: var(--footer-heading, #00B5B8);
-}
-</style>
 
