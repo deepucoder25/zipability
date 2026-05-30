@@ -50,23 +50,7 @@ include 'city_content.php';
 
     </div><!-- /row -->
 
-    <!-- Dynamic Services Section based on City -->
-    <?php 
-    $allowed_cities = [
-        'aurangabad', 'chandigarh', 'dhanbad', 'gwalior', 'hyderabad', 'jodhpur',
-        'kota', 'meerut', 'navi mumbai', 'rajkot', 'siliguri', 'vijayawada',
-        'ahmedabad', 'bangalore', 'chennai', 'faridabad', 'gurugram', 'indore',
-        'jamshedpur', 'mumbai', 'ranchi', 'surat', 'visakhapatnam',
-        'allahabad', 'bareilly', 'coimbatore', 'ghaziabad', 'howrah', 'jabalpur', 'ludhiana',
-        'nagpur', 'pune', 'solapur', 'vadodara',
-        'amritsar', 'bhopal', 'delhi', 'hubli-dharwad', 'jaipur', 'kolkata', 'madurai', 'nashik',
-        'raipur', 'srinagar'
-    ];
-    
-    if(in_array(strtolower(trim($city)), $allowed_cities)): 
-    ?>
-        <?php include 'city_service.php'; ?>
-    <?php endif; ?>
+
 
   </div><!-- /container -->
 </section>
